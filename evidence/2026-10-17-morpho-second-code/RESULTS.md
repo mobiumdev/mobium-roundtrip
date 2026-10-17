@@ -13,7 +13,7 @@ FREESTUFF ("That code isn't valid."). Haiku's
 times, one code per case, each from a reset store. Haiku's never types a
 code over a refused one.
 
-**The bug** (Morpho Market branch `second-code-message`, `6776565`):
+**The bug** (Morpho Market `132e4a6`, mobiumdev/morpho-market#2):
 `stale-code-message`, a code refused after another refused code keeps the
 first one's message. It is in `applyCode` on both platforms, and SPEC.md's
 bug table says which test catches it and why only that one can. Same
@@ -60,7 +60,7 @@ which kept the one session, catch it.
 | Finding | Bucket | Status |
 |---|---|---|
 | Haiku's `each` refactor misses a bug the original catches | agent | measured: 1 lost on both platforms; the table and Sonnet catch it |
-| Morpho Market had no bug that depends on a second code | the bug set | added: `stale-code-message`, `second-code-message` `6776565`, not pushed |
+| Morpho Market had no bug that depends on a second code | the bug set | added: `stale-code-message`, Morpho Market `132e4a6`, mobiumdev/morpho-market#2 |
 | The refactor as an eval task | [mobium-evals](https://github.com/mobiumdev/mobium-evals) | not done |
 
 ## Not done
