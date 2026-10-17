@@ -152,8 +152,8 @@ flowchart TB
 | **Tracer** (in Mobium) | Records each call: tool, arguments, result, the screen after it, and since #219 what an `expect` asserts | The thing under test. A gap here is a gap for every reader of every trace |
 | **Table generator** (`tools/gen.py`) | One step per traced call; drops what the runner adds (device, driver); turns an `assertion` back into an `expect`; leaves a placeholder for typed text | A baseline with no judgment in it. Whatever it loses, the trace lost |
 | **Agent generator** (`digest.py`, `agent_prompt.py`, `claude -p`, `agent_extract.py`) | Gives a model the trace as text and a format reference, and writes its answer out as test files | Tests what a table cannot do: recover structure (shared setup, cases over data, assertions) and intent |
-| **Mutants** (`app/mutate.py`, `tools/mutant.sh`) | Six plausible bugs compiled into one build; a file in the app's data turns one on | One build means the only thing that changes between runs is the bug. The switch is read back, never assumed |
-| **Matrix** (`tools/run.sh`) | Runs each suite under each mutant and under none | The no-mutant run is the control: if anything fails there, nothing else in the table means anything |
+| **Mutants** (`app/mutate.py`, `tools/mutant.sh`) | Six plausible bugs compiled into one build; a file in the app's data turns one on. Morpho Market (probe 4) has 16 of its own, switched by a deep link | One build means the only thing that changes between runs is the bug. The switch is read back, never assumed |
+| **Matrix** (`tools/run.sh`, `tools/morpho_run.sh`) | Runs each suite under each mutant and under none | The no-mutant run is the control: if anything fails there, nothing else in the table means anything |
 | **Scoring** (`tools/score.py`, `tools/compare.py`) | Compares failing cells; compares traces call by call with timings, coordinates and refs normalized | Both comparisons are mechanical, and both have a positive control that shows they can say "different" |
 | **Evidence** (`evidence/<date>/`) | Every report, trace, log and score, and a `RESULTS.md` | A claim here has to be re-checkable from what is kept |
 
@@ -228,6 +228,9 @@ So far:
 | A keystroke blamed for an app that left the front | Mobium | fixed, #223 |
 | iOS traces carry `driver` on every call | codegen table | fixed in `gen.py` |
 | Agents meet a conditional by removing it | agent | to become an eval task |
+| An agent's `each` changed a test's meaning, and no bug noticed (probe 4) | agent / the bug set | to become a mutant and an eval task |
+| A Morpho Market test's verdict under `slow-catalog` depends on a new process (probe 4) | the original test | fixed in Morpho Market; re-run 0 lost |
+| `score.py` let one `each` case overwrite another | the scorer | fixed; probes 2 and 3 unchanged |
 
 ## How it fits AI-native test automation
 

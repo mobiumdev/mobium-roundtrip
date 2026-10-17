@@ -1,0 +1,320 @@
+getpwuid_r did not find a match for uid 501
+Filtering the log data using "subsystem == "dev.mobium.shop""
+Timestamp               Ty Process[PID:TID]
+2026-10-17 10:34:56.422 Df Morpho Market[87092:2ac50da] [dev.mobium.shop:process] process 87092: store made
+2026-10-17 10:35:03.668 Df Morpho Market[87171:2ac53e5] [dev.mobium.shop:process] process 87171: store made
+2026-10-17 10:35:05.923 Df Morpho Market[87171:2ac53e5] [dev.mobium.shop:process] process 87171: reset
+2026-10-17 10:35:56.074 Df Morpho Market[87328:2ac59e4] [dev.mobium.shop:process] process 87328: store made
+2026-10-17 10:35:58.212 Df Morpho Market[87328:2ac59e4] [dev.mobium.shop:process] process 87328: reset
+2026-10-17 10:36:52.594 Df Morpho Market[87470:2ac5f55] [dev.mobium.shop:process] process 87470: store made
+2026-10-17 10:36:54.176 Df Morpho Market[87470:2ac5f55] [dev.mobium.shop:process] process 87470: reset
+2026-10-17 10:37:12.982 Df Morpho Market[87541:2ac61af] [dev.mobium.shop:process] process 87541: store made
+2026-10-17 10:37:15.110 Df Morpho Market[87541:2ac61af] [dev.mobium.shop:process] process 87541: reset
+2026-10-17 10:37:56.336 Df Morpho Market[87680:2ac65ec] [dev.mobium.shop:process] process 87680: store made
+2026-10-17 10:37:57.951 Df Morpho Market[87680:2ac65ec] [dev.mobium.shop:process] process 87680: reset
+2026-10-17 10:38:11.625 Df Morpho Market[87738:2ac679a] [dev.mobium.shop:process] process 87738: store made
+2026-10-17 10:38:13.861 Df Morpho Market[87738:2ac679a] [dev.mobium.shop:process] process 87738: reset
+2026-10-17 10:38:38.879 Df Morpho Market[87833:2ac6a5c] [dev.mobium.shop:process] process 87833: store made
+2026-10-17 10:38:41.134 Df Morpho Market[87833:2ac6a5c] [dev.mobium.shop:process] process 87833: reset
+2026-10-17 10:39:22.143 Df Morpho Market[87956:2ac6f1e] [dev.mobium.shop:process] process 87956: store made
+2026-10-17 10:39:24.395 Df Morpho Market[87956:2ac6f1e] [dev.mobium.shop:process] process 87956: reset
+2026-10-17 10:39:41.667 Df Morpho Market[88032:2ac7126] [dev.mobium.shop:process] process 88032: store made
+2026-10-17 10:39:43.864 Df Morpho Market[88032:2ac7126] [dev.mobium.shop:process] process 88032: reset
+2026-10-17 10:40:22.461 Df Morpho Market[88125:2ac744a] [dev.mobium.shop:process] process 88125: store made
+2026-10-17 10:40:24.605 Df Morpho Market[88125:2ac744a] [dev.mobium.shop:process] process 88125: reset
+2026-10-17 10:41:00.785 Df Morpho Market[88221:2ac7745] [dev.mobium.shop:process] process 88221: store made
+2026-10-17 10:41:02.928 Df Morpho Market[88221:2ac7745] [dev.mobium.shop:process] process 88221: reset
+2026-10-17 10:41:43.029 Df Morpho Market[88314:2ac7a76] [dev.mobium.shop:process] process 88314: store made
+2026-10-17 10:41:45.174 Df Morpho Market[88314:2ac7a76] [dev.mobium.shop:process] process 88314: reset
+2026-10-17 10:41:48.336 Df Morpho Market[88335:2ac7b01] [dev.mobium.shop:process] process 88335: store made
+2026-10-17 10:41:49.900 Df Morpho Market[88335:2ac7b01] [dev.mobium.shop:process] process 88335: reset
+2026-10-17 10:41:56.303 Df Morpho Market[88362:2ac7bed] [dev.mobium.shop:process] process 88362: store made
+2026-10-17 10:41:58.396 Df Morpho Market[88362:2ac7bed] [dev.mobium.shop:process] process 88362: reset
+2026-10-17 10:42:03.877 Df Morpho Market[88386:2ac7cc9] [dev.mobium.shop:process] process 88386: store made
+2026-10-17 10:42:05.425 Df Morpho Market[88386:2ac7cc9] [dev.mobium.shop:process] process 88386: reset
+2026-10-17 10:42:14.916 Df Morpho Market[88468:2ac7eb7] [dev.mobium.shop:process] process 88468: store made
+2026-10-17 10:42:17.084 Df Morpho Market[88468:2ac7eb7] [dev.mobium.shop:process] process 88468: reset
+2026-10-17 10:42:23.632 Df Morpho Market[88496:2ac7f9e] [dev.mobium.shop:process] process 88496: store made
+2026-10-17 10:42:25.194 Df Morpho Market[88496:2ac7f9e] [dev.mobium.shop:process] process 88496: reset
+2026-10-17 10:42:34.503 Df Morpho Market[88543:2ac80df] [dev.mobium.shop:process] process 88543: store made
+2026-10-17 10:42:36.626 Df Morpho Market[88543:2ac80df] [dev.mobium.shop:process] process 88543: reset
+2026-10-17 10:42:50.038 Df Morpho Market[88602:2ac8265] [dev.mobium.shop:process] process 88602: store made
+2026-10-17 10:42:52.106 Df Morpho Market[88602:2ac8265] [dev.mobium.shop:process] process 88602: reset
+2026-10-17 10:43:10.797 Df Morpho Market[88649:2ac8436] [dev.mobium.shop:process] process 88649: store made
+2026-10-17 10:43:12.948 Df Morpho Market[88649:2ac8436] [dev.mobium.shop:process] process 88649: reset
+2026-10-17 10:43:23.291 Df Morpho Market[88697:2ac8598] [dev.mobium.shop:process] process 88697: store made
+2026-10-17 10:43:25.421 Df Morpho Market[88697:2ac8598] [dev.mobium.shop:process] process 88697: reset
+2026-10-17 10:43:45.983 Df Morpho Market[88759:2ac87ed] [dev.mobium.shop:process] process 88759: store made
+2026-10-17 10:43:48.146 Df Morpho Market[88759:2ac87ed] [dev.mobium.shop:process] process 88759: reset
+2026-10-17 10:44:10.195 Df Morpho Market[88827:2ac8a5b] [dev.mobium.shop:process] process 88827: store made
+2026-10-17 10:44:12.347 Df Morpho Market[88827:2ac8a5b] [dev.mobium.shop:process] process 88827: reset
+2026-10-17 10:44:26.485 Df Morpho Market[88887:2ac8bf0] [dev.mobium.shop:process] process 88887: store made
+2026-10-17 10:44:28.686 Df Morpho Market[88887:2ac8bf0] [dev.mobium.shop:process] process 88887: reset
+2026-10-17 10:44:48.581 Df Morpho Market[88966:2ac8e2e] [dev.mobium.shop:process] process 88966: store made
+2026-10-17 10:44:50.164 Df Morpho Market[88966:2ac8e2e] [dev.mobium.shop:process] process 88966: reset
+2026-10-17 10:45:22.588 Df Morpho Market[89178:2ac9452] [dev.mobium.shop:process] process 89178: store made
+2026-10-17 10:45:24.224 Df Morpho Market[89178:2ac9452] [dev.mobium.shop:process] process 89178: reset
+2026-10-17 10:46:14.590 Df Morpho Market[89331:2ac988b] [dev.mobium.shop:process] process 89331: store made
+2026-10-17 10:46:16.208 Df Morpho Market[89331:2ac988b] [dev.mobium.shop:process] process 89331: reset
+2026-10-17 10:47:11.076 Df Morpho Market[89496:2ac9c96] [dev.mobium.shop:process] process 89496: store made
+2026-10-17 10:47:13.187 Df Morpho Market[89496:2ac9c96] [dev.mobium.shop:process] process 89496: reset
+2026-10-17 10:47:31.662 Df Morpho Market[89549:2ac9e32] [dev.mobium.shop:process] process 89549: store made
+2026-10-17 10:47:33.884 Df Morpho Market[89549:2ac9e32] [dev.mobium.shop:process] process 89549: reset
+2026-10-17 10:48:15.226 Df Morpho Market[89658:2aca194] [dev.mobium.shop:process] process 89658: store made
+2026-10-17 10:48:17.433 Df Morpho Market[89658:2aca194] [dev.mobium.shop:process] process 89658: reset
+2026-10-17 10:48:58.084 Df Morpho Market[89745:2aca4c2] [dev.mobium.shop:process] process 89745: store made
+2026-10-17 10:48:59.694 Df Morpho Market[89745:2aca4c2] [dev.mobium.shop:process] process 89745: reset
+2026-10-17 10:49:13.593 Df Morpho Market[89796:2aca6ac] [dev.mobium.shop:process] process 89796: store made
+2026-10-17 10:49:15.174 Df Morpho Market[89796:2aca6ac] [dev.mobium.shop:process] process 89796: reset
+2026-10-17 10:49:40.202 Df Morpho Market[89907:2aca9bd] [dev.mobium.shop:process] process 89907: store made
+2026-10-17 10:49:42.456 Df Morpho Market[89907:2aca9bd] [dev.mobium.shop:process] process 89907: reset
+2026-10-17 10:49:59.637 Df Morpho Market[89975:2acab7b] [dev.mobium.shop:process] process 89975: store made
+2026-10-17 10:50:01.854 Df Morpho Market[89975:2acab7b] [dev.mobium.shop:process] process 89975: reset
+2026-10-17 10:50:40.656 Df Morpho Market[90089:2acaffb] [dev.mobium.shop:process] process 90089: store made
+2026-10-17 10:50:42.838 Df Morpho Market[90089:2acaffb] [dev.mobium.shop:process] process 90089: reset
+2026-10-17 10:51:19.141 Df Morpho Market[90184:2acb3a2] [dev.mobium.shop:process] process 90184: store made
+2026-10-17 10:51:20.753 Df Morpho Market[90184:2acb3a2] [dev.mobium.shop:process] process 90184: reset
+2026-10-17 10:52:01.095 Df Morpho Market[90322:2acb70b] [dev.mobium.shop:process] process 90322: store made
+2026-10-17 10:52:02.672 Df Morpho Market[90322:2acb70b] [dev.mobium.shop:process] process 90322: reset
+2026-10-17 10:52:21.532 Df Morpho Market[90397:2acb92f] [dev.mobium.shop:process] process 90397: store made
+2026-10-17 10:52:23.656 Df Morpho Market[90397:2acb92f] [dev.mobium.shop:process] process 90397: reset
+2026-10-17 10:52:27.487 Df Morpho Market[90419:2acb9d7] [dev.mobium.shop:process] process 90419: store made
+2026-10-17 10:52:29.579 Df Morpho Market[90419:2acb9d7] [dev.mobium.shop:process] process 90419: reset
+2026-10-17 10:52:41.399 Df Morpho Market[90481:2acbb72] [dev.mobium.shop:process] process 90481: store made
+2026-10-17 10:52:43.619 Df Morpho Market[90481:2acbb72] [dev.mobium.shop:process] process 90481: reset
+2026-10-17 10:53:03.576 Df Morpho Market[90552:2acbd74] [dev.mobium.shop:process] process 90552: store made
+2026-10-17 10:53:05.166 Df Morpho Market[90552:2acbd74] [dev.mobium.shop:process] process 90552: reset
+2026-10-17 10:53:10.742 Df Morpho Market[90591:2acbe75] [dev.mobium.shop:process] process 90591: store made
+2026-10-17 10:53:12.900 Df Morpho Market[90591:2acbe75] [dev.mobium.shop:process] process 90591: reset
+2026-10-17 10:53:34.992 Df Morpho Market[90664:2acc097] [dev.mobium.shop:process] process 90664: store made
+2026-10-17 10:53:37.138 Df Morpho Market[90664:2acc097] [dev.mobium.shop:process] process 90664: reset
+2026-10-17 10:53:59.038 Df Morpho Market[90729:2acc279] [dev.mobium.shop:process] process 90729: store made
+2026-10-17 10:54:01.189 Df Morpho Market[90729:2acc279] [dev.mobium.shop:process] process 90729: reset
+2026-10-17 10:54:08.906 Df Morpho Market[90770:2acc395] [dev.mobium.shop:process] process 90770: store made
+2026-10-17 10:54:11.145 Df Morpho Market[90770:2acc395] [dev.mobium.shop:process] process 90770: reset
+2026-10-17 10:54:20.624 Df Morpho Market[90819:2acc4d0] [dev.mobium.shop:process] process 90819: store made
+2026-10-17 10:54:22.186 Df Morpho Market[90819:2acc4d0] [dev.mobium.shop:process] process 90819: reset
+2026-10-17 10:54:37.924 Df Morpho Market[90861:2acc6b6] [dev.mobium.shop:process] process 90861: store made
+2026-10-17 10:54:40.105 Df Morpho Market[90861:2acc6b6] [dev.mobium.shop:process] process 90861: reset
+2026-10-17 10:54:46.495 Df Morpho Market[90893:2acc7c3] [dev.mobium.shop:process] process 90893: store made
+2026-10-17 10:54:48.615 Df Morpho Market[90893:2acc7c3] [dev.mobium.shop:process] process 90893: reset
+2026-10-17 10:54:53.288 Df Morpho Market[90922:2acc88c] [dev.mobium.shop:process] process 90922: store made
+2026-10-17 10:54:55.444 Df Morpho Market[90922:2acc88c] [dev.mobium.shop:process] process 90922: reset
+2026-10-17 10:55:09.866 Df Morpho Market[90968:2acca0b] [dev.mobium.shop:process] process 90968: store made
+2026-10-17 10:55:12.088 Df Morpho Market[90968:2acca0b] [dev.mobium.shop:process] process 90968: reset
+2026-10-17 10:55:42.642 Df Morpho Market[91140:2accf59] [dev.mobium.shop:process] process 91140: store made
+2026-10-17 10:55:44.889 Df Morpho Market[91140:2accf59] [dev.mobium.shop:process] process 91140: reset
+2026-10-17 10:56:34.735 Df Morpho Market[91255:2acd310] [dev.mobium.shop:process] process 91255: store made
+2026-10-17 10:56:36.858 Df Morpho Market[91255:2acd310] [dev.mobium.shop:process] process 91255: reset
+2026-10-17 10:57:31.418 Df Morpho Market[91457:2acd801] [dev.mobium.shop:process] process 91457: store made
+2026-10-17 10:57:33.652 Df Morpho Market[91457:2acd801] [dev.mobium.shop:process] process 91457: reset
+2026-10-17 10:57:52.658 Df Morpho Market[91513:2acd9ce] [dev.mobium.shop:process] process 91513: store made
+2026-10-17 10:57:54.869 Df Morpho Market[91513:2acd9ce] [dev.mobium.shop:process] process 91513: reset
+2026-10-17 10:58:36.404 Df Morpho Market[91623:2acdcf3] [dev.mobium.shop:process] process 91623: store made
+2026-10-17 10:58:38.616 Df Morpho Market[91623:2acdcf3] [dev.mobium.shop:process] process 91623: reset
+2026-10-17 10:59:19.653 Df Morpho Market[91767:2ace0ae] [dev.mobium.shop:process] process 91767: store made
+2026-10-17 10:59:21.862 Df Morpho Market[91767:2ace0ae] [dev.mobium.shop:process] process 91767: reset
+2026-10-17 10:59:35.472 Df Morpho Market[91832:2ace25a] [dev.mobium.shop:process] process 91832: store made
+2026-10-17 10:59:37.742 Df Morpho Market[91832:2ace25a] [dev.mobium.shop:process] process 91832: reset
+2026-10-17 11:00:02.624 Df Morpho Market[91923:2ace522] [dev.mobium.shop:process] process 91923: store made
+2026-10-17 11:00:04.860 Df Morpho Market[91923:2ace522] [dev.mobium.shop:process] process 91923: reset
+2026-10-17 11:00:22.225 Df Morpho Market[91991:2ace730] [dev.mobium.shop:process] process 91991: store made
+2026-10-17 11:00:24.373 Df Morpho Market[91991:2ace730] [dev.mobium.shop:process] process 91991: reset
+2026-10-17 11:01:03.298 Df Morpho Market[92122:2acea93] [dev.mobium.shop:process] process 92122: store made
+2026-10-17 11:01:05.488 Df Morpho Market[92122:2acea93] [dev.mobium.shop:process] process 92122: reset
+2026-10-17 11:01:43.656 Df Morpho Market[92231:2acedc3] [dev.mobium.shop:process] process 92231: store made
+2026-10-17 11:01:45.888 Df Morpho Market[92231:2acedc3] [dev.mobium.shop:process] process 92231: reset
+2026-10-17 11:02:26.827 Df Morpho Market[92335:2acf0e3] [dev.mobium.shop:process] process 92335: store made
+2026-10-17 11:02:28.971 Df Morpho Market[92335:2acf0e3] [dev.mobium.shop:process] process 92335: reset
+2026-10-17 11:02:47.581 Df Morpho Market[92390:2acf2b8] [dev.mobium.shop:process] process 92390: store made
+2026-10-17 11:02:49.688 Df Morpho Market[92390:2acf2b8] [dev.mobium.shop:process] process 92390: reset
+2026-10-17 11:02:53.388 Df Morpho Market[92406:2acf339] [dev.mobium.shop:process] process 92406: store made
+2026-10-17 11:02:54.936 Df Morpho Market[92406:2acf339] [dev.mobium.shop:process] process 92406: reset
+2026-10-17 11:03:06.921 Df Morpho Market[92443:2acf495] [dev.mobium.shop:process] process 92443: store made
+2026-10-17 11:03:09.157 Df Morpho Market[92443:2acf495] [dev.mobium.shop:process] process 92443: reset
+2026-10-17 11:03:29.735 Df Morpho Market[92507:2acf8a4] [dev.mobium.shop:process] process 92507: store made
+2026-10-17 11:03:31.981 Df Morpho Market[92507:2acf8a4] [dev.mobium.shop:process] process 92507: reset
+2026-10-17 11:03:37.184 Df Morpho Market[92529:2acf98f] [dev.mobium.shop:process] process 92529: store made
+2026-10-17 11:03:39.390 Df Morpho Market[92529:2acf98f] [dev.mobium.shop:process] process 92529: reset
+2026-10-17 11:04:01.648 Df Morpho Market[92586:2acfb9d] [dev.mobium.shop:process] process 92586: store made
+2026-10-17 11:04:03.873 Df Morpho Market[92586:2acfb9d] [dev.mobium.shop:process] process 92586: reset
+2026-10-17 11:04:26.276 Df Morpho Market[92666:2acfe13] [dev.mobium.shop:process] process 92666: store made
+2026-10-17 11:04:28.401 Df Morpho Market[92666:2acfe13] [dev.mobium.shop:process] process 92666: reset
+2026-10-17 11:04:36.271 Df Morpho Market[92723:2acffb9] [dev.mobium.shop:process] process 92723: store made
+2026-10-17 11:04:38.398 Df Morpho Market[92723:2acffb9] [dev.mobium.shop:process] process 92723: reset
+2026-10-17 11:04:47.692 Df Morpho Market[92749:2ad00d4] [dev.mobium.shop:process] process 92749: store made
+2026-10-17 11:04:49.943 Df Morpho Market[92749:2ad00d4] [dev.mobium.shop:process] process 92749: reset
+2026-10-17 11:05:05.783 Df Morpho Market[92787:2ad024a] [dev.mobium.shop:process] process 92787: store made
+2026-10-17 11:05:07.908 Df Morpho Market[92787:2ad024a] [dev.mobium.shop:process] process 92787: reset
+2026-10-17 11:05:14.355 Df Morpho Market[92810:2ad0356] [dev.mobium.shop:process] process 92810: store made
+2026-10-17 11:05:15.954 Df Morpho Market[92810:2ad0356] [dev.mobium.shop:process] process 92810: reset
+2026-10-17 11:05:20.839 Df Morpho Market[92829:2ad03e4] [dev.mobium.shop:process] process 92829: store made
+2026-10-17 11:05:22.964 Df Morpho Market[92829:2ad03e4] [dev.mobium.shop:process] process 92829: reset
+2026-10-17 11:05:37.346 Df Morpho Market[92867:2ad056e] [dev.mobium.shop:process] process 92867: store made
+2026-10-17 11:05:39.459 Df Morpho Market[92867:2ad056e] [dev.mobium.shop:process] process 92867: reset
+2026-10-17 11:06:11.288 Df Morpho Market[93019:2ad0a45] [dev.mobium.shop:process] process 93019: store made
+2026-10-17 11:06:12.969 Df Morpho Market[93019:2ad0a45] [dev.mobium.shop:process] process 93019: reset
+2026-10-17 11:07:04.268 Df Morpho Market[93108:2ad0d77] [dev.mobium.shop:process] process 93108: store made
+2026-10-17 11:07:06.448 Df Morpho Market[93108:2ad0d77] [dev.mobium.shop:process] process 93108: reset
+2026-10-17 11:08:01.675 Df Morpho Market[93247:2ad11b5] [dev.mobium.shop:process] process 93247: store made
+2026-10-17 11:08:03.896 Df Morpho Market[93247:2ad11b5] [dev.mobium.shop:process] process 93247: reset
+2026-10-17 11:08:23.142 Df Morpho Market[93287:2ad1371] [dev.mobium.shop:process] process 93287: store made
+2026-10-17 11:08:25.388 Df Morpho Market[93287:2ad1371] [dev.mobium.shop:process] process 93287: reset
+2026-10-17 11:09:07.806 Df Morpho Market[93362:2ad1660] [dev.mobium.shop:process] process 93362: store made
+2026-10-17 11:09:09.961 Df Morpho Market[93362:2ad1660] [dev.mobium.shop:process] process 93362: reset
+2026-10-17 11:09:51.491 Df Morpho Market[93435:2ad1929] [dev.mobium.shop:process] process 93435: store made
+2026-10-17 11:09:53.685 Df Morpho Market[93435:2ad1929] [dev.mobium.shop:process] process 93435: reset
+2026-10-17 11:10:07.724 Df Morpho Market[93468:2ad1a9b] [dev.mobium.shop:process] process 93468: store made
+2026-10-17 11:10:09.947 Df Morpho Market[93468:2ad1a9b] [dev.mobium.shop:process] process 93468: reset
+2026-10-17 11:10:35.511 Df Morpho Market[93520:2ad1cd2] [dev.mobium.shop:process] process 93520: store made
+2026-10-17 11:10:37.678 Df Morpho Market[93520:2ad1cd2] [dev.mobium.shop:process] process 93520: reset
+2026-10-17 11:10:55.098 Df Morpho Market[93576:2ad1e9d] [dev.mobium.shop:process] process 93576: store made
+2026-10-17 11:10:56.716 Df Morpho Market[93576:2ad1e9d] [dev.mobium.shop:process] process 93576: reset
+2026-10-17 11:11:36.827 Df Morpho Market[93679:2ad2283] [dev.mobium.shop:process] process 93679: store made
+2026-10-17 11:11:38.464 Df Morpho Market[93679:2ad2283] [dev.mobium.shop:process] process 93679: reset
+2026-10-17 11:12:15.835 Df Morpho Market[93743:2ad25eb] [dev.mobium.shop:process] process 93743: store made
+2026-10-17 11:12:17.965 Df Morpho Market[93743:2ad25eb] [dev.mobium.shop:process] process 93743: reset
+2026-10-17 11:12:58.837 Df Morpho Market[93818:2ad28b7] [dev.mobium.shop:process] process 93818: store made
+2026-10-17 11:13:00.472 Df Morpho Market[93818:2ad28b7] [dev.mobium.shop:process] process 93818: reset
+2026-10-17 11:13:19.708 Df Morpho Market[93859:2ad2a67] [dev.mobium.shop:process] process 93859: store made
+2026-10-17 11:13:21.919 Df Morpho Market[93859:2ad2a67] [dev.mobium.shop:process] process 93859: reset
+2026-10-17 11:13:25.695 Df Morpho Market[93872:2ad2aea] [dev.mobium.shop:process] process 93872: store made
+2026-10-17 11:13:27.899 Df Morpho Market[93872:2ad2aea] [dev.mobium.shop:process] process 93872: reset
+2026-10-17 11:13:39.804 Df Morpho Market[93906:2ad2c53] [dev.mobium.shop:process] process 93906: store made
+2026-10-17 11:13:41.481 Df Morpho Market[93906:2ad2c53] [dev.mobium.shop:process] process 93906: reset
+2026-10-17 11:14:01.925 Df Morpho Market[93948:2ad2dd4] [dev.mobium.shop:process] process 93948: store made
+2026-10-17 11:14:04.163 Df Morpho Market[93948:2ad2dd4] [dev.mobium.shop:process] process 93948: reset
+2026-10-17 11:14:09.331 Df Morpho Market[93988:2ad2f02] [dev.mobium.shop:process] process 93988: store made
+2026-10-17 11:14:11.404 Df Morpho Market[93988:2ad2f02] [dev.mobium.shop:process] process 93988: reset
+2026-10-17 11:14:27.347 Df Morpho Market[94050:2ad30f0] [dev.mobium.shop:process] process 94050: store made
+2026-10-17 11:14:29.636 Df Morpho Market[94050:2ad30f0] [dev.mobium.shop:process] process 94050: reset
+2026-10-17 11:14:44.351 Df Morpho Market[94089:2ad327f] [dev.mobium.shop:process] process 94089: store made
+2026-10-17 11:14:46.619 Df Morpho Market[94089:2ad327f] [dev.mobium.shop:process] process 94089: reset
+2026-10-17 11:15:00.872 Df Morpho Market[94121:2ad33cc] [dev.mobium.shop:process] process 94121: store made
+2026-10-17 11:15:03.117 Df Morpho Market[94121:2ad33cc] [dev.mobium.shop:process] process 94121: reset
+2026-10-17 11:15:25.927 Df Morpho Market[94166:2ad358c] [dev.mobium.shop:process] process 94166: store made
+2026-10-17 11:15:28.155 Df Morpho Market[94166:2ad358c] [dev.mobium.shop:process] process 94166: reset
+2026-10-17 11:15:36.415 Df Morpho Market[94195:2ad3674] [dev.mobium.shop:process] process 94195: store made
+2026-10-17 11:15:38.587 Df Morpho Market[94195:2ad3674] [dev.mobium.shop:process] process 94195: reset
+2026-10-17 11:15:47.929 Df Morpho Market[94220:2ad3786] [dev.mobium.shop:process] process 94220: store made
+2026-10-17 11:15:50.147 Df Morpho Market[94220:2ad3786] [dev.mobium.shop:process] process 94220: reset
+2026-10-17 11:16:05.933 Df Morpho Market[94258:2ad3927] [dev.mobium.shop:process] process 94258: store made
+2026-10-17 11:16:08.128 Df Morpho Market[94258:2ad3927] [dev.mobium.shop:process] process 94258: reset
+2026-10-17 11:16:14.549 Df Morpho Market[94280:2ad39f1] [dev.mobium.shop:process] process 94280: store made
+2026-10-17 11:16:16.676 Df Morpho Market[94280:2ad39f1] [dev.mobium.shop:process] process 94280: reset
+2026-10-17 11:16:21.304 Df Morpho Market[94301:2ad3a98] [dev.mobium.shop:process] process 94301: store made
+2026-10-17 11:16:23.437 Df Morpho Market[94301:2ad3a98] [dev.mobium.shop:process] process 94301: reset
+2026-10-17 11:16:37.071 Df Morpho Market[94331:2ad3beb] [dev.mobium.shop:process] process 94331: store made
+2026-10-17 11:16:38.714 Df Morpho Market[94331:2ad3beb] [dev.mobium.shop:process] process 94331: reset
+2026-10-17 11:17:14.059 Df Morpho Market[94502:2ad419e] [dev.mobium.shop:process] process 94502: store made
+2026-10-17 11:17:15.153 Df Morpho Market[94502:2ad419e] [dev.mobium.shop:process] process 94502: reset
+2026-10-17 11:18:04.639 Df Morpho Market[94618:2ad44fc] [dev.mobium.shop:process] process 94618: store made
+2026-10-17 11:18:05.657 Df Morpho Market[94618:2ad44fc] [dev.mobium.shop:process] process 94618: reset
+2026-10-17 11:18:58.905 Df Morpho Market[94768:2ad49fd] [dev.mobium.shop:process] process 94768: store made
+2026-10-17 11:18:59.998 Df Morpho Market[94768:2ad49fd] [dev.mobium.shop:process] process 94768: reset
+2026-10-17 11:19:19.020 Df Morpho Market[94844:2ad4bc9] [dev.mobium.shop:process] process 94844: store made
+2026-10-17 11:19:20.120 Df Morpho Market[94844:2ad4bc9] [dev.mobium.shop:process] process 94844: reset
+2026-10-17 11:20:01.861 Df Morpho Market[94961:2ad4f8c] [dev.mobium.shop:process] process 94961: store made
+2026-10-17 11:20:02.939 Df Morpho Market[94961:2ad4f8c] [dev.mobium.shop:process] process 94961: reset
+2026-10-17 11:20:16.533 Df Morpho Market[94999:2ad50ee] [dev.mobium.shop:process] process 94999: store made
+2026-10-17 11:20:17.596 Df Morpho Market[94999:2ad50ee] [dev.mobium.shop:process] process 94999: reset
+2026-10-17 11:20:43.055 Df Morpho Market[95072:2ad5312] [dev.mobium.shop:process] process 95072: store made
+2026-10-17 11:20:44.148 Df Morpho Market[95072:2ad5312] [dev.mobium.shop:process] process 95072: reset
+2026-10-17 11:21:25.035 Df Morpho Market[95216:2ad56c6] [dev.mobium.shop:process] process 95216: store made
+2026-10-17 11:21:26.107 Df Morpho Market[95216:2ad56c6] [dev.mobium.shop:process] process 95216: reset
+2026-10-17 11:21:43.525 Df Morpho Market[95278:2ad585b] [dev.mobium.shop:process] process 95278: store made
+2026-10-17 11:21:44.610 Df Morpho Market[95278:2ad585b] [dev.mobium.shop:process] process 95278: reset
+2026-10-17 11:22:23.512 Df Morpho Market[95416:2ad5b90] [dev.mobium.shop:process] process 95416: store made
+2026-10-17 11:22:24.624 Df Morpho Market[95416:2ad5b90] [dev.mobium.shop:process] process 95416: reset
+2026-10-17 11:23:01.038 Df Morpho Market[95527:2ad5e74] [dev.mobium.shop:process] process 95527: store made
+2026-10-17 11:23:02.106 Df Morpho Market[95527:2ad5e74] [dev.mobium.shop:process] process 95527: reset
+2026-10-17 11:23:41.336 Df Morpho Market[95644:2ad61c0] [dev.mobium.shop:process] process 95644: store made
+2026-10-17 11:23:42.452 Df Morpho Market[95644:2ad61c0] [dev.mobium.shop:process] process 95644: reset
+2026-10-17 11:23:45.503 Df Morpho Market[95658:2ad6238] [dev.mobium.shop:process] process 95658: store made
+2026-10-17 11:23:46.582 Df Morpho Market[95658:2ad6238] [dev.mobium.shop:process] process 95658: reset
+2026-10-17 11:23:51.727 Df Morpho Market[95685:2ad62e4] [dev.mobium.shop:process] process 95685: store made
+2026-10-17 11:23:52.784 Df Morpho Market[95685:2ad62e4] [dev.mobium.shop:process] process 95685: reset
+2026-10-17 11:23:56.536 Df Morpho Market[95703:2ad6387] [dev.mobium.shop:process] process 95703: store made
+2026-10-17 11:23:57.574 Df Morpho Market[95703:2ad6387] [dev.mobium.shop:process] process 95703: reset
+2026-10-17 11:24:05.531 Df Morpho Market[95729:2ad6460] [dev.mobium.shop:process] process 95729: store made
+2026-10-17 11:24:06.639 Df Morpho Market[95729:2ad6460] [dev.mobium.shop:process] process 95729: reset
+2026-10-17 11:24:11.915 Df Morpho Market[95754:2ad6537] [dev.mobium.shop:process] process 95754: store made
+2026-10-17 11:24:12.941 Df Morpho Market[95754:2ad6537] [dev.mobium.shop:process] process 95754: reset
+2026-10-17 11:24:20.724 Df Morpho Market[95785:2ad6630] [dev.mobium.shop:process] process 95785: store made
+2026-10-17 11:24:21.825 Df Morpho Market[95785:2ad6630] [dev.mobium.shop:process] process 95785: reset
+2026-10-17 11:24:33.932 Df Morpho Market[95823:2ad6758] [dev.mobium.shop:process] process 95823: store made
+2026-10-17 11:24:34.993 Df Morpho Market[95823:2ad6758] [dev.mobium.shop:process] process 95823: reset
+2026-10-17 11:24:52.231 Df Morpho Market[95872:2ad6936] [dev.mobium.shop:process] process 95872: store made
+2026-10-17 11:24:53.317 Df Morpho Market[95872:2ad6936] [dev.mobium.shop:process] process 95872: reset
+2026-10-17 11:25:03.876 Df Morpho Market[95915:2ad6aa3] [dev.mobium.shop:process] process 95915: store made
+2026-10-17 11:25:04.929 Df Morpho Market[95915:2ad6aa3] [dev.mobium.shop:process] process 95915: reset
+2026-10-17 11:25:25.636 Df Morpho Market[95963:2ad6c71] [dev.mobium.shop:process] process 95963: store made
+2026-10-17 11:25:26.760 Df Morpho Market[95963:2ad6c71] [dev.mobium.shop:process] process 95963: reset
+2026-10-17 11:25:49.246 Df Morpho Market[96016:2ad6e2c] [dev.mobium.shop:process] process 96016: store made
+2026-10-17 11:25:50.307 Df Morpho Market[96016:2ad6e2c] [dev.mobium.shop:process] process 96016: reset
+2026-10-17 11:26:04.641 Df Morpho Market[96080:2ad6fe1] [dev.mobium.shop:process] process 96080: store made
+2026-10-17 11:26:05.669 Df Morpho Market[96080:2ad6fe1] [dev.mobium.shop:process] process 96080: reset
+2026-10-17 11:26:25.039 Df Morpho Market[96152:2ad7230] [dev.mobium.shop:process] process 96152: store made
+2026-10-17 11:26:26.139 Df Morpho Market[96152:2ad7230] [dev.mobium.shop:process] process 96152: reset
+2026-10-17 11:27:02.792 Df Morpho Market[96313:2ad77c3] [dev.mobium.shop:process] process 96313: store made
+2026-10-17 11:27:03.895 Df Morpho Market[96313:2ad77c3] [dev.mobium.shop:process] process 96313: reset
+2026-10-17 11:27:54.262 Df Morpho Market[96416:2ad7b35] [dev.mobium.shop:process] process 96416: store made
+2026-10-17 11:27:55.348 Df Morpho Market[96416:2ad7b35] [dev.mobium.shop:process] process 96416: reset
+2026-10-17 11:28:50.004 Df Morpho Market[96512:2ad7e9e] [dev.mobium.shop:process] process 96512: store made
+2026-10-17 11:28:51.157 Df Morpho Market[96512:2ad7e9e] [dev.mobium.shop:process] process 96512: reset
+2026-10-17 11:29:09.819 Df Morpho Market[96552:2ad801b] [dev.mobium.shop:process] process 96552: store made
+2026-10-17 11:29:10.920 Df Morpho Market[96552:2ad801b] [dev.mobium.shop:process] process 96552: reset
+2026-10-17 11:29:52.873 Df Morpho Market[96719:2ad845f] [dev.mobium.shop:process] process 96719: store made
+2026-10-17 11:29:53.967 Df Morpho Market[96719:2ad845f] [dev.mobium.shop:process] process 96719: reset
+2026-10-17 11:30:34.396 Df Morpho Market[96830:2ad8774] [dev.mobium.shop:process] process 96830: store made
+2026-10-17 11:30:35.469 Df Morpho Market[96830:2ad8774] [dev.mobium.shop:process] process 96830: reset
+2026-10-17 11:30:49.034 Df Morpho Market[96885:2ad88e2] [dev.mobium.shop:process] process 96885: store made
+2026-10-17 11:30:50.070 Df Morpho Market[96885:2ad88e2] [dev.mobium.shop:process] process 96885: reset
+2026-10-17 11:31:15.250 Df Morpho Market[96943:2ad8ae1] [dev.mobium.shop:process] process 96943: store made
+2026-10-17 11:31:16.339 Df Morpho Market[96943:2ad8ae1] [dev.mobium.shop:process] process 96943: reset
+2026-10-17 11:31:34.498 Df Morpho Market[97016:2ad8ce0] [dev.mobium.shop:process] process 97016: store made
+2026-10-17 11:31:35.572 Df Morpho Market[97016:2ad8ce0] [dev.mobium.shop:process] process 97016: reset
+2026-10-17 11:32:14.842 Df Morpho Market[97153:2ad910d] [dev.mobium.shop:process] process 97153: store made
+2026-10-17 11:32:15.925 Df Morpho Market[97153:2ad910d] [dev.mobium.shop:process] process 97153: reset
+2026-10-17 11:32:52.080 Df Morpho Market[97275:2ad9452] [dev.mobium.shop:process] process 97275: store made
+2026-10-17 11:32:53.147 Df Morpho Market[97275:2ad9452] [dev.mobium.shop:process] process 97275: reset
+2026-10-17 11:33:32.185 Df Morpho Market[97407:2ad97de] [dev.mobium.shop:process] process 97407: store made
+2026-10-17 11:33:33.282 Df Morpho Market[97407:2ad97de] [dev.mobium.shop:process] process 97407: reset
+2026-10-17 11:33:51.902 Df Morpho Market[97473:2ad99cf] [dev.mobium.shop:process] process 97473: store made
+2026-10-17 11:33:52.971 Df Morpho Market[97473:2ad99cf] [dev.mobium.shop:process] process 97473: reset
+2026-10-17 11:33:56.728 Df Morpho Market[97497:2ad9a6f] [dev.mobium.shop:process] process 97497: store made
+2026-10-17 11:33:57.775 Df Morpho Market[97497:2ad9a6f] [dev.mobium.shop:process] process 97497: reset
+2026-10-17 11:34:08.118 Df Morpho Market[97551:2ad9bc8] [dev.mobium.shop:process] process 97551: store made
+2026-10-17 11:34:09.187 Df Morpho Market[97551:2ad9bc8] [dev.mobium.shop:process] process 97551: reset
+2026-10-17 11:34:29.530 Df Morpho Market[97612:2ad9dbd] [dev.mobium.shop:process] process 97612: store made
+2026-10-17 11:34:30.593 Df Morpho Market[97612:2ad9dbd] [dev.mobium.shop:process] process 97612: reset
+2026-10-17 11:34:35.934 Df Morpho Market[97631:2ad9e6b] [dev.mobium.shop:process] process 97631: store made
+2026-10-17 11:34:36.997 Df Morpho Market[97631:2ad9e6b] [dev.mobium.shop:process] process 97631: reset
+2026-10-17 11:34:57.747 Df Morpho Market[97684:2ada037] [dev.mobium.shop:process] process 97684: store made
+2026-10-17 11:34:58.848 Df Morpho Market[97684:2ada037] [dev.mobium.shop:process] process 97684: reset
+2026-10-17 11:35:21.468 Df Morpho Market[97760:2ada254] [dev.mobium.shop:process] process 97760: store made
+2026-10-17 11:35:22.549 Df Morpho Market[97760:2ada254] [dev.mobium.shop:process] process 97760: reset
+2026-10-17 11:35:30.251 Df Morpho Market[97782:2ada326] [dev.mobium.shop:process] process 97782: store made
+2026-10-17 11:35:31.316 Df Morpho Market[97782:2ada326] [dev.mobium.shop:process] process 97782: reset
+2026-10-17 11:35:39.184 Df Morpho Market[97819:2ada43b] [dev.mobium.shop:process] process 97819: store made
+2026-10-17 11:35:40.245 Df Morpho Market[97819:2ada43b] [dev.mobium.shop:process] process 97819: reset
+2026-10-17 11:35:54.462 Df Morpho Market[97858:2ada595] [dev.mobium.shop:process] process 97858: store made
+2026-10-17 11:35:55.529 Df Morpho Market[97858:2ada595] [dev.mobium.shop:process] process 97858: reset
+2026-10-17 11:36:00.523 Df Morpho Market[97881:2ada639] [dev.mobium.shop:process] process 97881: store made
+2026-10-17 11:36:01.583 Df Morpho Market[97881:2ada639] [dev.mobium.shop:process] process 97881: reset
+2026-10-17 11:36:04.866 Df Morpho Market[97897:2ada6c9] [dev.mobium.shop:process] process 97897: store made
+2026-10-17 11:36:05.897 Df Morpho Market[97897:2ada6c9] [dev.mobium.shop:process] process 97897: reset
+2026-10-17 11:36:18.609 Df Morpho Market[97927:2ada7e0] [dev.mobium.shop:process] process 97927: store made
+2026-10-17 11:36:19.651 Df Morpho Market[97927:2ada7e0] [dev.mobium.shop:process] process 97927: reset
+2026-10-17 11:36:59.760 Df Morpho Market[98157:2adae5c] [dev.mobium.shop:process] process 98157: store made
+2026-10-17 11:37:00.857 Df Morpho Market[98157:2adae5c] [dev.mobium.shop:process] process 98157: reset
+2026-10-17 11:37:52.299 Df Morpho Market[98244:2adb1dc] [dev.mobium.shop:process] process 98244: store made
+2026-10-17 11:37:53.358 Df Morpho Market[98244:2adb1dc] [dev.mobium.shop:process] process 98244: reset
+2026-10-17 11:38:47.599 Df Morpho Market[98332:2adb522] [dev.mobium.shop:process] process 98332: store made
+2026-10-17 11:38:48.697 Df Morpho Market[98332:2adb522] [dev.mobium.shop:process] process 98332: reset
+2026-10-17 11:39:07.437 Df Morpho Market[98371:2adb6a2] [dev.mobium.shop:process] process 98371: store made
+2026-10-17 11:39:08.547 Df Morpho Market[98371:2adb6a2] [dev.mobium.shop:process] process 98371: reset
+2026-10-17 11:39:50.965 Df Morpho Market[98443:2adb946] [dev.mobium.shop:process] process 98443: store made
+2026-10-17 11:39:52.055 Df Morpho Market[98443:2adb946] [dev.mobium.shop:process] process 98443: reset
+2026-10-17 11:40:32.066 Df Morpho Market[98544:2adbc55] [dev.mobium.shop:process] process 98544: store made
+Child process terminated with signal 15: Terminated

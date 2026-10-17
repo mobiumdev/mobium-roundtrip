@@ -1,0 +1,1197 @@
+{
+  "app": "dev.mobium.shop",
+  "beforeEach": [
+    {
+      "dialogs": {
+        "press": "Open",
+        "when": "Morpho Market"
+      }
+    },
+    {
+      "open_url": "mobiumshop://reset"
+    },
+    {
+      "wait_for": {
+        "target": "testid=catalogList",
+        "timeout_ms": 3000
+      }
+    }
+  ],
+  "tests": [
+    {
+      "name": "A: two tees and a mug, WELCOME10, standard to NY",
+      "description": "Checks out two tees and a mug with WELCOME10, standard shipping to New York, and confirms the totals and the placed order.",
+      "steps": [
+        {
+          "tap": "testid=product_tee"
+        },
+        {
+          "tap": "testid=size_M"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$6.40"
+          }
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_standard"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$5.99"
+          }
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_street",
+            "text": "1 Main St"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_city",
+            "text": "New York"
+          }
+        },
+        {
+          "tap": "testid=statePicker"
+        },
+        {
+          "tap": "testid=state_NY"
+        },
+        {
+          "fill": {
+            "target": "testid=field_zip",
+            "text": "10001"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "ada@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$5.64"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$69.23"
+          }
+        },
+        {
+          "tap": "testid=placeOrder"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderNumber",
+            "text": "Order MS-000001 placed"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=confirmTotal",
+            "text": "$69.23"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "label=\"Cart, 0 items\""
+          }
+        }
+      ]
+    },
+    {
+      "name": "B: MOBIUM5 takes $77.98 under the free-shipping line, CA",
+      "description": "Applies MOBIUM5 to a cart just under the free-shipping line and checks the shipping, tax, and total for California.",
+      "steps": [
+        {
+          "tap": "testid=product_hoodie"
+        },
+        {
+          "tap": "testid=size_L"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_socks"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_magnet"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "MOBIUM5"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "$5.99"
+          }
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Grace Hopper"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_street",
+            "text": "2 Navy Way"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_city",
+            "text": "San Diego"
+          }
+        },
+        {
+          "tap": "testid=statePicker"
+        },
+        {
+          "tap": "testid=state_CA"
+        },
+        {
+          "fill": {
+            "target": "testid=field_zip",
+            "text": "92101"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "grace@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Grace Hopper"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$5.99"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$5.29"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$84.26"
+          }
+        }
+      ]
+    },
+    {
+      "name": "C1: exactly $75.00 ships free",
+      "description": "Confirms a merchandise subtotal of exactly $75.00 qualifies for free standard shipping.",
+      "steps": [
+        {
+          "tap": "testid=product_tee"
+        },
+        {
+          "tap": "testid=size_S"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_tumbler"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_tote"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$75.00"
+          }
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "Free"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "Free"
+          }
+        }
+      ]
+    },
+    {
+      "name": "D: three tumblers, express to TX, shipping taxed",
+      "description": "Orders three tumblers with express shipping to Texas and checks that the shipping charge is taxed.",
+      "steps": [
+        {
+          "tap": "testid=product_tumbler"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_express"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$17.49"
+          }
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Katherine Johnson"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_street",
+            "text": "3 Orbit Rd"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_city",
+            "text": "Houston"
+          }
+        },
+        {
+          "tap": "testid=statePicker"
+        },
+        {
+          "tap": "testid=state_TX"
+        },
+        {
+          "fill": {
+            "target": "testid=field_zip",
+            "text": "77058"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "kj@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "K Johnson"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=reviewDelivery",
+            "text": "Express, 1–2 days"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$7.09"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$120.58"
+          }
+        }
+      ]
+    },
+    {
+      "name": "delivery chosen stays chosen after going back from payment",
+      "description": "Chooses express delivery, goes back from payment to the address form and on again, and checks that express is still the chosen delivery.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_express"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_street",
+            "text": "1 Main St"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_city",
+            "text": "Portland"
+          }
+        },
+        {
+          "tap": "testid=statePicker"
+        },
+        {
+          "tap": "testid=state_OR"
+        },
+        {
+          "fill": {
+            "target": "testid=field_zip",
+            "text": "97201"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "ada@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "wait_for": {
+            "target": "testid=field_cardNumber"
+          }
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=reviewDelivery",
+            "text": "Express, 1–2 days"
+          }
+        }
+      ]
+    },
+    {
+      "name": "K: SHIPFREE frees standard, not express",
+      "description": "Applies SHIPFREE and checks that standard shipping becomes free while express still costs money.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "SHIPFREE"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "Free"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_express",
+            "text": "$14.99"
+          }
+        }
+      ]
+    },
+    {
+      "name": "M: pickup asks no address and is taxed in CA",
+      "description": "Chooses pickup, checks that no address is asked for, and checks that the order is taxed for California.",
+      "steps": [
+        {
+          "tap": "testid=product_hoodie"
+        },
+        {
+          "tap": "testid=size_M"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_pickup"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "wait_for": {
+            "condition": "hidden",
+            "target": "testid=field_street",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Alan Turing"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "alan@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Alan Turing"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$4.21"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$62.21"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the address form says what is missing",
+      "description": "Submits the address form with required fields missing and checks that each missing field has its error message.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_zip",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_city",
+            "text": "Portland"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_name",
+            "text": "Enter your name."
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_state",
+            "text": "Choose a state."
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_zip",
+            "text": "Enter a 5-digit ZIP code."
+          }
+        }
+      ]
+    },
+    {
+      "name": "the declined cards are declined, and nothing is ordered",
+      "description": "Tries a card that is declined and another that has insufficient funds, and checks that neither places an order.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_pickup"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "ada@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4000 0000 0000 0002"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "tap": "testid=placeOrder"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=paymentError",
+            "text": "Your card was declined."
+          }
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4000 0000 0000 9995"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "tap": "testid=placeOrder"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=paymentError",
+            "text": "Insufficient funds."
+          }
+        },
+        {
+          "tap": "label=Orders"
+        },
+        {
+          "wait_for": {
+            "target": "testid=noOrders"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the slow card is waited for, and one tap places one order",
+      "description": "Places an order with a slow-to-process card, and checks that the app waits for the order and that one tap places exactly one order.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_pickup"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "ada@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4000 0000 0000 0119"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "tap": "testid=placeOrder"
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=placeOrder",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderNumber",
+            "text": "Order MS-000001 placed",
+            "timeout_ms": 15000
+          }
+        },
+        {
+          "tap": "label=Orders"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderCount",
+            "text": "1 order"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WELCOME10 is spent once an order uses it",
+      "description": "Places an order with WELCOME10, then checks that the code is refused on a later order.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "tap": "testid=checkoutBtn"
+        },
+        {
+          "tap": "testid=ship_pickup"
+        },
+        {
+          "tap": "testid=continueDelivery"
+        },
+        {
+          "fill": {
+            "target": "testid=field_name",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_email",
+            "text": "ada@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=continueBtn"
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardNumber",
+            "text": "4242 4242 4242 4242"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardExpiry",
+            "text": "12/30"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardCvc",
+            "text": "123"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=field_cardName",
+            "text": "Ada Lovelace"
+          }
+        },
+        {
+          "tap": "testid=continuePayment"
+        },
+        {
+          "tap": "testid=placeOrder"
+        },
+        {
+          "tap": "testid=keepShopping"
+        },
+        {
+          "tap": "testid=product_hat"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "That code has already been used."
+          }
+        }
+      ]
+    }
+  ]
+}

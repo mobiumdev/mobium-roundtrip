@@ -1,0 +1,44 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › A: two tees and a mug, WELCOME10, standard to NY (1m2.6s)
+        step 15 (app_tap): [timeout] the test ran out of its time before step 15
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › B: MOBIUM5 takes $77.98 under the free-shipping line, CA (1m1.8s)
+        step 12 (app_tap): [timeout] the test ran out of its time before step 12
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › C1: exactly $75.00 ships free (1m1.3s)
+        step 14 (app_wait_for): [timeout] the test ran out of its time before step 14
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › D: three tumblers, express to TX, shipping taxed (1m4s)
+        step 13 (app_tap): [timeout] the test ran out of its time before step 13
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › K: SHIPFREE frees standard, not express (46.2s)
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › M: pickup asks no address and is taxed in CA (1m0.7s)
+        step 14 (app_fill): [timeout] the test ran out of its time before step 14
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › delivery chosen stays chosen after going back from payment (1m5.9s)
+        step 12 (app_fill): [timeout] the test ran out of its time before step 12
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the address form says what is missing (58.2s)
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the declined cards are declined, and nothing is ordered (1m3.9s)
+        step 13 (app_fill): [timeout] the test ran out of its time before step 13
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the slow card is waited for, and one tap places one order (1m3.9s)
+        step 13 (app_fill): [timeout] the test ran out of its time before step 13
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › WELCOME10 is spent once an order uses it (1m3.1s)
+        step 13 (app_fill): [timeout] the test ran out of its time before step 13
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › the catalog lists every product (21.1s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › search narrows the catalog (28.8s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a category narrows the catalog (22.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › price, low to high, starts with the magnet (35.2s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › an XXL tee costs $2 more (30.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › out of stock cannot be added (38.2s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › the quantity stops at 10 (55.1s)
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › two tees and a mug, with WELCOME10 (1m1.9s)
+        step 15 (app_wait_for): [timeout] the test ran out of its time before step 15
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a code applies once (41.3s)
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › codes refused, each saying why (1m3.6s)
+        step 14 (app_wait_for): [timeout] the test ran out of its time before step 14
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › MOBIUM5 comes off when the cart drops under $30 (1m1.4s)
+        step 13 (app_wait_for): [timeout] the test ran out of its time before step 13
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › removing the last line asks first, and the badge goes (49.1s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › 10% of $37.45 rounds half up to $3.75 (57.3s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a gift card needs an email, and takes no code (1m0.9s)
+13 passed, 12 failed (21m38.3s)
+json report: evidence/2026-10-16-morpho/01-original-traced-ios/results.json
+junit report: evidence/2026-10-16-morpho/01-original-traced-ios/junit.xml
+error: 12 of 25 tests failed
+ios exit=1

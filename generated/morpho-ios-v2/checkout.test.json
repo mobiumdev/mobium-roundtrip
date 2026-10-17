@@ -1,0 +1,2002 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.shop",
+  "tests": [
+    {
+      "name": "A: two tees and a mug, WELCOME10, standard to NY",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tee"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_M"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$6.40"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_standard"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$5.99"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_street",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_city",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=statePicker"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=state_NY"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_zip",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_8}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_9}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_10}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$5.64"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$69.23"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=placeOrder"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderNumber",
+            "text": "Order MS-000001 placed"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=confirmTotal",
+            "text": "$69.23"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "label=\"Cart, 0 items\""
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "WELCOME10",
+          "text_2": "Ada Lovelace",
+          "text_3": "1 Main St",
+          "text_4": "New York",
+          "text_5": "10001",
+          "text_6": "ada@example.com",
+          "text_7": "4242 4242 4242 4242",
+          "text_8": "12/30",
+          "text_9": "123",
+          "text_10": "Ada Lovelace"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7, text_8, text_9, text_10"
+    },
+    {
+      "name": "B: MOBIUM5 takes $77.98 under the free-shipping line, CA",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hoodie"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_L"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_socks"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_magnet"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "$5.99"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_street",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_city",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=statePicker"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=state_CA"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_zip",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_8}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_9}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_10}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$5.99"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$5.29"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$84.26"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "MOBIUM5",
+          "text_2": "Grace Hopper",
+          "text_3": "2 Navy Way",
+          "text_4": "San Diego",
+          "text_5": "92101",
+          "text_6": "grace@example.com",
+          "text_7": "4242 4242 4242 4242",
+          "text_8": "12/30",
+          "text_9": "123",
+          "text_10": "Grace Hopper"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7, text_8, text_9, text_10"
+    },
+    {
+      "name": "C1: exactly $75.00 ships free",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tee"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_S"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tumbler"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tote"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$75.00"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "Free"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "Free"
+          }
+        }
+      ]
+    },
+    {
+      "name": "D: three tumblers, express to TX, shipping taxed",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tumbler"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_express"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumShipping",
+            "text": "$17.49"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_street",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_city",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=statePicker"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=state_TX"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_zip",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_8}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_9}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=reviewDelivery",
+            "text": "Express, 1–2 days"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$7.09"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$120.58"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "Katherine Johnson",
+          "text_2": "3 Orbit Rd",
+          "text_3": "Houston",
+          "text_4": "77058",
+          "text_5": "kj@example.com",
+          "text_6": "4242 4242 4242 4242",
+          "text_7": "12/30",
+          "text_8": "123",
+          "text_9": "K Johnson"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7, text_8, text_9"
+    },
+    {
+      "name": "delivery chosen stays chosen after going back from payment",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_express"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_street",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_city",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=statePicker"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=state_OR"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_zip",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=field_cardNumber"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_8}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_9}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=reviewDelivery",
+            "text": "Express, 1–2 days"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "Ada Lovelace",
+          "text_2": "1 Main St",
+          "text_3": "Portland",
+          "text_4": "97201",
+          "text_5": "ada@example.com",
+          "text_6": "4242 4242 4242 4242",
+          "text_7": "12/30",
+          "text_8": "123",
+          "text_9": "Ada Lovelace"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7, text_8, text_9"
+    },
+    {
+      "name": "K: SHIPFREE frees standard, not express",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_standard",
+            "text": "Free"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=shipPrice_express",
+            "text": "$14.99"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "SHIPFREE"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "M: pickup asks no address and is taxed in CA",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hoodie"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_M"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_pickup"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=field_street",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTax",
+            "text": "$4.21"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$62.21"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "Alan Turing",
+          "text_2": "alan@example.com",
+          "text_3": "4242 4242 4242 4242",
+          "text_4": "12/30",
+          "text_5": "123",
+          "text_6": "Alan Turing"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6"
+    },
+    {
+      "name": "the address form says what is missing",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_zip",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_city",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_name",
+            "text": "Enter your name."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_state",
+            "text": "Choose a state."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=error_zip",
+            "text": "Enter a 5-digit ZIP code."
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "123",
+          "text_2": "Portland"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    },
+    {
+      "name": "the declined cards are declined, and nothing is ordered",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_pickup"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=placeOrder"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=paymentError",
+            "text": "Your card was declined."
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=placeOrder"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=paymentError",
+            "text": "Insufficient funds."
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Orders"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=noOrders"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "Ada Lovelace",
+          "text_2": "ada@example.com",
+          "text_3": "4000 0000 0000 0002",
+          "text_4": "12/30",
+          "text_5": "123",
+          "text_6": "Ada Lovelace",
+          "text_7": "4000 0000 0000 9995"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7"
+    },
+    {
+      "name": "the slow card is waited for, and one tap places one order",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_pickup"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=placeOrder"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=placeOrder",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderNumber",
+            "text": "Order MS-000001 placed",
+            "timeout_ms": 15000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Orders"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=orderCount",
+            "text": "1 order"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "Ada Lovelace",
+          "text_2": "ada@example.com",
+          "text_3": "4000 0000 0000 0119",
+          "text_4": "12/30",
+          "text_5": "123",
+          "text_6": "Ada Lovelace"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6"
+    },
+    {
+      "name": "WELCOME10 is spent once an order uses it",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=checkoutBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=ship_pickup"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueDelivery"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_name",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_email",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continueBtn"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardNumber",
+            "text": "${text_4}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardExpiry",
+            "text": "${text_5}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardCvc",
+            "text": "${text_6}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=field_cardName",
+            "text": "${text_7}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=continuePayment"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=placeOrder"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=keepShopping"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hat"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_8}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "That code has already been used."
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "WELCOME10",
+          "text_2": "Ada Lovelace",
+          "text_3": "ada@example.com",
+          "text_4": "4242 4242 4242 4242",
+          "text_5": "12/30",
+          "text_6": "123",
+          "text_7": "Ada Lovelace",
+          "text_8": "WELCOME10"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3, text_4, text_5, text_6, text_7, text_8"
+    }
+  ]
+}

@@ -19,8 +19,11 @@ SUITES = tuple(os.environ.get("SUITES", "corpus generated-withvalues").split())
 def results(path):
     out = {}
     for tc in ET.parse(path).getroot().iter("testcase"):
+        # A test's cases (each) fold into its name, and the test fails if
+        # any case does: the last case's result must not hide an earlier one.
         name = re.sub(r" \[\d+\]$", "", tc.get("name"))
-        out[name] = "fail" if tc.find("failure") is not None or tc.find("error") is not None else "pass"
+        failed = tc.find("failure") is not None or tc.find("error") is not None
+        out[name] = "fail" if failed or out.get(name) == "fail" else "pass"
     return out
 
 

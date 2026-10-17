@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="1" time="623.301">
+  <testsuite name="ios › checkout.test.json" tests="11" failures="1" time="412.801">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="ios.checkout.test.json" time="52.197"></testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="ios.checkout.test.json" time="56.351"></testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="ios.checkout.test.json" time="31.232">
+      <failure message="step 13 of 14 (app_wait_for) failed: timed out after 10.055s waiting for testid=shipPrice_standard to say exactly &#34;Free&#34; — its text is &#34;$5.99&#34;; steps 1-12 ran before it, and nothing after" type="timeout">step 13 (app_wait_for): [timeout] step 13 of 14 (app_wait_for) failed: timed out after 10.055s waiting for testid=shipPrice_standard to say exactly &#34;Free&#34; — its text is &#34;$5.99&#34;; steps 1-12 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="ios.checkout.test.json" time="44.640"></testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="ios.checkout.test.json" time="43.389"></testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="ios.checkout.test.json" time="15.739"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="ios.checkout.test.json" time="27.242"></testcase>
+    <testcase name="the address form says what is missing" classname="ios.checkout.test.json" time="19.422"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="ios.checkout.test.json" time="41.327"></testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="ios.checkout.test.json" time="38.883"></testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="ios.checkout.test.json" time="42.378"></testcase>
+  </testsuite>
+  <testsuite name="ios › shop.test.json" tests="14" failures="0" time="210.499">
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="ios.shop.test.json" time="21.044"></testcase>
+    <testcase name="a category narrows the catalog" classname="ios.shop.test.json" time="5.902"></testcase>
+    <testcase name="a code applies once" classname="ios.shop.test.json" time="13.696"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="ios.shop.test.json" time="22.347"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="ios.shop.test.json" time="7.736"></testcase>
+    <testcase name="codes refused, each saying why" classname="ios.shop.test.json" time="24.551"></testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="ios.shop.test.json" time="24.805"></testcase>
+    <testcase name="out of stock cannot be added" classname="ios.shop.test.json" time="10.034"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="ios.shop.test.json" time="11.499"></testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="ios.shop.test.json" time="17.743"></testcase>
+    <testcase name="search narrows the catalog" classname="ios.shop.test.json" time="8.572"></testcase>
+    <testcase name="the catalog lists every product" classname="ios.shop.test.json" time="6.158"></testcase>
+    <testcase name="the quantity stops at 10" classname="ios.shop.test.json" time="15.682"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="ios.shop.test.json" time="20.730"></testcase>
+  </testsuite>
+</testsuites>

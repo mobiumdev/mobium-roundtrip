@@ -1,7 +1,8 @@
 """Build the prompts an agent is given, from their parts — probe 2's part 2
 (the corpus) and part 3 (the branch).
 
-  corpus: agent/prompt.md with VALUES (tools/values.json, typed text by test),
+  corpus: agent/prompt.md with VALUES (tools/values.json, typed text by test;
+          the VALUES environment variable names another file),
           DIGEST (tools/digest.py over the corpus traces) and GUIDE
           (agent/format.md, written for the probe: Mobium's own test-runner
           guide quotes the corpus and would hand over the answer).
@@ -34,7 +35,8 @@ def digest(traces):
 def corpus(traces):
     p = read("agent/prompt.md").replace("# The guide to the test format (Mobium's docs/guides/test-runner.md)",
                                         "# The test format")
-    v = json.loads(read("tools/values.json"))
+    # VALUES names another values file: probe 4's is tools/morpho-values.json.
+    v = json.loads(read(os.environ.get("VALUES", "tools/values.json")))
     vals = "\n".join(f"- {k}: " + ", ".join(json.dumps(x) for _, x in sorted(d.items())) for k, d in v.items())
     return p.replace("VALUES", vals).replace("DIGEST", digest(traces)).replace("GUIDE", read("agent/format.md"))
 

@@ -10,11 +10,13 @@ original. The device decides; no language model grades anything.
 round-trip verification is, why it exists, how it works, what it is for, and
 how it fits AI-native test automation, with diagrams.
 
-Three probes have run, on Android and an iOS simulator. Their write-ups:
+Four probes have run, on Android and an iOS simulator. Their write-ups:
 
 - [evidence/2026-10-14/RESULTS.md](evidence/2026-10-14/RESULTS.md) — probe 1, Android
 - [evidence/2026-10-16/RESULTS.md](evidence/2026-10-16/RESULTS.md) — probe 2, Android: assertions, agents, a branch, the docs scenarios
 - [evidence/2026-10-16-ios/RESULTS.md](evidence/2026-10-16-ios/RESULTS.md) — probe 3, the same round trip on an iOS simulator
+- [evidence/2026-10-16-morpho/RESULTS.md](evidence/2026-10-16-morpho/RESULTS.md) — probe 4, Morpho Market's 25-test suite and its 16 bugs on both platforms
+- [evidence/2026-10-17-morpho-reset/RESULTS.md](evidence/2026-10-17-morpho-reset/RESULTS.md) — probe 4's follow-up: `slow-catalog` after every reset, and the app's process id logged
 
 ## Contents
 

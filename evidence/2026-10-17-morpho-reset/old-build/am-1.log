@@ -1,0 +1,290 @@
+--------- beginning of system
+10-17 11:18:39.320 I/ActivityManager(  555): Start proc 30761:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:18:40.610 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 30798
+10-17 11:18:40.635 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 30803
+10-17 11:18:40.635 I/ActivityManager(  555): Killing 30616:io.appium.uiautomator2.server/u0a223 (adj 0): stop io.appium.uiautomator2.server due to from pid 30803
+10-17 11:18:40.636 W/ActivityManager(  555): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+10-17 11:18:40.636 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: finished inst
+10-17 11:18:40.642 W/ActivityManager(  555): pid 555 system sent binder code 1 with flags 1 to frozen apps and got error -32
+10-17 11:18:40.770 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: start instr
+10-17 11:18:40.775 I/ActivityManager(  555): Start proc 30819:io.appium.uiautomator2.server/u0a223 for added application io.appium.uiautomator2.server
+10-17 11:18:41.741 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 30855
+10-17 11:18:41.742 I/ActivityManager(  555): Killing 30761:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 30855
+10-17 11:18:41.749 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 30761
+10-17 11:18:41.807 I/ActivityManager(  555): Start proc 30872:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:18:41.833 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:19:21.453 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 31284
+10-17 11:19:21.455 I/ActivityManager(  555): Killing 30872:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 31284
+10-17 11:19:21.471 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 30872
+10-17 11:19:21.525 I/ActivityManager(  555): Start proc 31300:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:19:21.537 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:19:31.444 I/ActivityManager(  555): Killing 2050:com.google.android.apps.wallpaper/u0a180 (adj 975): empty #17
+10-17 11:20:03.547 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 31701
+10-17 11:20:03.547 I/ActivityManager(  555): Killing 31300:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 31701
+10-17 11:20:03.569 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 31300
+10-17 11:20:03.612 I/ActivityManager(  555): Start proc 31717:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:20:03.637 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:20:19.895 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 31795
+10-17 11:20:19.896 I/ActivityManager(  555): Killing 31717:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 31795
+10-17 11:20:19.922 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 31717
+10-17 11:20:19.970 I/ActivityManager(  555): Start proc 31811:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:20:19.987 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:20:52.826 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 32157
+10-17 11:20:52.827 I/ActivityManager(  555): Killing 31811:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 32157
+10-17 11:20:52.856 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 31811
+10-17 11:20:52.894 I/ActivityManager(  555): Start proc 32173:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:20:52.923 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:21:01.444 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 32264
+10-17 11:21:01.445 I/ActivityManager(  555): Killing 32173:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 32264
+10-17 11:21:01.454 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 32173
+10-17 11:21:01.514 I/ActivityManager(  555): Start proc 32281:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:21:01.545 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:21:23.204 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 32562
+10-17 11:21:23.204 I/ActivityManager(  555): Killing 32281:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 32562
+10-17 11:21:23.214 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 32281
+10-17 11:21:23.269 I/ActivityManager(  555): Start proc 32578:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:21:23.301 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:21:53.259 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 883
+10-17 11:21:53.260 I/ActivityManager(  555): Killing 32578:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 883
+10-17 11:21:53.267 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 32578
+10-17 11:21:53.334 I/ActivityManager(  555): Start proc 936:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:21:53.355 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:22:05.588 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 1339
+10-17 11:22:05.589 I/ActivityManager(  555): Killing 936:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 1339
+10-17 11:22:05.613 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 936
+10-17 11:22:05.659 I/ActivityManager(  555): Start proc 1355:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:22:05.682 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:22:36.427 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 2100
+10-17 11:22:36.428 I/ActivityManager(  555): Killing 1355:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 2100
+10-17 11:22:36.458 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 1355
+10-17 11:22:36.504 I/ActivityManager(  555): Start proc 2118:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:22:36.546 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:05.134 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 2427
+10-17 11:23:05.135 I/ActivityManager(  555): Killing 2118:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 2427
+10-17 11:23:05.145 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 2118
+10-17 11:23:05.204 I/ActivityManager(  555): Start proc 2443:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:05.221 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:38.750 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 2880
+10-17 11:23:38.751 I/ActivityManager(  555): Killing 2443:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 2880
+10-17 11:23:38.779 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 2443
+10-17 11:23:38.820 I/ActivityManager(  555): Start proc 2897:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:38.837 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:41.213 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 2941
+10-17 11:23:41.213 I/ActivityManager(  555): Killing 2897:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 2941
+10-17 11:23:41.222 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 2897
+10-17 11:23:41.287 I/ActivityManager(  555): Start proc 2957:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:41.302 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:47.813 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3028
+10-17 11:23:47.813 I/ActivityManager(  555): Killing 2957:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3028
+10-17 11:23:47.820 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 2957
+10-17 11:23:47.876 I/ActivityManager(  555): Start proc 3044:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:47.899 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:53.007 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3089
+10-17 11:23:53.007 I/ActivityManager(  555): Killing 3044:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3089
+10-17 11:23:53.015 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3044
+10-17 11:23:53.084 I/ActivityManager(  555): Start proc 3111:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:53.104 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:23:59.184 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3164
+10-17 11:23:59.185 I/ActivityManager(  555): Killing 3111:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3164
+10-17 11:23:59.201 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3111
+10-17 11:23:59.249 I/ActivityManager(  555): Start proc 3180:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:23:59.270 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:24:05.795 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3242
+10-17 11:24:05.796 I/ActivityManager(  555): Killing 3180:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3242
+10-17 11:24:05.805 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3180
+10-17 11:24:05.875 I/ActivityManager(  555): Start proc 3258:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:24:05.891 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:24:13.373 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3338
+10-17 11:24:13.373 I/ActivityManager(  555): Killing 3258:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3338
+10-17 11:24:13.386 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3258
+10-17 11:24:13.443 I/ActivityManager(  555): Start proc 3355:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:24:13.464 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:24:21.366 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3428
+10-17 11:24:21.367 I/ActivityManager(  555): Killing 3355:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3428
+10-17 11:24:21.374 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3355
+10-17 11:24:21.439 I/ActivityManager(  555): Start proc 3448:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:24:21.454 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:24:35.059 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3565
+10-17 11:24:35.059 I/ActivityManager(  555): Killing 3448:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3565
+10-17 11:24:35.087 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3448
+10-17 11:24:35.125 I/ActivityManager(  555): Start proc 3583:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:24:35.149 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:24:43.172 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3676
+10-17 11:24:43.172 I/ActivityManager(  555): Killing 3583:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3676
+10-17 11:24:43.184 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3583
+10-17 11:24:43.237 I/ActivityManager(  555): Start proc 3692:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:24:43.265 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:25:02.237 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3862
+10-17 11:25:02.237 I/ActivityManager(  555): Killing 3692:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3862
+10-17 11:25:02.267 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3692
+10-17 11:25:02.309 I/ActivityManager(  555): Start proc 3878:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:25:02.320 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:25:17.938 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 3985
+10-17 11:25:17.939 I/ActivityManager(  555): Killing 3878:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 3985
+10-17 11:25:17.948 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 3878
+10-17 11:25:18.009 I/ActivityManager(  555): Start proc 4001:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:25:18.041 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:25:26.286 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4074
+10-17 11:25:26.287 I/ActivityManager(  555): Killing 4001:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4074
+10-17 11:25:26.300 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4001
+10-17 11:25:26.357 I/ActivityManager(  555): Start proc 4090:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:25:26.371 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:25:41.954 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4194
+10-17 11:25:41.954 I/ActivityManager(  555): Killing 4090:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4194
+10-17 11:25:41.968 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4090
+10-17 11:25:42.019 I/ActivityManager(  555): Start proc 4210:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:25:42.049 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:25:58.238 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: finished inst
+10-17 11:25:58.238 E/ActivityManager(  555): Unable to freeze binder for 30819: -11
+10-17 11:25:58.239 I/ActivityManager(  555): Killing 30819:io.appium.uiautomator2.server/u0a223 (adj 0): stop io.appium.uiautomator2.server due to finished inst
+10-17 11:25:58.251 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 4356
+10-17 11:25:58.274 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 4361
+10-17 11:25:58.360 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 4366
+10-17 11:25:58.382 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 4371
+10-17 11:25:58.474 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 4390
+10-17 11:25:58.498 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 4395
+10-17 11:25:58.600 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: start instr
+10-17 11:25:58.606 I/ActivityManager(  555): Start proc 4409:io.appium.uiautomator2.server/u0a223 for added application io.appium.uiautomator2.server
+10-17 11:26:05.876 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 4467
+10-17 11:26:05.898 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 4472
+10-17 11:26:05.898 I/ActivityManager(  555): Killing 4409:io.appium.uiautomator2.server/u0a223 (adj 0): stop io.appium.uiautomator2.server due to from pid 4472
+10-17 11:26:05.899 W/ActivityManager(  555): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+10-17 11:26:05.899 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: finished inst
+10-17 11:26:06.019 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: start instr
+10-17 11:26:06.024 I/ActivityManager(  555): Start proc 4487:io.appium.uiautomator2.server/u0a223 for added application io.appium.uiautomator2.server
+10-17 11:26:06.974 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4520
+10-17 11:26:06.975 I/ActivityManager(  555): Killing 4210:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4520
+10-17 11:26:06.998 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4210
+10-17 11:26:07.047 I/ActivityManager(  555): Start proc 4537:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:07.065 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:12.525 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4585
+10-17 11:26:12.526 I/ActivityManager(  555): Killing 4537:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4585
+10-17 11:26:12.535 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4537
+10-17 11:26:12.596 I/ActivityManager(  555): Start proc 4601:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:12.614 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:20.013 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4647
+10-17 11:26:20.013 I/ActivityManager(  555): Killing 4601:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4647
+10-17 11:26:20.025 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4601
+10-17 11:26:20.085 I/ActivityManager(  555): Start proc 4663:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:20.105 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:27.451 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4712
+10-17 11:26:27.452 I/ActivityManager(  555): Killing 4663:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4712
+10-17 11:26:27.463 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4663
+10-17 11:26:27.518 I/ActivityManager(  555): Start proc 4728:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:27.537 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:34.889 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4774
+10-17 11:26:34.890 I/ActivityManager(  555): Killing 4728:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4774
+10-17 11:26:34.900 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4728
+10-17 11:26:34.957 I/ActivityManager(  555): Start proc 4790:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:34.983 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:42.315 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4836
+10-17 11:26:42.316 I/ActivityManager(  555): Killing 4790:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4836
+10-17 11:26:42.327 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4790
+10-17 11:26:42.388 I/ActivityManager(  555): Start proc 4852:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:42.404 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:49.766 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4900
+10-17 11:26:49.766 I/ActivityManager(  555): Killing 4852:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4900
+10-17 11:26:49.776 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4852
+10-17 11:26:49.835 I/ActivityManager(  555): Start proc 4916:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:49.854 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:26:57.825 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 4971
+10-17 11:26:57.827 I/ActivityManager(  555): Killing 4916:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 4971
+10-17 11:26:57.834 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4916
+10-17 11:26:57.890 I/ActivityManager(  555): Start proc 4987:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:26:57.914 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:05.249 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5042
+10-17 11:27:05.250 I/ActivityManager(  555): Killing 4987:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5042
+10-17 11:27:05.265 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 4987
+10-17 11:27:05.317 I/ActivityManager(  555): Start proc 5058:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:05.339 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:12.712 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5102
+10-17 11:27:12.712 I/ActivityManager(  555): Killing 5058:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5102
+10-17 11:27:12.721 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5058
+10-17 11:27:12.783 I/ActivityManager(  555): Start proc 5118:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:12.804 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:20.192 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5162
+10-17 11:27:20.193 I/ActivityManager(  555): Killing 5118:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5162
+10-17 11:27:20.201 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5118
+10-17 11:27:20.261 I/ActivityManager(  555): Start proc 5178:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:20.282 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:28.207 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5224
+10-17 11:27:28.207 I/ActivityManager(  555): Killing 5178:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5224
+10-17 11:27:28.216 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5178
+10-17 11:27:28.279 I/ActivityManager(  555): Start proc 5240:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:28.301 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:35.631 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5286
+10-17 11:27:35.631 I/ActivityManager(  555): Killing 5240:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5286
+10-17 11:27:35.640 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5240
+10-17 11:27:35.700 I/ActivityManager(  555): Start proc 5302:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:35.720 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:43.052 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5347
+10-17 11:27:43.052 I/ActivityManager(  555): Killing 5302:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5347
+10-17 11:27:43.062 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5302
+10-17 11:27:43.119 I/ActivityManager(  555): Start proc 5363:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:43.138 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:50.500 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5407
+10-17 11:27:50.501 I/ActivityManager(  555): Killing 5363:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5407
+10-17 11:27:50.513 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5363
+10-17 11:27:50.569 I/ActivityManager(  555): Start proc 5423:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:50.588 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:27:57.956 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5470
+10-17 11:27:57.956 I/ActivityManager(  555): Killing 5423:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5470
+10-17 11:27:57.964 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5423
+10-17 11:27:58.025 I/ActivityManager(  555): Start proc 5486:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:27:58.049 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:05.413 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5531
+10-17 11:28:05.413 I/ActivityManager(  555): Killing 5486:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5531
+10-17 11:28:05.423 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5486
+10-17 11:28:05.483 I/ActivityManager(  555): Start proc 5547:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:05.497 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:12.843 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5591
+10-17 11:28:12.844 I/ActivityManager(  555): Killing 5547:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5591
+10-17 11:28:12.854 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5547
+10-17 11:28:12.907 I/ActivityManager(  555): Start proc 5608:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:12.931 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:20.273 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5663
+10-17 11:28:20.274 I/ActivityManager(  555): Killing 5608:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5663
+10-17 11:28:20.286 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5608
+10-17 11:28:20.339 I/ActivityManager(  555): Start proc 5679:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:20.352 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:27.668 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5724
+10-17 11:28:27.669 I/ActivityManager(  555): Killing 5679:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5724
+10-17 11:28:27.678 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5679
+10-17 11:28:27.741 I/ActivityManager(  555): Start proc 5740:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:27.766 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:35.082 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5784
+10-17 11:28:35.083 I/ActivityManager(  555): Killing 5740:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5784
+10-17 11:28:35.090 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5740
+10-17 11:28:35.150 I/ActivityManager(  555): Start proc 5800:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:35.170 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:43.143 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5844
+10-17 11:28:43.144 I/ActivityManager(  555): Killing 5800:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5844
+10-17 11:28:43.153 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5800
+10-17 11:28:43.215 I/ActivityManager(  555): Start proc 5860:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:43.236 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:50.634 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5905
+10-17 11:28:50.636 I/ActivityManager(  555): Killing 5860:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5905
+10-17 11:28:50.646 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5860
+10-17 11:28:50.712 I/ActivityManager(  555): Start proc 5921:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:50.723 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:28:58.417 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 5966
+10-17 11:28:58.417 I/ActivityManager(  555): Killing 5921:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 5966
+10-17 11:28:58.429 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5921
+10-17 11:28:58.485 I/ActivityManager(  555): Start proc 5983:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:28:58.503 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:29:05.881 I/ActivityManager(  555): Force stopping dev.mobium.shop appid=10213 user=0: from pid 6028
+10-17 11:29:05.883 I/ActivityManager(  555): Killing 5983:dev.mobium.shop/u0a213 (adj 0): stop dev.mobium.shop due to from pid 6028
+10-17 11:29:05.889 W/ActivityManager(  555): setHasOverlayUi called on unknown pid: 5983
+10-17 11:29:05.949 I/ActivityManager(  555): Start proc 6044:dev.mobium.shop/u0a213 for next-top-activity {dev.mobium.shop/dev.mobium.shop.MainActivity}
+10-17 11:29:05.972 W/ActivityManager(  555): pid 555 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-17 11:29:13.311 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: finished inst
+10-17 11:29:13.311 E/ActivityManager(  555): Unable to freeze binder for 4487: -11
+10-17 11:29:13.311 I/ActivityManager(  555): Killing 4487:io.appium.uiautomator2.server/u0a223 (adj 0): stop io.appium.uiautomator2.server due to finished inst
+10-17 11:29:13.316 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 6097
+10-17 11:29:13.342 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 6104
+10-17 11:29:13.433 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 6109
+10-17 11:29:13.456 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 6114
+10-17 11:29:13.556 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server.test appid=10224 user=0: from pid 6132
+10-17 11:29:13.580 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: from pid 6137
+10-17 11:29:13.688 I/ActivityManager(  555): Force stopping io.appium.uiautomator2.server appid=10223 user=0: start instr
+10-17 11:29:13.695 I/ActivityManager(  555): Start proc 6151:io.appium.uiautomator2.server/u0a223 for added application io.appium.uiautomator2.server

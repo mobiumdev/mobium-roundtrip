@@ -1,0 +1,1257 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.shop",
+  "tests": [
+    {
+      "name": "10% of $37.45 rounds half up to $3.75",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_stickers"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$37.45"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$3.75"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "WELCOME10"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "a category narrows the catalog",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=category_drinkware"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "2 items"
+          }
+        }
+      ]
+    },
+    {
+      "name": "a code applies once",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hat"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "WELCOME10 is already applied.",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$2.60"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "WELCOME10"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "a gift card needs an email, and takes no code",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_giftcard"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=amount_25"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=giftEmailError",
+            "text": "Enter a valid email address."
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=giftEmail",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumGift",
+            "text": "$25.00"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=sumShipping",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "Codes don't apply to gift cards."
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "friend@example.com",
+          "text_2": "WELCOME10"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    },
+    {
+      "name": "an XXL tee costs $2 more",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tee"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_XXL"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=productPrice",
+            "text": "$26.00"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "enabled",
+            "target": "testid=addToCart"
+          }
+        }
+      ]
+    },
+    {
+      "name": "codes refused, each saying why",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_pins"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "Add $6.00 more to use this code."
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "That code has expired.",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=sumDiscount",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_3}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "That code isn't valid."
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "MOBIUM5",
+          "text_2": "EXPIRED20",
+          "text_3": "FREESTUFF"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2, text_3"
+    },
+    {
+      "name": "MOBIUM5 comes off when the cart drops under $30",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hat"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_magnet"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$31.99"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$5.00"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=lineMinus_magnet"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {
+            "button": "Remove"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "Add $4.00 more to use this code."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=sumDiscount"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "MOBIUM5"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "out of stock cannot be added",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_beanie"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=productStock"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=addToCart",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_hoodie"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_XL"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=variantStock",
+            "text": "Out of stock in XL"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=addToCart",
+            "timeout_ms": 2000
+          }
+        }
+      ]
+    },
+    {
+      "name": "price, low to high, starts with the magnet",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=sortMenu"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=sort_price_asc"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=price_magnet",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=price_stickers",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=price_hoodie",
+            "timeout_ms": 3000
+          }
+        }
+      ]
+    },
+    {
+      "name": "removing the last line asks first, and the badge goes",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "label=\"Cart, 1 item\""
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=lineMinus_mug"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {
+            "button": "Cancel"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=lineQty_mug",
+            "text": "1"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=lineMinus_mug"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {
+            "button": "Remove"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=emptyCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "label=\"Cart, 0 items\"",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=checkoutBtn"
+          }
+        }
+      ]
+    },
+    {
+      "name": "search narrows the catalog",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=searchField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "1 item"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mug"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "the catalog lists every product",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "13 items"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=price_tee",
+            "text": "$24.00"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the quantity stops at 10",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=qtyValue",
+            "text": "10"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "disabled",
+            "target": "testid=qtyPlus",
+            "timeout_ms": 2000
+          }
+        }
+      ]
+    },
+    {
+      "name": "two tees and a mug, with WELCOME10",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Open",
+            "when": "Morpho Market"
+          }
+        },
+        {
+          "name": "app_open_url",
+          "arguments": {
+            "url": "mobiumshop://reset"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_tee"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=size_M"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=qtyPlus"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=addedNotice"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "label=\"Cart, 2 items\""
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=backBtn"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=product_mug"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=viewCart"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$64.00"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=codeField",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=applyCode"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "WELCOME10 applied: 10% off merchandise."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$6.40"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$57.60"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "welcome10"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    }
+  ]
+}

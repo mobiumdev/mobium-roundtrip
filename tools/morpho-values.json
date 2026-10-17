@@ -1,0 +1,114 @@
+{
+  "A: two tees and a mug, WELCOME10, standard to NY": {
+    "text_1": "WELCOME10",
+    "text_2": "Ada Lovelace",
+    "text_3": "1 Main St",
+    "text_4": "New York",
+    "text_5": "10001",
+    "text_6": "ada@example.com",
+    "text_7": "4242 4242 4242 4242",
+    "text_8": "12/30",
+    "text_9": "123",
+    "text_10": "Ada Lovelace"
+  },
+  "B: MOBIUM5 takes $77.98 under the free-shipping line, CA": {
+    "text_1": "MOBIUM5",
+    "text_2": "Grace Hopper",
+    "text_3": "2 Navy Way",
+    "text_4": "San Diego",
+    "text_5": "92101",
+    "text_6": "grace@example.com",
+    "text_7": "4242 4242 4242 4242",
+    "text_8": "12/30",
+    "text_9": "123",
+    "text_10": "Grace Hopper"
+  },
+  "D: three tumblers, express to TX, shipping taxed": {
+    "text_1": "Katherine Johnson",
+    "text_2": "3 Orbit Rd",
+    "text_3": "Houston",
+    "text_4": "77058",
+    "text_5": "kj@example.com",
+    "text_6": "4242 4242 4242 4242",
+    "text_7": "12/30",
+    "text_8": "123",
+    "text_9": "K Johnson"
+  },
+  "K: SHIPFREE frees standard, not express": {
+    "text_1": "SHIPFREE"
+  },
+  "M: pickup asks no address and is taxed in CA": {
+    "text_1": "Alan Turing",
+    "text_2": "alan@example.com",
+    "text_3": "4242 4242 4242 4242",
+    "text_4": "12/30",
+    "text_5": "123",
+    "text_6": "Alan Turing"
+  },
+  "delivery chosen stays chosen after going back from payment": {
+    "text_1": "Ada Lovelace",
+    "text_2": "1 Main St",
+    "text_3": "Portland",
+    "text_4": "97201",
+    "text_5": "ada@example.com",
+    "text_6": "4242 4242 4242 4242",
+    "text_7": "12/30",
+    "text_8": "123",
+    "text_9": "Ada Lovelace"
+  },
+  "the address form says what is missing": {
+    "text_1": "123",
+    "text_2": "Portland"
+  },
+  "the declined cards are declined, and nothing is ordered": {
+    "text_1": "Ada Lovelace",
+    "text_2": "ada@example.com",
+    "text_3": "4000 0000 0000 0002",
+    "text_4": "12/30",
+    "text_5": "123",
+    "text_6": "Ada Lovelace",
+    "text_7": "4000 0000 0000 9995"
+  },
+  "the slow card is waited for, and one tap places one order": {
+    "text_1": "Ada Lovelace",
+    "text_2": "ada@example.com",
+    "text_3": "4000 0000 0000 0119",
+    "text_4": "12/30",
+    "text_5": "123",
+    "text_6": "Ada Lovelace"
+  },
+  "WELCOME10 is spent once an order uses it": {
+    "text_1": "WELCOME10",
+    "text_2": "Ada Lovelace",
+    "text_3": "ada@example.com",
+    "text_4": "4242 4242 4242 4242",
+    "text_5": "12/30",
+    "text_6": "123",
+    "text_7": "Ada Lovelace",
+    "text_8": "WELCOME10"
+  },
+  "search narrows the catalog": {
+    "text_1": "mug"
+  },
+  "two tees and a mug, with WELCOME10": {
+    "text_1": "welcome10"
+  },
+  "a code applies once": {
+    "text_1": "WELCOME10"
+  },
+  "codes refused, each saying why": {
+    "text_1": "MOBIUM5",
+    "text_2": "EXPIRED20",
+    "text_3": "FREESTUFF"
+  },
+  "MOBIUM5 comes off when the cart drops under $30": {
+    "text_1": "MOBIUM5"
+  },
+  "10% of $37.45 rounds half up to $3.75": {
+    "text_1": "WELCOME10"
+  },
+  "a gift card needs an email, and takes no code": {
+    "text_1": "friend@example.com",
+    "text_2": "WELCOME10"
+  }
+}

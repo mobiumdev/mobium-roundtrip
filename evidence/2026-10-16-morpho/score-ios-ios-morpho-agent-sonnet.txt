@@ -1,0 +1,62 @@
+mutant          | test | original | generated
+coupon-twice    | a code applies once | fail | fail
+coupon-twice    | killed by original: True, by generated: True
+declined-succeeds | the declined cards are declined, and nothing is ordered | fail | fail
+declined-succeeds | killed by original: True, by generated: True
+double-order    | the slow card is waited for, and one tap places one order | fail | fail
+double-order    | killed by original: True, by generated: True
+expired-accepted | codes refused, each saying why | fail | fail
+expired-accepted | killed by original: True, by generated: True
+express-free    | K: SHIPFREE frees standard, not express | fail | fail
+express-free    | killed by original: True, by generated: True
+free-shipping-before-discount | B: MOBIUM5 takes $77.98 under the free-shipping line, CA | fail | fail
+free-shipping-before-discount | killed by original: True, by generated: True
+free-shipping-over | C1: exactly $75.00 ships free | fail | fail
+free-shipping-over | killed by original: True, by generated: True
+lost-delivery   | delivery chosen stays chosen after going back from payment | fail | fail
+lost-delivery   | killed by original: True, by generated: True
+out-of-stock-addable | out of stock cannot be added | fail | fail
+out-of-stock-addable | killed by original: True, by generated: True
+qty-eleven      | the quantity stops at 10 | fail | fail
+qty-eleven      | killed by original: True, by generated: True
+round-down      | 10% of $37.45 rounds half up to $3.75 | fail | fail
+round-down      | M: pickup asks no address and is taxed in CA | fail | fail
+round-down      | killed by original: True, by generated: True
+slow-catalog    | 10% of $37.45 rounds half up to $3.75 | fail | fail
+slow-catalog    | A: two tees and a mug, WELCOME10, standard to NY | fail | fail
+slow-catalog    | B: MOBIUM5 takes $77.98 under the free-shipping line, CA | fail | fail
+slow-catalog    | C1: exactly $75.00 ships free | fail | fail
+slow-catalog    | D: three tumblers, express to TX, shipping taxed | fail | fail
+slow-catalog    | K: SHIPFREE frees standard, not express | fail | fail
+slow-catalog    | M: pickup asks no address and is taxed in CA | fail | fail
+slow-catalog    | MOBIUM5 comes off when the cart drops under $30 | fail | fail
+slow-catalog    | WELCOME10 is spent once an order uses it | fail | fail
+slow-catalog    | a category narrows the catalog | fail | fail
+slow-catalog    | a code applies once | fail | fail
+slow-catalog    | a gift card needs an email, and takes no code | fail | fail
+slow-catalog    | an XXL tee costs $2 more | fail | fail
+slow-catalog    | codes refused, each saying why | fail | fail
+slow-catalog    | delivery chosen stays chosen after going back from payment | fail | fail
+slow-catalog    | out of stock cannot be added | fail | fail
+slow-catalog    | price, low to high, starts with the magnet | fail | fail
+slow-catalog    | removing the last line asks first, and the badge goes | fail | fail
+slow-catalog    | search narrows the catalog | fail | fail
+slow-catalog    | the address form says what is missing | fail | fail
+slow-catalog    | the catalog lists every product | fail | fail
+slow-catalog    | the declined cards are declined, and nothing is ordered | fail | fail
+slow-catalog    | the quantity stops at 10 | fail | fail
+slow-catalog    | the slow card is waited for, and one tap places one order | fail | fail
+slow-catalog    | two tees and a mug, with WELCOME10 | fail | fail
+slow-catalog    | killed by original: True, by generated: True
+sort-as-text    | price, low to high, starts with the magnet | fail | fail
+sort-as-text    | killed by original: True, by generated: True
+stale-badge     | A: two tees and a mug, WELCOME10, standard to NY | fail | fail
+stale-badge     | removing the last line asks first, and the badge goes | fail | fail
+stale-badge     | killed by original: True, by generated: True
+tax-before-discount | A: two tees and a mug, WELCOME10, standard to NY | fail | fail
+tax-before-discount | B: MOBIUM5 takes $77.98 under the free-shipping line, CA | fail | fail
+tax-before-discount | killed by original: True, by generated: True
+xxl-no-surcharge | an XXL tee costs $2 more | fail | fail
+xxl-no-surcharge | killed by original: True, by generated: True
+
+cells where both fail: 43; lost by the round trip: 0; failing only when generated: 0

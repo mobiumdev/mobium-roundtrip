@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="27" failures="26" time="259.953">
+  <testsuite name="android › checkout.test.json" tests="11" failures="11" time="102.812">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="android.checkout.test.json" time="9.656">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.973s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.973s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="android.checkout.test.json" time="8.542">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.059s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.059s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="android.checkout.test.json" time="8.887">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.186s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.186s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="android.checkout.test.json" time="9.701">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.136s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.136s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="android.checkout.test.json" time="9.369">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.276s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.276s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="android.checkout.test.json" time="9.856">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.424s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.424s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="android.checkout.test.json" time="9.405">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 4.021s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 4.021s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the address form says what is missing" classname="android.checkout.test.json" time="8.963">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.013s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.013s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="android.checkout.test.json" time="9.647">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.287s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.287s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="android.checkout.test.json" time="8.718">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.157s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.157s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="android.checkout.test.json" time="10.069">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.997s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.997s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="android › shop.test.json" tests="16" failures="15" time="157.139">
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="android.shop.test.json" time="8.758">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.322s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.322s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a category narrows the catalog" classname="android.shop.test.json" time="10.093">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.378s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.378s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a code applies once" classname="android.shop.test.json" time="9.367">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.343s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.343s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="android.shop.test.json" time="8.787">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.23s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.23s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="an XXL tee costs $2 more" classname="android.shop.test.json" time="9.672">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.416s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.416s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="codes refused, each saying why [1]" classname="android.shop.test.json" time="8.703">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.106s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.106s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="codes refused, each saying why [2]" classname="android.shop.test.json" time="19.301"></testcase>
+    <testcase name="codes refused, each saying why [3]" classname="android.shop.test.json" time="7.984">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.549s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.549s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="android.shop.test.json" time="9.814">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.402s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.402s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="out of stock cannot be added" classname="android.shop.test.json" time="9.480">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.43s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.43s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="android.shop.test.json" time="8.642">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.224s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.224s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="android.shop.test.json" time="9.028">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.2s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.2s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="search narrows the catalog" classname="android.shop.test.json" time="9.752">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.253s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.253s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the catalog lists every product" classname="android.shop.test.json" time="9.420">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.321s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.321s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the quantity stops at 10" classname="android.shop.test.json" time="8.550">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.14s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.14s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="android.shop.test.json" time="9.786">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.255s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.255s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

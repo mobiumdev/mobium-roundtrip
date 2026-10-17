@@ -1,0 +1,412 @@
+--------- beginning of main
+10-17 10:33:58.792 I/MorphoMarket( 3705): process 3705: store made
+10-17 10:34:03.090 I/MorphoMarket( 3705): process 3705: reset
+10-17 10:34:11.944 I/MorphoMarket( 3705): process 3705: reset
+10-17 10:34:49.327 I/MorphoMarket( 3927): process 3927: store made
+10-17 10:34:50.418 I/MorphoMarket( 3927): process 3927: reset
+10-17 10:35:29.988 I/MorphoMarket( 4398): process 4398: store made
+10-17 10:35:31.087 I/MorphoMarket( 4398): process 4398: reset
+10-17 10:36:12.739 I/MorphoMarket( 4826): process 4826: store made
+10-17 10:36:13.833 I/MorphoMarket( 4826): process 4826: reset
+10-17 10:36:29.333 I/MorphoMarket( 4922): process 4922: store made
+10-17 10:36:30.432 I/MorphoMarket( 4922): process 4922: reset
+10-17 10:37:02.586 I/MorphoMarket( 5283): process 5283: store made
+10-17 10:37:03.667 I/MorphoMarket( 5283): process 5283: reset
+10-17 10:37:11.000 I/MorphoMarket( 5390): process 5390: store made
+10-17 10:37:12.078 I/MorphoMarket( 5390): process 5390: reset
+10-17 10:37:33.103 I/MorphoMarket( 5702): process 5702: store made
+10-17 10:37:34.192 I/MorphoMarket( 5702): process 5702: reset
+10-17 10:38:03.632 I/MorphoMarket( 6076): process 6076: store made
+10-17 10:38:04.701 I/MorphoMarket( 6076): process 6076: reset
+10-17 10:38:14.839 I/MorphoMarket( 6245): process 6245: store made
+10-17 10:38:15.902 I/MorphoMarket( 6245): process 6245: reset
+10-17 10:38:45.552 I/MorphoMarket( 6637): process 6637: store made
+10-17 10:38:46.692 I/MorphoMarket( 6637): process 6637: reset
+10-17 10:39:14.757 I/MorphoMarket( 6957): process 6957: store made
+10-17 10:39:15.888 I/MorphoMarket( 6957): process 6957: reset
+10-17 10:39:48.542 I/MorphoMarket( 7470): process 7470: store made
+10-17 10:39:49.637 I/MorphoMarket( 7470): process 7470: reset
+10-17 10:39:51.024 I/MorphoMarket( 7527): process 7527: store made
+10-17 10:39:52.092 I/MorphoMarket( 7527): process 7527: reset
+10-17 10:39:57.535 I/MorphoMarket( 7622): process 7622: store made
+10-17 10:39:58.614 I/MorphoMarket( 7622): process 7622: reset
+10-17 10:40:02.691 I/MorphoMarket( 7683): process 7683: store made
+10-17 10:40:03.758 I/MorphoMarket( 7683): process 7683: reset
+10-17 10:40:08.826 I/MorphoMarket( 7751): process 7751: store made
+10-17 10:40:09.888 I/MorphoMarket( 7751): process 7751: reset
+10-17 10:40:14.822 I/MorphoMarket( 7816): process 7816: store made
+10-17 10:40:15.905 I/MorphoMarket( 7816): process 7816: reset
+10-17 10:40:22.442 I/MorphoMarket( 7887): process 7887: store made
+10-17 10:40:23.517 I/MorphoMarket( 7887): process 7887: reset
+10-17 10:40:30.448 I/MorphoMarket( 7975): process 7975: store made
+10-17 10:40:31.519 I/MorphoMarket( 7975): process 7975: reset
+10-17 10:40:44.150 I/MorphoMarket( 8095): process 8095: store made
+10-17 10:40:45.237 I/MorphoMarket( 8095): process 8095: reset
+10-17 10:40:52.294 I/MorphoMarket( 8202): process 8202: store made
+10-17 10:40:53.381 I/MorphoMarket( 8202): process 8202: reset
+10-17 10:41:11.349 I/MorphoMarket( 8384): process 8384: store made
+10-17 10:41:12.434 I/MorphoMarket( 8384): process 8384: reset
+10-17 10:41:27.564 I/MorphoMarket( 8509): process 8509: store made
+10-17 10:41:28.635 I/MorphoMarket( 8509): process 8509: reset
+10-17 10:41:35.894 I/MorphoMarket( 8587): process 8587: store made
+10-17 10:41:36.983 I/MorphoMarket( 8587): process 8587: reset
+10-17 10:41:51.451 I/MorphoMarket( 8704): process 8704: store made
+10-17 10:41:52.549 I/MorphoMarket( 8704): process 8704: reset
+10-17 10:42:13.757 I/MorphoMarket( 9023): process 9023: store made
+10-17 10:42:14.838 I/MorphoMarket( 9023): process 9023: reset
+10-17 10:42:50.863 I/MorphoMarket( 9455): process 9455: store made
+10-17 10:42:51.927 I/MorphoMarket( 9455): process 9455: reset
+10-17 10:43:33.242 I/MorphoMarket( 9876): process 9876: store made
+10-17 10:43:34.313 I/MorphoMarket( 9876): process 9876: reset
+10-17 10:43:49.647 I/MorphoMarket( 9973): process 9973: store made
+10-17 10:43:50.746 I/MorphoMarket( 9973): process 9973: reset
+10-17 10:44:22.958 I/MorphoMarket(10339): process 10339: store made
+10-17 10:44:24.053 I/MorphoMarket(10339): process 10339: reset
+10-17 10:44:53.033 I/MorphoMarket(10776): process 10776: store made
+10-17 10:44:54.145 I/MorphoMarket(10776): process 10776: reset
+10-17 10:45:01.514 I/MorphoMarket(10884): process 10884: store made
+10-17 10:45:02.600 I/MorphoMarket(10884): process 10884: reset
+10-17 10:45:23.572 I/MorphoMarket(11186): process 11186: store made
+10-17 10:45:24.653 I/MorphoMarket(11186): process 11186: reset
+10-17 10:45:35.004 I/MorphoMarket(11339): process 11339: store made
+10-17 10:45:36.089 I/MorphoMarket(11339): process 11339: reset
+10-17 10:46:05.637 I/MorphoMarket(11675): process 11675: store made
+10-17 10:46:06.699 I/MorphoMarket(11675): process 11675: reset
+10-17 10:46:34.284 I/MorphoMarket(11971): process 11971: store made
+10-17 10:46:35.362 I/MorphoMarket(11971): process 11971: reset
+10-17 10:47:07.795 I/MorphoMarket(12349): process 12349: store made
+10-17 10:47:08.850 I/MorphoMarket(12349): process 12349: reset
+10-17 10:47:21.560 I/MorphoMarket(12487): process 12487: store made
+10-17 10:47:22.620 I/MorphoMarket(12487): process 12487: reset
+10-17 10:47:24.830 I/MorphoMarket(12547): process 12547: store made
+10-17 10:47:25.916 I/MorphoMarket(12547): process 12547: reset
+10-17 10:47:34.816 I/MorphoMarket(12655): process 12655: store made
+10-17 10:47:35.889 I/MorphoMarket(12655): process 12655: reset
+10-17 10:47:51.671 I/MorphoMarket(12807): process 12807: store made
+10-17 10:47:52.750 I/MorphoMarket(12807): process 12807: reset
+10-17 10:47:55.788 I/MorphoMarket(12870): process 12870: store made
+10-17 10:47:56.847 I/MorphoMarket(12870): process 12870: reset
+10-17 10:48:16.330 I/MorphoMarket(13051): process 13051: store made
+10-17 10:48:17.382 I/MorphoMarket(13051): process 13051: reset
+10-17 10:48:31.979 I/MorphoMarket(13172): process 13172: store made
+10-17 10:48:33.029 I/MorphoMarket(13172): process 13172: reset
+10-17 10:48:37.732 I/MorphoMarket(13246): process 13246: store made
+10-17 10:48:38.837 I/MorphoMarket(13246): process 13246: reset
+10-17 10:48:43.904 I/MorphoMarket(13311): process 13311: store made
+10-17 10:48:44.987 I/MorphoMarket(13311): process 13311: reset
+10-17 10:48:54.057 I/MorphoMarket(13389): process 13389: store made
+10-17 10:48:55.146 I/MorphoMarket(13389): process 13389: reset
+10-17 10:49:00.780 I/MorphoMarket(13477): process 13477: store made
+10-17 10:49:01.871 I/MorphoMarket(13477): process 13477: reset
+10-17 10:49:05.164 I/MorphoMarket(13533): process 13533: store made
+10-17 10:49:06.247 I/MorphoMarket(13533): process 13533: reset
+10-17 10:49:13.155 I/MorphoMarket(13623): process 13623: store made
+10-17 10:49:14.235 I/MorphoMarket(13623): process 13623: reset
+10-17 10:49:32.070 I/MorphoMarket(13904): process 13904: store made
+10-17 10:49:33.146 I/MorphoMarket(13904): process 13904: reset
+10-17 10:50:10.212 I/MorphoMarket(14341): process 14341: store made
+10-17 10:50:11.287 I/MorphoMarket(14341): process 14341: reset
+10-17 10:50:52.650 I/MorphoMarket(14773): process 14773: store made
+10-17 10:50:53.728 I/MorphoMarket(14773): process 14773: reset
+10-17 10:51:09.048 I/MorphoMarket(14872): process 14872: store made
+10-17 10:51:10.115 I/MorphoMarket(14872): process 14872: reset
+10-17 10:51:42.246 I/MorphoMarket(15235): process 15235: store made
+10-17 10:51:43.297 I/MorphoMarket(15235): process 15235: reset
+10-17 10:52:12.484 I/MorphoMarket(15611): process 15611: store made
+10-17 10:52:13.549 I/MorphoMarket(15611): process 15611: reset
+10-17 10:52:20.694 I/MorphoMarket(15718): process 15718: store made
+10-17 10:52:21.769 I/MorphoMarket(15718): process 15718: reset
+10-17 10:52:42.414 I/MorphoMarket(16023): process 16023: store made
+10-17 10:52:43.496 I/MorphoMarket(16023): process 16023: reset
+10-17 10:52:53.604 I/MorphoMarket(16192): process 16192: store made
+10-17 10:52:54.664 I/MorphoMarket(16192): process 16192: reset
+10-17 10:53:24.534 I/MorphoMarket(16530): process 16530: store made
+10-17 10:53:25.616 I/MorphoMarket(16530): process 16530: reset
+10-17 10:53:53.134 I/MorphoMarket(16826): process 16826: store made
+10-17 10:53:54.201 I/MorphoMarket(16826): process 16826: reset
+10-17 10:54:26.695 I/MorphoMarket(17202): process 17202: store made
+10-17 10:54:27.765 I/MorphoMarket(17202): process 17202: reset
+10-17 10:54:40.417 I/MorphoMarket(17320): process 17320: store made
+10-17 10:54:41.484 I/MorphoMarket(17320): process 17320: reset
+10-17 10:54:43.670 I/MorphoMarket(17380): process 17380: store made
+10-17 10:54:44.758 I/MorphoMarket(17380): process 17380: reset
+10-17 10:54:53.572 I/MorphoMarket(17487): process 17487: store made
+10-17 10:54:54.661 I/MorphoMarket(17487): process 17487: reset
+10-17 10:55:09.885 I/MorphoMarket(17646): process 17646: store made
+10-17 10:55:10.968 I/MorphoMarket(17646): process 17646: reset
+10-17 10:55:13.987 I/MorphoMarket(17717): process 17717: store made
+10-17 10:55:15.059 I/MorphoMarket(17717): process 17717: reset
+10-17 10:55:34.549 I/MorphoMarket(17895): process 17895: store made
+10-17 10:55:35.614 I/MorphoMarket(17895): process 17895: reset
+10-17 10:55:50.163 I/MorphoMarket(18022): process 18022: store made
+10-17 10:55:51.237 I/MorphoMarket(18022): process 18022: reset
+10-17 10:55:55.905 I/MorphoMarket(18093): process 18093: store made
+10-17 10:55:56.987 I/MorphoMarket(18093): process 18093: reset
+10-17 10:56:02.573 I/MorphoMarket(18158): process 18158: store made
+10-17 10:56:03.653 I/MorphoMarket(18158): process 18158: reset
+10-17 10:56:12.726 I/MorphoMarket(18234): process 18234: store made
+10-17 10:56:13.817 I/MorphoMarket(18234): process 18234: reset
+10-17 10:56:19.274 I/MorphoMarket(18324): process 18324: store made
+10-17 10:56:20.349 I/MorphoMarket(18324): process 18324: reset
+10-17 10:56:23.647 I/MorphoMarket(18380): process 18380: store made
+10-17 10:56:24.717 I/MorphoMarket(18380): process 18380: reset
+10-17 10:56:31.633 I/MorphoMarket(18469): process 18469: store made
+10-17 10:56:32.698 I/MorphoMarket(18469): process 18469: reset
+10-17 10:56:50.579 I/MorphoMarket(18748): process 18748: store made
+10-17 10:56:51.660 I/MorphoMarket(18748): process 18748: reset
+10-17 10:57:28.070 I/MorphoMarket(19167): process 19167: store made
+10-17 10:57:29.135 I/MorphoMarket(19167): process 19167: reset
+10-17 10:58:10.645 I/MorphoMarket(19580): process 19580: store made
+10-17 10:58:11.707 I/MorphoMarket(19580): process 19580: reset
+10-17 10:58:26.927 I/MorphoMarket(19678): process 19678: store made
+10-17 10:58:28.005 I/MorphoMarket(19678): process 19678: reset
+10-17 10:58:59.888 I/MorphoMarket(20043): process 20043: store made
+10-17 10:59:00.954 I/MorphoMarket(20043): process 20043: reset
+10-17 10:59:29.147 I/MorphoMarket(20421): process 20421: store made
+10-17 10:59:30.202 I/MorphoMarket(20421): process 20421: reset
+10-17 10:59:37.353 I/MorphoMarket(20528): process 20528: store made
+10-17 10:59:38.435 I/MorphoMarket(20528): process 20528: reset
+10-17 10:59:59.118 I/MorphoMarket(20821): process 20821: store made
+10-17 11:00:00.665 I/MorphoMarket(20821): process 20821: reset
+10-17 11:00:10.727 I/MorphoMarket(20999): process 20999: store made
+10-17 11:00:11.796 I/MorphoMarket(20999): process 20999: reset
+10-17 11:00:42.023 I/MorphoMarket(21333): process 21333: store made
+10-17 11:00:43.089 I/MorphoMarket(21333): process 21333: reset
+10-17 11:01:11.398 I/MorphoMarket(21626): process 21626: store made
+10-17 11:01:12.472 I/MorphoMarket(21626): process 21626: reset
+10-17 11:01:44.969 I/MorphoMarket(22018): process 22018: store made
+10-17 11:01:46.053 I/MorphoMarket(22018): process 22018: reset
+10-17 11:01:58.815 I/MorphoMarket(22137): process 22137: store made
+10-17 11:01:59.898 I/MorphoMarket(22137): process 22137: reset
+10-17 11:02:02.329 I/MorphoMarket(22196): process 22196: store made
+10-17 11:02:03.380 I/MorphoMarket(22196): process 22196: reset
+10-17 11:02:12.302 I/MorphoMarket(22302): process 22302: store made
+10-17 11:02:13.364 I/MorphoMarket(22302): process 22302: reset
+10-17 11:02:28.927 I/MorphoMarket(22455): process 22455: store made
+10-17 11:02:30.014 I/MorphoMarket(22455): process 22455: reset
+10-17 11:02:33.043 I/MorphoMarket(22520): process 22520: store made
+10-17 11:02:34.116 I/MorphoMarket(22520): process 22520: reset
+10-17 11:02:46.422 I/MorphoMarket(22627): process 22627: store made
+10-17 11:02:47.481 I/MorphoMarket(22627): process 22627: reset
+10-17 11:02:58.182 I/MorphoMarket(22733): process 22733: store made
+10-17 11:02:59.274 I/MorphoMarket(22733): process 22733: reset
+10-17 11:03:10.114 I/MorphoMarket(22840): process 22840: store made
+10-17 11:03:11.195 I/MorphoMarket(22840): process 22840: reset
+10-17 11:03:25.736 I/MorphoMarket(22960): process 22960: store made
+10-17 11:03:26.815 I/MorphoMarket(22960): process 22960: reset
+10-17 11:03:31.491 I/MorphoMarket(23030): process 23030: store made
+10-17 11:03:32.584 I/MorphoMarket(23030): process 23030: reset
+10-17 11:03:37.689 I/MorphoMarket(23095): process 23095: store made
+10-17 11:03:38.801 I/MorphoMarket(23095): process 23095: reset
+10-17 11:03:47.965 I/MorphoMarket(23171): process 23171: store made
+10-17 11:03:49.035 I/MorphoMarket(23171): process 23171: reset
+10-17 11:03:54.529 I/MorphoMarket(23260): process 23260: store made
+10-17 11:03:55.613 I/MorphoMarket(23260): process 23260: reset
+10-17 11:03:58.910 I/MorphoMarket(23316): process 23316: store made
+10-17 11:03:59.970 I/MorphoMarket(23316): process 23316: reset
+10-17 11:04:06.883 I/MorphoMarket(23404): process 23404: store made
+10-17 11:04:07.950 I/MorphoMarket(23404): process 23404: reset
+10-17 11:04:28.885 I/MorphoMarket(23697): process 23697: store made
+10-17 11:04:29.919 I/MorphoMarket(23697): process 23697: reset
+10-17 11:04:34.837 I/MorphoMarket(23760): process 23760: store made
+10-17 11:04:35.866 I/MorphoMarket(23760): process 23760: reset
+10-17 11:04:42.279 I/MorphoMarket(23821): process 23821: store made
+10-17 11:04:43.337 I/MorphoMarket(23821): process 23821: reset
+10-17 11:04:49.765 I/MorphoMarket(23882): process 23882: store made
+10-17 11:04:50.796 I/MorphoMarket(23882): process 23882: reset
+10-17 11:04:57.198 I/MorphoMarket(23945): process 23945: store made
+10-17 11:04:58.239 I/MorphoMarket(23945): process 23945: reset
+10-17 11:05:04.807 I/MorphoMarket(24007): process 24007: store made
+10-17 11:05:05.821 I/MorphoMarket(24007): process 24007: reset
+10-17 11:05:12.201 I/MorphoMarket(24081): process 24081: store made
+10-17 11:05:13.230 I/MorphoMarket(24081): process 24081: reset
+10-17 11:05:19.631 I/MorphoMarket(24142): process 24142: store made
+10-17 11:05:20.679 I/MorphoMarket(24142): process 24142: reset
+10-17 11:05:27.064 I/MorphoMarket(24202): process 24202: store made
+10-17 11:05:28.104 I/MorphoMarket(24202): process 24202: reset
+10-17 11:05:34.500 I/MorphoMarket(24264): process 24264: store made
+10-17 11:05:35.536 I/MorphoMarket(24264): process 24264: reset
+10-17 11:05:41.911 I/MorphoMarket(24324): process 24324: store made
+10-17 11:05:42.924 I/MorphoMarket(24324): process 24324: reset
+10-17 11:05:49.302 I/MorphoMarket(24384): process 24384: store made
+10-17 11:05:50.328 I/MorphoMarket(24384): process 24384: reset
+10-17 11:05:56.721 I/MorphoMarket(24444): process 24444: store made
+10-17 11:05:57.745 I/MorphoMarket(24444): process 24444: reset
+10-17 11:06:04.167 I/MorphoMarket(24504): process 24504: store made
+10-17 11:06:05.197 I/MorphoMarket(24504): process 24504: reset
+10-17 11:06:11.615 I/MorphoMarket(24574): process 24574: store made
+10-17 11:06:12.667 I/MorphoMarket(24574): process 24574: reset
+10-17 11:06:19.062 I/MorphoMarket(24644): process 24644: store made
+10-17 11:06:20.089 I/MorphoMarket(24644): process 24644: reset
+10-17 11:06:26.505 I/MorphoMarket(24704): process 24704: store made
+10-17 11:06:27.553 I/MorphoMarket(24704): process 24704: reset
+10-17 11:06:33.971 I/MorphoMarket(24765): process 24765: store made
+10-17 11:06:34.990 I/MorphoMarket(24765): process 24765: reset
+10-17 11:06:41.391 I/MorphoMarket(24825): process 24825: store made
+10-17 11:06:42.435 I/MorphoMarket(24825): process 24825: reset
+10-17 11:06:48.828 I/MorphoMarket(24890): process 24890: store made
+10-17 11:06:49.873 I/MorphoMarket(24890): process 24890: reset
+10-17 11:06:56.296 I/MorphoMarket(24965): process 24965: store made
+10-17 11:06:57.335 I/MorphoMarket(24965): process 24965: reset
+10-17 11:07:04.028 I/MorphoMarket(25026): process 25026: store made
+10-17 11:07:05.069 I/MorphoMarket(25026): process 25026: reset
+10-17 11:07:11.466 I/MorphoMarket(25088): process 25088: store made
+10-17 11:07:12.494 I/MorphoMarket(25088): process 25088: reset
+10-17 11:07:18.893 I/MorphoMarket(25149): process 25149: store made
+10-17 11:07:19.928 I/MorphoMarket(25149): process 25149: reset
+10-17 11:07:26.311 I/MorphoMarket(25210): process 25210: store made
+10-17 11:07:27.354 I/MorphoMarket(25210): process 25210: reset
+10-17 11:07:41.862 I/MorphoMarket(25446): process 25446: store made
+10-17 11:07:42.908 I/MorphoMarket(25446): process 25446: reset
+10-17 11:07:49.308 I/MorphoMarket(25510): process 25510: store made
+10-17 11:07:50.338 I/MorphoMarket(25510): process 25510: reset
+10-17 11:07:56.750 I/MorphoMarket(25571): process 25571: store made
+10-17 11:07:57.787 I/MorphoMarket(25571): process 25571: reset
+10-17 11:08:04.197 I/MorphoMarket(25632): process 25632: store made
+10-17 11:08:05.237 I/MorphoMarket(25632): process 25632: reset
+10-17 11:08:11.663 I/MorphoMarket(25693): process 25693: store made
+10-17 11:08:12.701 I/MorphoMarket(25693): process 25693: reset
+10-17 11:08:19.131 I/MorphoMarket(25756): process 25756: store made
+10-17 11:08:20.154 I/MorphoMarket(25756): process 25756: reset
+10-17 11:08:26.537 I/MorphoMarket(25819): process 25819: store made
+10-17 11:08:27.564 I/MorphoMarket(25819): process 25819: reset
+10-17 11:08:33.988 I/MorphoMarket(25889): process 25889: store made
+10-17 11:08:35.037 I/MorphoMarket(25889): process 25889: reset
+10-17 11:08:41.439 I/MorphoMarket(25961): process 25961: store made
+10-17 11:08:42.457 I/MorphoMarket(25961): process 25961: reset
+10-17 11:08:48.874 I/MorphoMarket(26023): process 26023: store made
+10-17 11:08:49.922 I/MorphoMarket(26023): process 26023: reset
+10-17 11:08:56.324 I/MorphoMarket(26083): process 26083: store made
+10-17 11:08:57.375 I/MorphoMarket(26083): process 26083: reset
+10-17 11:09:04.005 I/MorphoMarket(26146): process 26146: store made
+10-17 11:09:05.024 I/MorphoMarket(26146): process 26146: reset
+10-17 11:09:11.461 I/MorphoMarket(26208): process 26208: store made
+10-17 11:09:12.495 I/MorphoMarket(26208): process 26208: reset
+10-17 11:09:18.912 I/MorphoMarket(26272): process 26272: store made
+10-17 11:09:19.938 I/MorphoMarket(26272): process 26272: reset
+10-17 11:09:26.335 I/MorphoMarket(26332): process 26332: store made
+10-17 11:09:27.375 I/MorphoMarket(26332): process 26332: reset
+10-17 11:09:33.765 I/MorphoMarket(26393): process 26393: store made
+10-17 11:09:34.812 I/MorphoMarket(26393): process 26393: reset
+10-17 11:09:41.213 I/MorphoMarket(26453): process 26453: store made
+10-17 11:09:42.251 I/MorphoMarket(26453): process 26453: reset
+10-17 11:09:48.655 I/MorphoMarket(26513): process 26513: store made
+10-17 11:09:49.695 I/MorphoMarket(26513): process 26513: reset
+10-17 11:09:56.097 I/MorphoMarket(26573): process 26573: store made
+10-17 11:09:57.154 I/MorphoMarket(26573): process 26573: reset
+10-17 11:10:03.985 I/MorphoMarket(26633): process 26633: store made
+10-17 11:10:05.020 I/MorphoMarket(26633): process 26633: reset
+10-17 11:10:11.412 I/MorphoMarket(26693): process 26693: store made
+10-17 11:10:12.446 I/MorphoMarket(26693): process 26693: reset
+10-17 11:10:18.872 I/MorphoMarket(26758): process 26758: store made
+10-17 11:10:19.902 I/MorphoMarket(26758): process 26758: reset
+10-17 11:10:26.304 I/MorphoMarket(26820): process 26820: store made
+10-17 11:10:27.345 I/MorphoMarket(26820): process 26820: reset
+10-17 11:10:33.705 I/MorphoMarket(26883): process 26883: store made
+10-17 11:10:34.731 I/MorphoMarket(26883): process 26883: reset
+10-17 11:10:41.136 I/MorphoMarket(26944): process 26944: store made
+10-17 11:10:42.161 I/MorphoMarket(26944): process 26944: reset
+10-17 11:10:56.728 I/MorphoMarket(27177): process 27177: store made
+10-17 11:10:57.766 I/MorphoMarket(27177): process 27177: reset
+10-17 11:11:04.197 I/MorphoMarket(27240): process 27240: store made
+10-17 11:11:05.238 I/MorphoMarket(27240): process 27240: reset
+10-17 11:11:11.642 I/MorphoMarket(27301): process 27301: store made
+10-17 11:11:12.677 I/MorphoMarket(27301): process 27301: reset
+10-17 11:11:19.059 I/MorphoMarket(27363): process 27363: store made
+10-17 11:11:20.094 I/MorphoMarket(27363): process 27363: reset
+10-17 11:11:26.519 I/MorphoMarket(27424): process 27424: store made
+10-17 11:11:27.539 I/MorphoMarket(27424): process 27424: reset
+10-17 11:11:33.944 I/MorphoMarket(27485): process 27485: store made
+10-17 11:11:34.985 I/MorphoMarket(27485): process 27485: reset
+10-17 11:11:41.412 I/MorphoMarket(27545): process 27545: store made
+10-17 11:11:42.844 I/MorphoMarket(27545): process 27545: reset
+10-17 11:11:49.740 I/MorphoMarket(27606): process 27606: store made
+10-17 11:11:50.761 I/MorphoMarket(27606): process 27606: reset
+10-17 11:11:57.140 I/MorphoMarket(27666): process 27666: store made
+10-17 11:11:58.173 I/MorphoMarket(27666): process 27666: reset
+10-17 11:12:04.547 I/MorphoMarket(27728): process 27728: store made
+10-17 11:12:05.578 I/MorphoMarket(27728): process 27728: reset
+10-17 11:12:11.997 I/MorphoMarket(27789): process 27789: store made
+10-17 11:12:13.048 I/MorphoMarket(27789): process 27789: reset
+10-17 11:12:19.439 I/MorphoMarket(27850): process 27850: store made
+10-17 11:12:20.484 I/MorphoMarket(27850): process 27850: reset
+10-17 11:12:26.880 I/MorphoMarket(27910): process 27910: store made
+10-17 11:12:27.903 I/MorphoMarket(27910): process 27910: reset
+10-17 11:12:34.285 I/MorphoMarket(27970): process 27970: store made
+10-17 11:12:35.311 I/MorphoMarket(27970): process 27970: reset
+10-17 11:12:41.692 I/MorphoMarket(28032): process 28032: store made
+10-17 11:12:42.712 I/MorphoMarket(28032): process 28032: reset
+10-17 11:12:49.123 I/MorphoMarket(28093): process 28093: store made
+10-17 11:12:50.153 I/MorphoMarket(28093): process 28093: reset
+10-17 11:12:56.544 I/MorphoMarket(28155): process 28155: store made
+10-17 11:12:57.579 I/MorphoMarket(28155): process 28155: reset
+10-17 11:13:03.986 I/MorphoMarket(28216): process 28216: store made
+10-17 11:13:05.023 I/MorphoMarket(28216): process 28216: reset
+10-17 11:13:11.423 I/MorphoMarket(28278): process 28278: store made
+10-17 11:13:12.453 I/MorphoMarket(28278): process 28278: reset
+10-17 11:13:18.863 I/MorphoMarket(28347): process 28347: store made
+10-17 11:13:19.896 I/MorphoMarket(28347): process 28347: reset
+10-17 11:13:26.352 I/MorphoMarket(28407): process 28407: store made
+10-17 11:13:27.396 I/MorphoMarket(28407): process 28407: reset
+10-17 11:13:33.824 I/MorphoMarket(28468): process 28468: store made
+10-17 11:13:34.853 I/MorphoMarket(28468): process 28468: reset
+10-17 11:13:41.263 I/MorphoMarket(28530): process 28530: store made
+10-17 11:13:42.302 I/MorphoMarket(28530): process 28530: reset
+10-17 11:13:48.666 I/MorphoMarket(28591): process 28591: store made
+10-17 11:13:49.702 I/MorphoMarket(28591): process 28591: reset
+10-17 11:13:56.064 I/MorphoMarket(28652): process 28652: store made
+10-17 11:13:57.108 I/MorphoMarket(28652): process 28652: reset
+10-17 11:14:12.827 I/MorphoMarket(28885): process 28885: store made
+10-17 11:14:13.877 I/MorphoMarket(28885): process 28885: reset
+10-17 11:14:20.313 I/MorphoMarket(28947): process 28947: store made
+10-17 11:14:21.339 I/MorphoMarket(28947): process 28947: reset
+10-17 11:14:27.754 I/MorphoMarket(29009): process 29009: store made
+10-17 11:14:28.804 I/MorphoMarket(29009): process 29009: reset
+10-17 11:14:35.192 I/MorphoMarket(29071): process 29071: store made
+10-17 11:14:36.220 I/MorphoMarket(29071): process 29071: reset
+10-17 11:14:42.638 I/MorphoMarket(29135): process 29135: store made
+10-17 11:14:43.676 I/MorphoMarket(29135): process 29135: reset
+10-17 11:14:50.062 I/MorphoMarket(29196): process 29196: store made
+10-17 11:14:51.088 I/MorphoMarket(29196): process 29196: reset
+10-17 11:14:57.515 I/MorphoMarket(29258): process 29258: store made
+10-17 11:14:58.546 I/MorphoMarket(29258): process 29258: reset
+10-17 11:15:04.963 I/MorphoMarket(29321): process 29321: store made
+10-17 11:15:06.003 I/MorphoMarket(29321): process 29321: reset
+10-17 11:15:12.415 I/MorphoMarket(29382): process 29382: store made
+10-17 11:15:13.465 I/MorphoMarket(29382): process 29382: reset
+10-17 11:15:19.859 I/MorphoMarket(29443): process 29443: store made
+10-17 11:15:20.892 I/MorphoMarket(29443): process 29443: reset
+10-17 11:15:27.318 I/MorphoMarket(29504): process 29504: store made
+10-17 11:15:28.347 I/MorphoMarket(29504): process 29504: reset
+10-17 11:15:34.752 I/MorphoMarket(29564): process 29564: store made
+10-17 11:15:35.772 I/MorphoMarket(29564): process 29564: reset
+10-17 11:15:42.162 I/MorphoMarket(29625): process 29625: store made
+10-17 11:15:43.203 I/MorphoMarket(29625): process 29625: reset
+10-17 11:15:49.577 I/MorphoMarket(29706): process 29706: store made
+10-17 11:15:50.616 I/MorphoMarket(29706): process 29706: reset
+10-17 11:15:57.012 I/MorphoMarket(29767): process 29767: store made
+10-17 11:15:58.044 I/MorphoMarket(29767): process 29767: reset
+10-17 11:16:04.416 I/MorphoMarket(29827): process 29827: store made
+10-17 11:16:05.442 I/MorphoMarket(29827): process 29827: reset
+10-17 11:16:11.855 I/MorphoMarket(29887): process 29887: store made
+10-17 11:16:12.887 I/MorphoMarket(29887): process 29887: reset
+10-17 11:16:19.280 I/MorphoMarket(29949): process 29949: store made
+10-17 11:16:20.311 I/MorphoMarket(29949): process 29949: reset
+10-17 11:16:26.702 I/MorphoMarket(30011): process 30011: store made
+10-17 11:16:27.744 I/MorphoMarket(30011): process 30011: reset
+10-17 11:16:34.138 I/MorphoMarket(30071): process 30071: store made
+10-17 11:16:35.161 I/MorphoMarket(30071): process 30071: reset
+10-17 11:16:41.531 I/MorphoMarket(30132): process 30132: store made
+10-17 11:16:42.557 I/MorphoMarket(30132): process 30132: reset
+10-17 11:16:48.923 I/MorphoMarket(30194): process 30194: store made
+10-17 11:16:49.971 I/MorphoMarket(30194): process 30194: reset
+10-17 11:16:56.377 I/MorphoMarket(30253): process 30253: store made
+10-17 11:16:57.418 I/MorphoMarket(30253): process 30253: reset
+10-17 11:17:04.001 I/MorphoMarket(30314): process 30314: store made
+10-17 11:17:05.027 I/MorphoMarket(30314): process 30314: reset
+10-17 11:17:11.430 I/MorphoMarket(30374): process 30374: store made
+10-17 11:17:12.458 I/MorphoMarket(30374): process 30374: reset
+10-17 11:17:18.836 I/MorphoMarket(30450): process 30450: store made
+10-17 11:17:19.888 I/MorphoMarket(30450): process 30450: reset
+10-17 11:17:26.321 I/MorphoMarket(30510): process 30510: store made
+10-17 11:17:27.354 I/MorphoMarket(30510): process 30510: reset

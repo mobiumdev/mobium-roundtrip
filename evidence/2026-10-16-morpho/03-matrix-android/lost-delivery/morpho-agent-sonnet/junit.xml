@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="1" time="474.415">
+  <testsuite name="android › checkout.test.json" tests="11" failures="1" time="327.788">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="android.checkout.test.json" time="41.601"></testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="android.checkout.test.json" time="44.771"></testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="android.checkout.test.json" time="17.233"></testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="android.checkout.test.json" time="35.734"></testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="android.checkout.test.json" time="42.393">
+      <failure message="step 25 of 25 (app_wait_for) failed: timed out after 10.016s waiting for testid=reviewDelivery to say exactly &#34;Express, 1–2 days&#34; — its text is &#34;Standard, 3–5 days&#34;; steps 1-24 ran before it, and nothing after" type="timeout">step 25 (app_wait_for): [timeout] step 25 of 25 (app_wait_for) failed: timed out after 10.016s waiting for testid=reviewDelivery to say exactly &#34;Express, 1–2 days&#34; — its text is &#34;Standard, 3–5 days&#34;; steps 1-24 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="android.checkout.test.json" time="8.664"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="android.checkout.test.json" time="23.986"></testcase>
+    <testcase name="the address form says what is missing" classname="android.checkout.test.json" time="12.579"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="android.checkout.test.json" time="34.066"></testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="android.checkout.test.json" time="31.125"></testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="android.checkout.test.json" time="35.636"></testcase>
+  </testsuite>
+  <testsuite name="android › shop.test.json" tests="14" failures="0" time="146.625">
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="android.shop.test.json" time="14.640"></testcase>
+    <testcase name="a category narrows the catalog" classname="android.shop.test.json" time="3.711"></testcase>
+    <testcase name="a code applies once" classname="android.shop.test.json" time="10.407"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="android.shop.test.json" time="17.208"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="android.shop.test.json" time="4.499"></testcase>
+    <testcase name="codes refused, each saying why" classname="android.shop.test.json" time="21.660"></testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="android.shop.test.json" time="16.442"></testcase>
+    <testcase name="out of stock cannot be added" classname="android.shop.test.json" time="6.305"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="android.shop.test.json" time="6.725"></testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="android.shop.test.json" time="10.765"></testcase>
+    <testcase name="search narrows the catalog" classname="android.shop.test.json" time="7.161"></testcase>
+    <testcase name="the catalog lists every product" classname="android.shop.test.json" time="4.742"></testcase>
+    <testcase name="the quantity stops at 10" classname="android.shop.test.json" time="8.380"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="android.shop.test.json" time="13.981"></testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,688 @@
+{
+  "app": "dev.mobium.shop",
+  "beforeEach": [
+    {
+      "dialogs": {
+        "press": "Open",
+        "when": "Morpho Market"
+      }
+    },
+    {
+      "open_url": "mobiumshop://reset"
+    },
+    {
+      "wait_for": {
+        "target": "testid=catalogList",
+        "timeout_ms": 3000
+      }
+    }
+  ],
+  "tests": [
+    {
+      "name": "10% of $37.45 rounds half up to $3.75",
+      "description": "Adds stickers to a cart totaling $37.45 and checks that WELCOME10 takes 10% off, rounded half up.",
+      "steps": [
+        {
+          "tap": "testid=product_stickers"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$37.45"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$3.75"
+          }
+        }
+      ]
+    },
+    {
+      "name": "a category narrows the catalog",
+      "description": "Picks a category and checks that the catalog shows only its items.",
+      "steps": [
+        {
+          "tap": "testid=category_drinkware"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "2 items"
+          }
+        }
+      ]
+    },
+    {
+      "name": "a code applies once",
+      "description": "Applies WELCOME10 twice and checks that the second attempt is refused as already applied.",
+      "steps": [
+        {
+          "tap": "testid=product_hat"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "WELCOME10 is already applied.",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$2.60"
+          }
+        }
+      ]
+    },
+    {
+      "name": "a gift card needs an email, and takes no code",
+      "description": "Adds a gift card without an email and checks the error, then adds it with an email and checks that a promo code is refused.",
+      "steps": [
+        {
+          "tap": "testid=product_giftcard"
+        },
+        {
+          "tap": "testid=amount_25"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=giftEmailError",
+            "text": "Enter a valid email address."
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=giftEmail",
+            "text": "friend@example.com"
+          }
+        },
+        {
+          "keyboard": {
+            "key": "enter"
+          }
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumGift",
+            "text": "$25.00"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "hidden",
+            "target": "testid=sumShipping",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "WELCOME10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "Codes don't apply to gift cards."
+          }
+        }
+      ]
+    },
+    {
+      "name": "an XXL tee costs $2 more",
+      "description": "Selects the XXL size of a tee and checks that the price rises by $2 and add to cart is enabled.",
+      "steps": [
+        {
+          "tap": "testid=product_tee"
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=addToCart"
+          }
+        },
+        {
+          "tap": "testid=size_XXL"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=productPrice",
+            "text": "$26.00"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "enabled",
+            "target": "testid=addToCart"
+          }
+        }
+      ]
+    },
+    {
+      "name": "codes refused, each saying why",
+      "description": "Applies each code that should be refused and checks the message that explains why.",
+      "each": [
+        {
+          "code": "MOBIUM5",
+          "message": "Add $6.00 more to use this code."
+        },
+        {
+          "code": "EXPIRED20",
+          "message": "That code has expired."
+        },
+        {
+          "code": "FREESTUFF",
+          "message": "That code isn't valid."
+        }
+      ],
+      "steps": [
+        {
+          "tap": "testid=product_pins"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "${code}"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "${message}"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "hidden",
+            "target": "testid=sumDiscount",
+            "timeout_ms": 2000
+          }
+        }
+      ]
+    },
+    {
+      "name": "MOBIUM5 comes off when the cart drops under $30",
+      "description": "Applies MOBIUM5 and then removes an item so the cart drops under $30, and checks that the code is taken off.",
+      "steps": [
+        {
+          "tap": "testid=product_hat"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_magnet"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$31.99"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "MOBIUM5"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$5.00"
+          }
+        },
+        {
+          "tap": "testid=lineMinus_magnet"
+        },
+        {
+          "alert": {
+            "button": "Remove"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "Add $4.00 more to use this code."
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "hidden",
+            "target": "testid=sumDiscount"
+          }
+        }
+      ]
+    },
+    {
+      "name": "out of stock cannot be added",
+      "description": "Opens an out-of-stock product and a variant that is out of stock, and checks that add to cart is disabled both times.",
+      "steps": [
+        {
+          "wait_for": {
+            "target": "testid=catalogList",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "tap": "testid=product_beanie"
+        },
+        {
+          "wait_for": {
+            "target": "testid=productStock"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=addToCart",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_hoodie"
+        },
+        {
+          "tap": "testid=size_XL"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=variantStock",
+            "text": "Out of stock in XL"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=addToCart",
+            "timeout_ms": 2000
+          }
+        }
+      ]
+    },
+    {
+      "name": "price, low to high, starts with the magnet",
+      "description": "Sorts the catalog by price, low to high, and checks that the cheapest items come first.",
+      "steps": [
+        {
+          "tap": "testid=sortMenu"
+        },
+        {
+          "tap": "testid=sort_price_asc"
+        },
+        {
+          "wait_for": {
+            "target": "testid=price_magnet",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=price_stickers",
+            "timeout_ms": 3000
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "hidden",
+            "target": "testid=price_hoodie",
+            "timeout_ms": 3000
+          }
+        }
+      ]
+    },
+    {
+      "name": "removing the last line asks first, and the badge goes",
+      "description": "Tries to remove the last cart line, cancels, then removes it, and checks that the cart empties and checkout is disabled.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "target": "label=\"Cart, 1 item\""
+          }
+        },
+        {
+          "tap": "testid=lineMinus_mug"
+        },
+        {
+          "alert": {
+            "button": "Cancel"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=lineQty_mug",
+            "text": "1"
+          }
+        },
+        {
+          "tap": "testid=lineMinus_mug"
+        },
+        {
+          "alert": {
+            "button": "Remove"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=emptyCart"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "label=\"Cart, 0 items\"",
+            "timeout_ms": 2000
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=checkoutBtn"
+          }
+        }
+      ]
+    },
+    {
+      "name": "search narrows the catalog",
+      "description": "Types a search term and checks that the catalog narrows to the matching product.",
+      "steps": [
+        {
+          "fill": {
+            "target": "testid=searchField",
+            "text": "mug"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "1 item"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=product_mug"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the catalog lists every product",
+      "description": "Opens the catalog and checks the item count and the price of a known product.",
+      "steps": [
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=resultCount",
+            "text": "13 items"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=price_tee",
+            "text": "$24.00"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the quantity stops at 10",
+      "description": "Raises the quantity until it reaches 10 and checks that the plus button is then disabled.",
+      "steps": [
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=qtyValue",
+            "text": "10"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "disabled",
+            "target": "testid=qtyPlus",
+            "timeout_ms": 2000
+          }
+        }
+      ]
+    },
+    {
+      "name": "two tees and a mug, with WELCOME10",
+      "description": "Adds two tees and a mug, applies WELCOME10 in lowercase, and checks the 10% discount and the total.",
+      "steps": [
+        {
+          "tap": "testid=product_tee"
+        },
+        {
+          "tap": "testid=size_M"
+        },
+        {
+          "tap": "testid=qtyPlus"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "wait_for": {
+            "target": "testid=addedNotice"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "label=\"Cart, 2 items\""
+          }
+        },
+        {
+          "tap": "testid=backBtn"
+        },
+        {
+          "tap": "testid=product_mug"
+        },
+        {
+          "tap": "testid=addToCart"
+        },
+        {
+          "tap": "testid=viewCart"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumMerch",
+            "text": "$64.00"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=codeField",
+            "text": "welcome10"
+          }
+        },
+        {
+          "tap": "testid=applyCode"
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=codeMessage",
+            "text": "WELCOME10 applied: 10% off merchandise."
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumDiscount",
+            "text": "-$6.40"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=sumTotal",
+            "text": "$57.60"
+          }
+        }
+      ]
+    }
+  ]
+}

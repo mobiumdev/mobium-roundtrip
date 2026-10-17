@@ -1,0 +1,31 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › A: two tees and a mug, WELCOME10, standard to NY (2m23.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › B: MOBIUM5 takes $77.98 under the free-shipping line, CA (2m27.8s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › C1: exactly $75.00 ships free (1m2.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › D: three tumblers, express to TX, shipping taxed (1m57.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › K: SHIPFREE frees standard, not express (45.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › M: pickup asks no address and is taxed in CA (1m22.2s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › delivery chosen stays chosen after going back from payment (1m57.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the address form says what is missing (58.9s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the declined cards are declined, and nothing is ordered (1m44.8s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › the slow card is waited for, and one tap places one order (1m29.9s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] checkout.test.json › WELCOME10 is spent once an order uses it (1m53.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › the catalog lists every product (20.7s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › search narrows the catalog (27.8s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a category narrows the catalog (23.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › price, low to high, starts with the magnet (34.8s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › an XXL tee costs $2 more (30.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › out of stock cannot be added (38.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › the quantity stops at 10 (54.5s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › two tees and a mug, with WELCOME10 (1m4.2s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a code applies once (40.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › codes refused, each saying why (1m2.6s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › MOBIUM5 comes off when the cart drops under $30 (1m5.4s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › removing the last line asks first, and the badge goes (48.9s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › 10% of $37.45 rounds half up to $3.75 (57.2s)
+  ok    [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] shop.test.json › a gift card needs an email, and takes no code (1m1s)
+25 passed (28m33.2s)
+json report: evidence/2026-10-16-morpho/01-original-traced-ios/results.json
+junit report: evidence/2026-10-16-morpho/01-original-traced-ios/junit.xml
+ios exit=0

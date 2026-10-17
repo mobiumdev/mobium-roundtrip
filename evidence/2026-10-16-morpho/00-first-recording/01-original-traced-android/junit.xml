@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="9" time="1086.082">
+  <testsuite name="android › checkout.test.json" tests="11" failures="8" time="614.271">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="android.checkout.test.json" time="61.302">
+      <failure message="the test ran out of its time before step 18" type="timeout">step 18 (app_fill): [timeout] the test ran out of its time before step 18</failure>
+    </testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="android.checkout.test.json" time="62.441">
+      <failure message="the test ran out of its time before step 17" type="timeout">step 17 (app_fill): [timeout] the test ran out of its time before step 17</failure>
+    </testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="android.checkout.test.json" time="54.892"></testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="android.checkout.test.json" time="62.485">
+      <failure message="the test ran out of its time before step 20" type="timeout">step 20 (app_fill): [timeout] the test ran out of its time before step 20</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="android.checkout.test.json" time="29.760"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="android.checkout.test.json" time="61.867">
+      <failure message="the test ran out of its time before step 18" type="timeout">step 18 (app_wait_for): [timeout] the test ran out of its time before step 18</failure>
+    </testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="android.checkout.test.json" time="60.748">
+      <failure message="the test ran out of its time before step 21" type="timeout">step 21 (app_fill): [timeout] the test ran out of its time before step 21</failure>
+    </testcase>
+    <testcase name="the address form says what is missing" classname="android.checkout.test.json" time="36.624"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="android.checkout.test.json" time="62.174">
+      <failure message="the test ran out of its time before step 20" type="timeout">step 20 (app_tap): [timeout] the test ran out of its time before step 20</failure>
+    </testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="android.checkout.test.json" time="60.850">
+      <failure message="the test ran out of its time before step 19" type="timeout">step 19 (app_tap): [timeout] the test ran out of its time before step 19</failure>
+    </testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="android.checkout.test.json" time="61.126">
+      <failure message="the test ran out of its time before step 19" type="timeout">step 19 (app_tap): [timeout] the test ran out of its time before step 19</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="android › shop.test.json" tests="14" failures="1" time="471.810">
+    <testcase name="the catalog lists every product" classname="android.shop.test.json" time="19.958"></testcase>
+    <testcase name="search narrows the catalog" classname="android.shop.test.json" time="22.358"></testcase>
+    <testcase name="a category narrows the catalog" classname="android.shop.test.json" time="20.294"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="android.shop.test.json" time="29.875"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="android.shop.test.json" time="26.056"></testcase>
+    <testcase name="out of stock cannot be added" classname="android.shop.test.json" time="32.892"></testcase>
+    <testcase name="the quantity stops at 10" classname="android.shop.test.json" time="33.188"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="android.shop.test.json" time="51.559"></testcase>
+    <testcase name="a code applies once" classname="android.shop.test.json" time="28.024"></testcase>
+    <testcase name="codes refused, each saying why" classname="android.shop.test.json" time="43.964"></testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="android.shop.test.json" time="44.663"></testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="android.shop.test.json" time="30.481"></testcase>
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="android.shop.test.json" time="39.768"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="android.shop.test.json" time="48.729">
+      <failure message="no element matches testid=viewCart on the current screen — the screen may have changed, run app_map again&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 8 (app_tap): [no_such_element] no element matches testid=viewCart on the current screen — the screen may have changed, run app_map again&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

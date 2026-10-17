@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="12" time="1298.294">
+  <testsuite name="ios › checkout.test.json" tests="11" failures="9" time="671.550">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="ios.checkout.test.json" time="62.579">
+      <failure message="the test ran out of its time before step 15" type="timeout">step 15 (app_tap): [timeout] the test ran out of its time before step 15</failure>
+    </testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="ios.checkout.test.json" time="61.767">
+      <failure message="the test ran out of its time before step 12" type="timeout">step 12 (app_tap): [timeout] the test ran out of its time before step 12</failure>
+    </testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="ios.checkout.test.json" time="61.346">
+      <failure message="the test ran out of its time before step 14" type="timeout">step 14 (app_wait_for): [timeout] the test ran out of its time before step 14</failure>
+    </testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="ios.checkout.test.json" time="64.024">
+      <failure message="the test ran out of its time before step 13" type="timeout">step 13 (app_tap): [timeout] the test ran out of its time before step 13</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="ios.checkout.test.json" time="46.164"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="ios.checkout.test.json" time="60.677">
+      <failure message="the test ran out of its time before step 14" type="timeout">step 14 (app_fill): [timeout] the test ran out of its time before step 14</failure>
+    </testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="ios.checkout.test.json" time="65.912">
+      <failure message="the test ran out of its time before step 12" type="timeout">step 12 (app_fill): [timeout] the test ran out of its time before step 12</failure>
+    </testcase>
+    <testcase name="the address form says what is missing" classname="ios.checkout.test.json" time="58.156"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="ios.checkout.test.json" time="63.940">
+      <failure message="the test ran out of its time before step 13" type="timeout">step 13 (app_fill): [timeout] the test ran out of its time before step 13</failure>
+    </testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="ios.checkout.test.json" time="63.897">
+      <failure message="the test ran out of its time before step 13" type="timeout">step 13 (app_fill): [timeout] the test ran out of its time before step 13</failure>
+    </testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="ios.checkout.test.json" time="63.089">
+      <failure message="the test ran out of its time before step 13" type="timeout">step 13 (app_fill): [timeout] the test ran out of its time before step 13</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ios › shop.test.json" tests="14" failures="3" time="626.743">
+    <testcase name="the catalog lists every product" classname="ios.shop.test.json" time="21.054"></testcase>
+    <testcase name="search narrows the catalog" classname="ios.shop.test.json" time="28.784"></testcase>
+    <testcase name="a category narrows the catalog" classname="ios.shop.test.json" time="22.499"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="ios.shop.test.json" time="35.178"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="ios.shop.test.json" time="30.354"></testcase>
+    <testcase name="out of stock cannot be added" classname="ios.shop.test.json" time="38.178"></testcase>
+    <testcase name="the quantity stops at 10" classname="ios.shop.test.json" time="55.100"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="ios.shop.test.json" time="61.916">
+      <failure message="the test ran out of its time before step 15" type="timeout">step 15 (app_wait_for): [timeout] the test ran out of its time before step 15</failure>
+    </testcase>
+    <testcase name="a code applies once" classname="ios.shop.test.json" time="41.305"></testcase>
+    <testcase name="codes refused, each saying why" classname="ios.shop.test.json" time="63.627">
+      <failure message="the test ran out of its time before step 14" type="timeout">step 14 (app_wait_for): [timeout] the test ran out of its time before step 14</failure>
+    </testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="ios.shop.test.json" time="61.376">
+      <failure message="the test ran out of its time before step 13" type="timeout">step 13 (app_wait_for): [timeout] the test ran out of its time before step 13</failure>
+    </testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="ios.shop.test.json" time="49.146"></testcase>
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="ios.shop.test.json" time="57.287"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="ios.shop.test.json" time="60.940"></testcase>
+  </testsuite>
+</testsuites>

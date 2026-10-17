@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="2" time="842.118">
+  <testsuite name="ios › checkout.test.json" tests="11" failures="1" time="574.225">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="ios.checkout.test.json" time="86.328">
+      <failure message="step 35 of 35 (app_wait_for) failed: timed out after 10.994s waiting for label=&#34;Cart, 0 items&#34; to become visible — it is not on screen; steps 1-34 ran before it, and nothing after" type="timeout">step 35 (app_wait_for): [timeout] step 35 of 35 (app_wait_for) failed: timed out after 10.994s waiting for label=&#34;Cart, 0 items&#34; to become visible — it is not on screen; steps 1-34 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="ios.checkout.test.json" time="75.498"></testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="ios.checkout.test.json" time="28.685"></testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="ios.checkout.test.json" time="64.451"></testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="ios.checkout.test.json" time="59.717"></testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="ios.checkout.test.json" time="22.040"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="ios.checkout.test.json" time="39.026"></testcase>
+    <testcase name="the address form says what is missing" classname="ios.checkout.test.json" time="28.534"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="ios.checkout.test.json" time="54.824"></testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="ios.checkout.test.json" time="55.197"></testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="ios.checkout.test.json" time="59.923"></testcase>
+  </testsuite>
+  <testsuite name="ios › shop.test.json" tests="14" failures="1" time="267.892">
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="ios.shop.test.json" time="27.489"></testcase>
+    <testcase name="a category narrows the catalog" classname="ios.shop.test.json" time="8.351"></testcase>
+    <testcase name="a code applies once" classname="ios.shop.test.json" time="20.794"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="ios.shop.test.json" time="31.887"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="ios.shop.test.json" time="11.080"></testcase>
+    <testcase name="codes refused, each saying why" classname="ios.shop.test.json" time="27.960"></testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="ios.shop.test.json" time="29.112"></testcase>
+    <testcase name="out of stock cannot be added" classname="ios.shop.test.json" time="12.351"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="ios.shop.test.json" time="12.488"></testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="ios.shop.test.json" time="24.190">
+      <failure message="step 11 of 12 (app_wait_for) failed: timed out after 2.69s waiting for label=&#34;Cart, 0 items&#34; to become visible — it is not on screen; steps 1-10 ran before it, and nothing after" type="timeout">step 11 (app_wait_for): [timeout] step 11 of 12 (app_wait_for) failed: timed out after 2.69s waiting for label=&#34;Cart, 0 items&#34; to become visible — it is not on screen; steps 1-10 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="search narrows the catalog" classname="ios.shop.test.json" time="9.747"></testcase>
+    <testcase name="the catalog lists every product" classname="ios.shop.test.json" time="8.213"></testcase>
+    <testcase name="the quantity stops at 10" classname="ios.shop.test.json" time="19.846"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="ios.shop.test.json" time="24.383"></testcase>
+  </testsuite>
+</testsuites>

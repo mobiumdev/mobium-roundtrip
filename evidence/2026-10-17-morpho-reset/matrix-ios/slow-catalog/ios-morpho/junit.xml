@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="25" failures="25" time="166.271">
+  <testsuite name="ios › checkout.test.json" tests="11" failures="11" time="73.032">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="ios.checkout.test.json" time="6.677">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.28s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.28s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="ios.checkout.test.json" time="6.630">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.26s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.26s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="ios.checkout.test.json" time="6.608">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.279s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.279s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="ios.checkout.test.json" time="6.634">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.297s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.297s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="ios.checkout.test.json" time="6.690">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.305s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.305s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="ios.checkout.test.json" time="6.659">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="ios.checkout.test.json" time="6.579">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.259s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.259s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the address form says what is missing" classname="ios.checkout.test.json" time="6.629">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.267s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.267s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="ios.checkout.test.json" time="6.656">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.324s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.324s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="ios.checkout.test.json" time="6.628">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.306s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.306s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="ios.checkout.test.json" time="6.640">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.309s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.309s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ios › shop.test.json" tests="14" failures="14" time="93.238">
+    <testcase name="the catalog lists every product" classname="ios.shop.test.json" time="6.646">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="search narrows the catalog" classname="ios.shop.test.json" time="6.658">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.305s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.305s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a category narrows the catalog" classname="ios.shop.test.json" time="6.684">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.318s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="ios.shop.test.json" time="6.670">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.316s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.316s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="an XXL tee costs $2 more" classname="ios.shop.test.json" time="6.641">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.286s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.286s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="out of stock cannot be added" classname="ios.shop.test.json" time="6.659">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.275s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.275s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the quantity stops at 10" classname="ios.shop.test.json" time="6.633">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.287s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.287s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="ios.shop.test.json" time="6.689">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.314s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.314s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a code applies once" classname="ios.shop.test.json" time="6.671">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.315s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.315s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="codes refused, each saying why" classname="ios.shop.test.json" time="6.660">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.294s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.294s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="ios.shop.test.json" time="6.668">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.303s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.303s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="ios.shop.test.json" time="6.665">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.299s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.299s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="ios.shop.test.json" time="6.628">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.279s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.279s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="ios.shop.test.json" time="6.666">
+      <failure message="in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.296s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after" type="timeout">the catalog is there at once: slow-catalog takes 8 seconds — before its steps: [timeout] in beforeEach: step 3 of 3 (app_wait_for) failed: timed out after 3.296s waiting for testid=catalogList to become visible — it is not on screen; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

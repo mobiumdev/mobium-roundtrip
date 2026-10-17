@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="27" failures="1" time="632.060">
+  <testsuite name="ios › checkout.test.json" tests="11" failures="1" time="398.070">
+    <testcase name="A: two tees and a mug, WELCOME10, standard to NY" classname="ios.checkout.test.json" time="50.182"></testcase>
+    <testcase name="B: MOBIUM5 takes $77.98 under the free-shipping line, CA" classname="ios.checkout.test.json" time="55.281"></testcase>
+    <testcase name="C1: exactly $75.00 ships free" classname="ios.checkout.test.json" time="20.249"></testcase>
+    <testcase name="D: three tumblers, express to TX, shipping taxed" classname="ios.checkout.test.json" time="42.208"></testcase>
+    <testcase name="delivery chosen stays chosen after going back from payment" classname="ios.checkout.test.json" time="51.773">
+      <failure message="step 25 of 25 (app_wait_for) failed: timed out after 10.197s waiting for testid=reviewDelivery to say exactly &#34;Express, 1–2 days&#34; — its text is &#34;Standard, 3–5 days&#34;; steps 1-24 ran before it, and nothing after" type="timeout">step 25 (app_wait_for): [timeout] step 25 of 25 (app_wait_for) failed: timed out after 10.197s waiting for testid=reviewDelivery to say exactly &#34;Express, 1–2 days&#34; — its text is &#34;Standard, 3–5 days&#34;; steps 1-24 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="K: SHIPFREE frees standard, not express" classname="ios.checkout.test.json" time="15.277"></testcase>
+    <testcase name="M: pickup asks no address and is taxed in CA" classname="ios.checkout.test.json" time="26.287"></testcase>
+    <testcase name="the address form says what is missing" classname="ios.checkout.test.json" time="18.606"></testcase>
+    <testcase name="the declined cards are declined, and nothing is ordered" classname="ios.checkout.test.json" time="39.885"></testcase>
+    <testcase name="the slow card is waited for, and one tap places one order" classname="ios.checkout.test.json" time="36.757"></testcase>
+    <testcase name="WELCOME10 is spent once an order uses it" classname="ios.checkout.test.json" time="41.565"></testcase>
+  </testsuite>
+  <testsuite name="ios › shop.test.json" tests="16" failures="0" time="233.987">
+    <testcase name="10% of $37.45 rounds half up to $3.75" classname="ios.shop.test.json" time="20.383"></testcase>
+    <testcase name="a category narrows the catalog" classname="ios.shop.test.json" time="5.698"></testcase>
+    <testcase name="a code applies once" classname="ios.shop.test.json" time="13.930"></testcase>
+    <testcase name="a gift card needs an email, and takes no code" classname="ios.shop.test.json" time="21.875"></testcase>
+    <testcase name="an XXL tee costs $2 more" classname="ios.shop.test.json" time="7.149"></testcase>
+    <testcase name="codes refused, each saying why [1]" classname="ios.shop.test.json" time="18.096"></testcase>
+    <testcase name="codes refused, each saying why [2]" classname="ios.shop.test.json" time="16.237"></testcase>
+    <testcase name="codes refused, each saying why [3]" classname="ios.shop.test.json" time="16.243"></testcase>
+    <testcase name="MOBIUM5 comes off when the cart drops under $30" classname="ios.shop.test.json" time="23.874"></testcase>
+    <testcase name="out of stock cannot be added" classname="ios.shop.test.json" time="10.080"></testcase>
+    <testcase name="price, low to high, starts with the magnet" classname="ios.shop.test.json" time="11.380"></testcase>
+    <testcase name="removing the last line asks first, and the badge goes" classname="ios.shop.test.json" time="17.395"></testcase>
+    <testcase name="search narrows the catalog" classname="ios.shop.test.json" time="8.701"></testcase>
+    <testcase name="the catalog lists every product" classname="ios.shop.test.json" time="6.877"></testcase>
+    <testcase name="the quantity stops at 10" classname="ios.shop.test.json" time="15.556"></testcase>
+    <testcase name="two tees and a mug, with WELCOME10" classname="ios.shop.test.json" time="20.511"></testcase>
+  </testsuite>
+</testsuites>
