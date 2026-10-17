@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="1" time="63.749">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="12.257">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="2.894"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="3.002"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.361"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="1" time="51.491">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="ios.login.test.json" time="18.090">
+      <failure message="step 4 of 5 (app_wait_for) failed: timed out after 10.255s waiting for testid=loginError to say exactly &#34;Incorrect username or password.&#34; — its text is &#34;Incorrect password.&#34;; steps 1-3 ran before it, and nothing after" type="timeout">step 4 (app_wait_for): [timeout] step 4 of 5 (app_wait_for) failed: timed out after 10.255s waiting for testid=loginError to say exactly &#34;Incorrect username or password.&#34; — its text is &#34;Incorrect password.&#34;; steps 1-3 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="ios.login.test.json" time="8.361"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="ios.login.test.json" time="8.070"></testcase>
+    <testcase name="the demo account signs in, and out" classname="ios.login.test.json" time="9.939"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="ios.login.test.json" time="4.628"></testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.402"></testcase>
+  </testsuite>
+</testsuites>

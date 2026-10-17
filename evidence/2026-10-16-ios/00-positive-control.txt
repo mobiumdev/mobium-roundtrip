@@ -1,0 +1,6 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] login.test.json › a bad sign-in is refused, and says why: a wrong password (18.4s)
+        step 4 (app_wait_for): [timeout] step 4 of 5 (app_wait_for) failed: timed out after 10.248s waiting for testid=loginError to say exactly "Incorrect username or password." — its text is "Incorrect password."; steps 1-3 ran before it, and nothing after
+0 passed, 1 failed (18.4s)
+error: 1 of 1 tests failed

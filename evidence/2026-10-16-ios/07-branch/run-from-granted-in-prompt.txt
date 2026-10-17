@@ -1,0 +1,7 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] from-granted.test.json › the camera is granted, asked or not (13.6s)
+        step 7 (app_scroll_to): [no_such_element] step 7 of 8 (app_scroll_to) failed: no element matches testid=dialogOutcome — scrolled up to the start of the list (1 scroll) without bringing it into view; at the start of a list the last swipe is a pull, which an app may answer by refreshing what it shows; steps 1-6 ran before it, and nothing after
+0 passed, 1 failed (13.6s)
+json report: evidence/2026-10-16-ios/07-branch/run-from-granted-in-prompt/results.json
+error: 1 of 1 tests failed

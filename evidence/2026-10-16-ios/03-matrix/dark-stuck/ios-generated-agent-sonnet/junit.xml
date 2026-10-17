@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="1" time="55.900">
+  <testsuite name="ios › form.test.json" tests="3" failures="1" time="12.020">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="2.933"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.661"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.426">
+      <failure message="step 3 of 4 (app_check) failed: tapped testid=darkSwitch to make it unchecked and it is still checked — the control did not respond, so nothing here can make it; steps 1-2 ran before it, and nothing after" type="not_confirmed">step 3 (app_check): [not_confirmed] step 3 of 4 (app_check) failed: tapped testid=darkSwitch to make it unchecked and it is still checked — the control did not respond, so nothing here can make it; steps 1-2 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="0" time="43.879">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="ios.login.test.json" time="9.179"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="ios.login.test.json" time="8.032"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="ios.login.test.json" time="8.308"></testcase>
+    <testcase name="the demo account signs in, and out" classname="ios.login.test.json" time="10.175"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="ios.login.test.json" time="5.898"></testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.288"></testcase>
+  </testsuite>
+</testsuites>

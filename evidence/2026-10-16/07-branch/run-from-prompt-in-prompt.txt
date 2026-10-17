@@ -1,0 +1,5 @@
+waiting for the UiAutomator2 server to start...
+  ok    [android · emulator-5554] from-prompt.test.json › the camera is granted, asked or not (8.4s)
+1 passed (8.4s)
+json report: evidence/2026-10-16/07-branch/run-from-prompt-in-prompt/results.json
+junit report: evidence/2026-10-16/07-branch/run-from-prompt-in-prompt/junit.xml

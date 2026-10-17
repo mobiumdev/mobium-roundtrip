@@ -1,0 +1,4 @@
+waiting for the UiAutomator2 server to start...
+  ok    [android · emulator-5554] dialogs-rule.test.json › the camera is granted, asked or not (8.7s)
+1 passed (8.7s)
+json report: evidence/2026-10-16/08-scroll-dialog-fix/dialogs-rule-2/results.json

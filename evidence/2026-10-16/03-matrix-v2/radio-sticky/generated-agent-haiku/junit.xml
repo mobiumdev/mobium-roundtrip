@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="1" time="55.720">
+  <testsuite name="android › form.test.json" tests="3" failures="1" time="20.589">
+    <testcase name="a checkbox reaches the state asked for" classname="android.form.test.json" time="3.266"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="android.form.test.json" time="13.173">
+      <failure message="step 4 of 5 (app_wait_for) failed: timed out after 10.013s waiting for testid=planFree to become unchecked — it is checked; steps 1-3 ran before it, and nothing after" type="timeout">step 4 (app_wait_for): [timeout] step 4 of 5 (app_wait_for) failed: timed out after 10.013s waiting for testid=planFree to become unchecked — it is checked; steps 1-3 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="android.form.test.json" time="4.151"></testcase>
+  </testsuite>
+  <testsuite name="android › login.test.json" tests="6" failures="0" time="35.131">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="android.login.test.json" time="7.418"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="android.login.test.json" time="6.401"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="android.login.test.json" time="6.881"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="android.login.test.json" time="4.080"></testcase>
+    <testcase name="the app is in front throughout" classname="android.login.test.json" time="2.202"></testcase>
+    <testcase name="the demo account signs in, and out" classname="android.login.test.json" time="8.149"></testcase>
+  </testsuite>
+</testsuites>

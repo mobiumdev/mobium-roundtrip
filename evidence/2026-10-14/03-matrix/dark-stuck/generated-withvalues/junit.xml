@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="1" time="45.858">
+  <testsuite name="android › form.test.json" tests="3" failures="1" time="10.450">
+    <testcase name="a checkbox reaches the state asked for" classname="android.form.test.json" time="3.168"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="android.form.test.json" time="3.031"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="android.form.test.json" time="4.251">
+      <failure message="step 4 of 5 (app_check) failed: tapped testid=darkSwitch to make it unchecked and it is still checked — the control did not respond, so nothing here can make it; steps 1-3 ran before it, and nothing after" type="not_confirmed">step 4 (app_check): [not_confirmed] step 4 of 5 (app_check) failed: tapped testid=darkSwitch to make it unchecked and it is still checked — the control did not respond, so nothing here can make it; steps 1-3 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="android › login.test.json" tests="6" failures="0" time="35.408">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="android.login.test.json" time="6.397"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="android.login.test.json" time="6.034"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="android.login.test.json" time="7.620"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="android.login.test.json" time="4.666"></testcase>
+    <testcase name="the app is in front throughout" classname="android.login.test.json" time="2.174"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="android.login.test.json" time="8.517"></testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="2" time="63.530">
+  <testsuite name="android › form.test.json" tests="3" failures="0" time="10.144">
+    <testcase name="a checkbox reaches the state asked for" classname="android.form.test.json" time="3.285"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="android.form.test.json" time="2.859"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="android.form.test.json" time="4.001"></testcase>
+  </testsuite>
+  <testsuite name="android › login.test.json" tests="6" failures="2" time="53.385">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="android.login.test.json" time="6.821"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="android.login.test.json" time="6.192"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="android.login.test.json" time="6.444"></testcase>
+    <testcase name="the demo account signs in, and out" classname="android.login.test.json" time="17.597">
+      <failure message="step 6 of 6 (app_wait_for) failed: timed out after 10.026s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-5 ran before it, and nothing after" type="timeout">step 6 (app_wait_for): [timeout] step 6 of 6 (app_wait_for) failed: timed out after 10.026s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-5 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="android.login.test.json" time="14.154">
+      <failure message="step 5 of 6 (app_wait_for) failed: timed out after 10.023s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-4 ran before it, and nothing after" type="timeout">step 5 (app_wait_for): [timeout] step 5 of 6 (app_wait_for) failed: timed out after 10.023s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-4 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="android.login.test.json" time="2.177"></testcase>
+  </testsuite>
+</testsuites>

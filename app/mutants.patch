@@ -1,0 +1,63 @@
+diff --git a/App.tsx b/App.tsx
+index a978709..c6ba147 100644
+--- a/App.tsx
++++ b/App.tsx
+@@ -18,6 +18,12 @@ import {Camera} from 'expo-camera';
+ import * as Clipboard from 'expo-clipboard';
+ import * as LocalAuthentication from 'expo-local-authentication';
+ import {ground, ui} from './theme';
++import {Linking} from 'react-native';
++let MUTANT = '';
++try {
++  const mf = new File(Paths.document, 'roundtrip-mutant.txt');
++  if (mf.exists) MUTANT = mf.textSync().trim();
++} catch (e) {}
+ 
+ // Pages are shipped inline rather than fetched: a check that depends on a
+ // domain is a check that fails when somebody lets the domain lapse.
+@@ -1531,7 +1537,7 @@ function FormScreen({dark, setDark}: {dark: boolean; setDark: (v: boolean) => vo
+       accessibilityLabel={label}
+       accessibilityState={{checked: on}}
+       style={s.row}
+-      onPress={() => set(!on)}>
++      onPress={() => { set(!on); if (MUTANT === 'terms-notify' && id === 'termsCheck') setNotify(!on); }}>
+       <Text style={s.box}>{on ? '☑' : '☐'}</Text>
+       <Text style={s.rowText}>{label}</Text>
+     </Pressable>
+@@ -1542,7 +1548,7 @@ function FormScreen({dark, setDark}: {dark: boolean; setDark: (v: boolean) => vo
+       testID={id}
+       accessibilityRole="radio"
+       accessibilityLabel={label}
+-      accessibilityState={{checked: plan === value}}
++      accessibilityState={{checked: plan === value || (MUTANT === 'radio-sticky' && value === 'free')}}
+       style={s.row}
+       onPress={() => setPlan(value)}>
+       <Text style={s.box}>{plan === value ? '◉' : '○'}</Text>
+@@ -1568,7 +1574,7 @@ function FormScreen({dark, setDark}: {dark: boolean; setDark: (v: boolean) => vo
+           testID="darkSwitch"
+           accessibilityLabel="Dark mode"
+           value={dark}
+-          onValueChange={setDark}
++          onValueChange={v => setDark(MUTANT === 'dark-stuck' ? true : v)}
+         />
+         <Text style={s.rowText}>Dark mode, for the whole app</Text>
+       </View>
+@@ -2713,7 +2719,8 @@ function FieldNotice({id, problem, ok, shown}: {id: string; problem: string | nu
+ }
+ 
+ function LoginScreen({onLogin}: {onLogin: (username: string) => void}) {
+-  const [user, setUser] = useState('');
++  const [user, setUser] = useState(MUTANT === 'logout-keeps' ? 'mobium' : '');
++  useEffect(() => { if (MUTANT === 'leaves-front') Linking.openSettings(); }, []);
+   const [pass, setPass] = useState('');
+   const [touched, setTouched] = useState({user: false, pass: false});
+   const [formErr, setFormErr] = useState('');
+@@ -2738,7 +2745,7 @@ function LoginScreen({onLogin}: {onLogin: (username: string) => void}) {
+         onLogin(u);
+         return;
+       }
+-      setFormErr('Incorrect username or password.');
++      setFormErr(MUTANT === 'msg' ? 'Incorrect password.' : 'Incorrect username or password.');
+       AccessibilityInfo.announceForAccessibility('Incorrect username or password.');
+     }, SIGN_IN_MS);
+   };

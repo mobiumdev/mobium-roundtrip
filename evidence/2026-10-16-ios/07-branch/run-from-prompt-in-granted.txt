@@ -1,0 +1,7 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] from-prompt.test.json › the camera is granted, asked or not (9.4s)
+        step 4 (app_alert): [no_such_alert] step 4 of 6 (app_alert) failed: there is no dialog to press a button on — app_alert with no action reports whether one is up; steps 1-3 ran before it, and nothing after
+0 passed, 1 failed (9.4s)
+json report: evidence/2026-10-16-ios/07-branch/run-from-prompt-in-granted/results.json
+error: 1 of 1 tests failed

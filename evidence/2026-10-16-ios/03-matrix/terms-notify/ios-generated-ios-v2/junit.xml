@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="1" time="65.619">
+  <testsuite name="ios › form.test.json" tests="3" failures="1" time="22.789">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="13.497">
+      <failure message="step 5 of 5 (app_wait_for) failed: timed out after 10.087s waiting for testid=notifyCheck to stop being checked — it is checked; steps 1-4 ran before it, and nothing after" type="timeout">step 5 (app_wait_for): [timeout] step 5 of 5 (app_wait_for) failed: timed out after 10.087s waiting for testid=notifyCheck to stop being checked — it is checked; steps 1-4 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.985"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.307"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="0" time="42.829">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="ios.login.test.json" time="8.363"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="ios.login.test.json" time="8.166"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="ios.login.test.json" time="9.483"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="ios.login.test.json" time="4.794"></testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.298"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="ios.login.test.json" time="9.725"></testcase>
+  </testsuite>
+</testsuites>

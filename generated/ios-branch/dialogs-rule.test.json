@@ -1,0 +1,14 @@
+{
+  "description": "Written by hand, not generated: the branch as dialog rules, one per platform's prompt, so one file passes on Android and iOS.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {"name": "the camera is granted, asked or not", "steps": [
+      {"dialogs": {"when": "take pictures", "press": "While using the app"}},
+      {"dialogs": {"when": "access the Camera", "press": "Allow"}},
+      {"tap": "label=Dialog Demo"},
+      {"tap": "testid=cameraBtn"},
+      {"scroll_to": {"target": "testid=dialogOutcome", "direction": "up"}},
+      {"wait_for": {"target": "testid=dialogOutcome", "condition": "text", "text": "camera: granted", "exact": true}}
+    ]}
+  ]
+}

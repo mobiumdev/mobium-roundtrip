@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="2" time="76.961">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="11.780">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="2.874"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.859"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.047"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="2" time="65.180">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="ios.login.test.json" time="9.751"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="ios.login.test.json" time="8.617"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="ios.login.test.json" time="8.506"></testcase>
+    <testcase name="the demo account signs in, and out" classname="ios.login.test.json" time="20.376">
+      <failure message="step 6 of 6 (app_wait_for) failed: timed out after 10.107s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-5 ran before it, and nothing after" type="timeout">step 6 (app_wait_for): [timeout] step 6 of 6 (app_wait_for) failed: timed out after 10.107s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-5 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="ios.login.test.json" time="15.521">
+      <failure message="step 5 of 6 (app_wait_for) failed: timed out after 10.208s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-4 ran before it, and nothing after" type="timeout">step 5 (app_wait_for): [timeout] step 5 of 6 (app_wait_for) failed: timed out after 10.208s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-4 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.410"></testcase>
+  </testsuite>
+</testsuites>

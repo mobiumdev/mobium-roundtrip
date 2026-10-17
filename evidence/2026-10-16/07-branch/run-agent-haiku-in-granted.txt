@@ -1,0 +1,5 @@
+waiting for the UiAutomator2 server to start...
+  ok    [android · emulator-5554] agent-haiku.test.json › camera button shows granted outcome (7.1s)
+1 passed (7.1s)
+json report: evidence/2026-10-16/07-branch/run-agent-haiku-in-granted/results.json
+junit report: evidence/2026-10-16/07-branch/run-agent-haiku-in-granted/junit.xml

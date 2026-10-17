@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="2" time="75.722">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="11.858">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="3.165"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.423"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.271"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="2" time="63.864">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="ios.login.test.json" time="8.054"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="ios.login.test.json" time="8.413"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="ios.login.test.json" time="9.470"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="ios.login.test.json" time="15.530">
+      <failure message="step 7 of 8 (app_wait_for) failed: timed out after 10.217s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-6 ran before it, and nothing after" type="timeout">step 7 (app_wait_for): [timeout] step 7 of 8 (app_wait_for) failed: timed out after 10.217s waiting for testid=username to hold &#34;mob&#34; — its value is &#34;mobiummob&#34;; steps 1-6 ran before it, and nothing after</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="1.866"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="ios.login.test.json" time="20.531">
+      <failure message="step 8 of 8 (app_wait_for) failed: timed out after 10.117s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-7 ran before it, and nothing after" type="timeout">step 8 (app_wait_for): [timeout] step 8 of 8 (app_wait_for) failed: timed out after 10.117s waiting for testid=username to hold &#34;&#34; — its value is &#34;mobium&#34;; steps 1-7 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

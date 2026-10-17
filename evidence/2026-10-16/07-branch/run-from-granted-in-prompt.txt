@@ -1,0 +1,7 @@
+waiting for the UiAutomator2 server to start...
+  FAIL  [android · emulator-5554] from-granted.test.json › the camera is granted, asked or not (8.5s)
+        step 10 (app_scroll_to): [no_such_element] step 10 of 11 (app_scroll_to) failed: no element matches testid=dialogOutcome and nothing on this screen scrolls; steps 1-9 ran before it, and nothing after
+0 passed, 1 failed (8.5s)
+json report: evidence/2026-10-16/07-branch/run-from-granted-in-prompt/results.json
+junit report: evidence/2026-10-16/07-branch/run-from-granted-in-prompt/junit.xml
+error: 1 of 1 tests failed

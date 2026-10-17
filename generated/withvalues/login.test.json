@@ -1,0 +1,352 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {
+      "name": "a bad sign-in is refused, and says why: a short password",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=username",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=password",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=loginBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=passError",
+            "text": "Password must be at least 6 characters."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=welcomeText"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mobium",
+          "text_2": "abc"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    },
+    {
+      "name": "a bad sign-in is refused, and says why: a short username",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=username",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=password",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=loginBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=userError",
+            "text": "Username must be at least 3 characters."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=welcomeText"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mo",
+          "text_2": "hunter2"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    },
+    {
+      "name": "a bad sign-in is refused, and says why: a wrong password",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=username",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=password",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=loginBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=loginError",
+            "text": "Incorrect username or password."
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "hidden",
+            "target": "testid=welcomeText"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mobium",
+          "text_2": "wrongpass1"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    },
+    {
+      "name": "focus follows the tap, and a field holds what was typed",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=username"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "focused",
+            "target": "testid=username"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "focused",
+            "not": true,
+            "target": "testid=password"
+          }
+        },
+        {
+          "name": "app_type",
+          "arguments": {
+            "target": "testid=username",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "value",
+            "target": "testid=username",
+            "text": "mob"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "not": true,
+            "target": "testid=username",
+            "text": "mobium"
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mob"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1"
+    },
+    {
+      "name": "the app is in front throughout",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_state",
+          "arguments": {
+            "app": "dev.mobium.mobiumapp"
+          }
+        },
+        {
+          "name": "app_current",
+          "arguments": {}
+        }
+      ]
+    },
+    {
+      "name": "the demo account signs in, and out",
+      "steps": [
+        {
+          "name": "app_dialogs",
+          "arguments": {
+            "press": "Not Now",
+            "when": "Save Password"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Login Demo"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=username",
+            "text": "${text_1}"
+          }
+        },
+        {
+          "name": "app_fill",
+          "arguments": {
+            "target": "testid=password",
+            "text": "${text_2}"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=loginBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "testid=welcomeText",
+            "timeout_ms": 15000
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=logoutBtn"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "value",
+            "target": "testid=username",
+            "text": ""
+          }
+        }
+      ],
+      "each": [
+        {
+          "text_1": "mobium",
+          "text_2": "hunter2"
+        }
+      ],
+      "description": "typed text supplied from outside the trace: text_1, text_2"
+    }
+  ]
+}

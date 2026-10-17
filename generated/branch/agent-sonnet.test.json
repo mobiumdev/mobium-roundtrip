@@ -1,0 +1,38 @@
+{
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {
+      "name": "the camera is granted, asked or not",
+      "description": "Grants camera up front so no prompt appears in either device state, then checks the app reports the camera as granted.",
+      "steps": [
+        {
+          "grant": {
+            "app": "dev.mobium.mobiumapp",
+            "permissions": "camera"
+          }
+        },
+        {
+          "tap": "label=Dialog Demo"
+        },
+        {
+          "tap": "testid=cameraBtn"
+        },
+        {
+          "scroll_to": {
+            "direction": "up",
+            "target": "testid=dialogOutcome"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=dialogOutcome",
+            "condition": "text",
+            "text": "camera: granted",
+            "exact": true,
+            "timeout_ms": 10000
+          }
+        }
+      ]
+    }
+  ]
+}

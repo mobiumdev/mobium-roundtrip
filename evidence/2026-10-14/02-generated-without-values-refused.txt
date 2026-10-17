@@ -1,0 +1,4 @@
+  form.test.json › a checkbox reaches the state asked for
+  form.test.json › choosing a radio clears the one before
+  form.test.json › the dark mode switch goes on and back off
+error: generated/novalues/login.test.json › a bad sign-in is refused, and says why: a short password uses ${text_1} and has no "each" to fill it in — add "each": [{"text_1": ...}], or write $${ for a literal ${

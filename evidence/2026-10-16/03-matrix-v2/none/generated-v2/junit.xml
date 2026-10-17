@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="0" time="129.079">
+  <testsuite name="android › form.test.json" tests="3" failures="0" time="41.181">
+    <testcase name="a checkbox reaches the state asked for" classname="android.form.test.json" time="11.847"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="android.form.test.json" time="13.156"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="android.form.test.json" time="16.177"></testcase>
+  </testsuite>
+  <testsuite name="android › login.test.json" tests="6" failures="0" time="87.898">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="android.login.test.json" time="15.134"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="android.login.test.json" time="14.698"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="android.login.test.json" time="15.081"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="android.login.test.json" time="13.472"></testcase>
+    <testcase name="the app is in front throughout" classname="android.login.test.json" time="7.585"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="android.login.test.json" time="21.927"></testcase>
+  </testsuite>
+</testsuites>

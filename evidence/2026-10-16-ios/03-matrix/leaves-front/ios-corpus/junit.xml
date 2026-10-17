@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="5" time="42.528">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="12.366">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="3.138"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.966"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.263"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="5" time="30.161">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="ios.login.test.json" time="12.517">
+      <failure message="step 1 of 5 (app_fill) failed: typed &#34;mobium&#34; and the field holds &#34;username&#34; — iOS dropped a keystroke, and retrying 2 times, down to 6 keys a second, did not recover it; nothing ran after it" type="not_confirmed">step 1 (app_fill): [not_confirmed] step 1 of 5 (app_fill) failed: typed &#34;mobium&#34; and the field holds &#34;username&#34; — iOS dropped a keystroke, and retrying 2 times, down to 6 keys a second, did not recover it; nothing ran after it</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="ios.login.test.json" time="3.749">
+      <failure message="step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="ios.login.test.json" time="3.767">
+      <failure message="step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="the demo account signs in, and out" classname="ios.login.test.json" time="3.741">
+      <failure message="step 1 of 6 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 6 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="ios.login.test.json" time="3.764">
+      <failure message="step 1 of 6 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_tap): [no_such_element] step 1 of 6 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.623"></testcase>
+  </testsuite>
+</testsuites>

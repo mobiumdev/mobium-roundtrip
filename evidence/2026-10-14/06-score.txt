@@ -1,0 +1,21 @@
+mutant          | test | original | generated
+dark-stuck      | the dark mode switch goes on and back off | fail | fail
+dark-stuck      | killed by original: True, by generated: True
+leaves-front    | a bad sign-in is refused, and says why: a short password | fail | fail
+leaves-front    | a bad sign-in is refused, and says why: a short username | fail | fail
+leaves-front    | a bad sign-in is refused, and says why: a wrong password | fail | fail
+leaves-front    | focus follows the tap, and a field holds what was typed | fail | fail
+leaves-front    | the app is in front throughout | fail | pass  <-- lost
+leaves-front    | the demo account signs in, and out | fail | fail
+leaves-front    | killed by original: True, by generated: True
+logout-keeps    | focus follows the tap, and a field holds what was typed | fail | fail
+logout-keeps    | the demo account signs in, and out | fail | fail
+logout-keeps    | killed by original: True, by generated: True
+msg             | a bad sign-in is refused, and says why: a wrong password | fail | fail
+msg             | killed by original: True, by generated: True
+radio-sticky    | choosing a radio clears the one before | fail | fail
+radio-sticky    | killed by original: True, by generated: True
+terms-notify    | a checkbox reaches the state asked for | fail | fail
+terms-notify    | killed by original: True, by generated: True
+
+cells where both fail: 11; lost by the round trip: 1; failing only when generated: 0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="6" failures="0" time="31.236">
+  <testsuite name="android › mobiumapp.test.json" tests="6" failures="0" time="31.236">
+    <testcase name="app_scroll_to[1]" classname="android.mobiumapp.test.json" time="13.342"></testcase>
+    <testcase name="app_check[0]" classname="android.mobiumapp.test.json" time="3.125"></testcase>
+    <testcase name="app_wait_for[2]" classname="android.mobiumapp.test.json" time="3.057"></testcase>
+    <testcase name="app_keyboard[0]" classname="android.mobiumapp.test.json" time="4.546"></testcase>
+    <testcase name="app_alert[1]" classname="android.mobiumapp.test.json" time="3.590"></testcase>
+    <testcase name="app_alert[2]" classname="android.mobiumapp.test.json" time="3.577"></testcase>
+  </testsuite>
+</testsuites>

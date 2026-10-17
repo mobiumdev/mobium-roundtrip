@@ -1,0 +1,96 @@
+{
+  "app": "dev.mobium.mobiumapp",
+  "beforeEach": [
+    {
+      "tap": "label=Form Demo"
+    }
+  ],
+  "tests": [
+    {
+      "name": "a checkbox reaches the state asked for",
+      "steps": [
+        {
+          "wait_for": {
+            "target": "testid=termsCheck",
+            "condition": "unchecked"
+          }
+        },
+        {
+          "check": "testid=termsCheck"
+        },
+        {
+          "wait_for": {
+            "target": "testid=termsCheck",
+            "condition": "checked"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=notifyCheck",
+            "condition": "checked",
+            "not": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "choosing a radio clears the one before",
+      "steps": [
+        {
+          "wait_for": {
+            "target": "testid=planFree",
+            "condition": "checked"
+          }
+        },
+        {
+          "tap": "testid=planPro"
+        },
+        {
+          "wait_for": {
+            "target": "testid=planPro",
+            "condition": "checked"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=planFree",
+            "condition": "unchecked"
+          }
+        },
+        {
+          "wait_for": {
+            "condition": "count",
+            "count": 3,
+            "target": "role=radio"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the dark mode switch goes on and back off",
+      "steps": [
+        {
+          "check": "testid=darkSwitch"
+        },
+        {
+          "wait_for": {
+            "target": "testid=darkSwitch",
+            "condition": "checked"
+          }
+        },
+        {
+          "check": {
+            "target": "testid=darkSwitch",
+            "checked": false
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=darkSwitch",
+            "condition": "unchecked"
+          }
+        }
+      ]
+    }
+  ]
+}

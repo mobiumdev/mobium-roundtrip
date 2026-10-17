@@ -1,0 +1,92 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "com.android.settings",
+  "tests": [
+    {
+      "name": "app_map[0]",
+      "steps": [
+        {
+          "name": "app_map",
+          "arguments": {}
+        }
+      ]
+    },
+    {
+      "name": "app_text[0]",
+      "steps": [
+        {
+          "name": "app_text",
+          "arguments": {}
+        }
+      ]
+    },
+    {
+      "name": "app_find[0]",
+      "steps": [
+        {
+          "name": "app_find",
+          "arguments": {
+            "locator": "role=button"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_tap[0]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Network & internet"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_scroll_to[0]",
+      "steps": [
+        {
+          "name": "app_scroll_to",
+          "arguments": {
+            "target": "text=System"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_swipe[0]",
+      "steps": [
+        {
+          "name": "app_swipe",
+          "arguments": {
+            "direction": "up",
+            "duration_ms": 300
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_press[0]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Network & internet"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "text=Internet"
+          }
+        },
+        {
+          "name": "app_press",
+          "arguments": {
+            "button": "back"
+          }
+        }
+      ]
+    }
+  ]
+}

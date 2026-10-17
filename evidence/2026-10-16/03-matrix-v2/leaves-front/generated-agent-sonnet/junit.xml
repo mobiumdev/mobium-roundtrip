@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="6" time="44.622">
+  <testsuite name="android › form.test.json" tests="3" failures="0" time="10.269">
+    <testcase name="a checkbox reaches the state asked for" classname="android.form.test.json" time="3.266"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="android.form.test.json" time="3.061"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="android.form.test.json" time="3.942"></testcase>
+  </testsuite>
+  <testsuite name="android › login.test.json" tests="6" failures="6" time="34.353">
+    <testcase name="a bad sign-in is refused, and says why: a wrong password" classname="android.login.test.json" time="4.450">
+      <failure message="step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short password" classname="android.login.test.json" time="4.475">
+      <failure message="step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username" classname="android.login.test.json" time="4.666">
+      <failure message="step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 5 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="the demo account signs in, and out" classname="android.login.test.json" time="4.452">
+      <failure message="step 1 of 6 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_fill): [no_such_element] step 1 of 6 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed" classname="android.login.test.json" time="4.312">
+      <failure message="step 1 of 6 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 1 (app_tap): [no_such_element] step 1 of 6 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; nothing ran after it&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="android.login.test.json" time="11.999">
+      <failure message="expected app_state&#39;s state to be &#34;foreground&#34;, and after 10s state is &#34;background&#34;" type="timeout">step 1 (expect app_state): [timeout] expected app_state&#39;s state to be &#34;foreground&#34;, and after 10s state is &#34;background&#34;</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

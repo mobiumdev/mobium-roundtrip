@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="6" failures="1" time="33.220">
+  <testsuite name="android › mobiumapp.test.json" tests="6" failures="1" time="33.220">
+    <testcase name="app_scroll_to[1]" classname="android.mobiumapp.test.json" time="13.413"></testcase>
+    <testcase name="app_check[0]" classname="android.mobiumapp.test.json" time="3.076"></testcase>
+    <testcase name="app_wait_for[2]" classname="android.mobiumapp.test.json" time="3.042"></testcase>
+    <testcase name="app_keyboard[0]" classname="android.mobiumapp.test.json" time="6.613">
+      <failure message="step 2 of 3 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; step 1 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 2 (app_tap): [no_such_element] step 2 of 3 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; step 1 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="app_alert[1]" classname="android.mobiumapp.test.json" time="3.520"></testcase>
+    <testcase name="app_alert[2]" classname="android.mobiumapp.test.json" time="3.556"></testcase>
+  </testsuite>
+</testsuites>

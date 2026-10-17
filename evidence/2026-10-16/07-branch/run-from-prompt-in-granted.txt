@@ -1,0 +1,7 @@
+waiting for the UiAutomator2 server to start...
+  FAIL  [android · emulator-5554] from-prompt.test.json › the camera is granted, asked or not (6.3s)
+        step 4 (app_alert): [no_such_alert] step 4 of 6 (app_alert) failed: there is no dialog to press a button on — app_alert with no action reports whether one is up; steps 1-3 ran before it, and nothing after
+0 passed, 1 failed (6.3s)
+json report: evidence/2026-10-16/07-branch/run-from-prompt-in-granted/results.json
+junit report: evidence/2026-10-16/07-branch/run-from-prompt-in-granted/junit.xml
+error: 1 of 1 tests failed

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="1" failures="1" time="6.326">
+  <testsuite name="android › from-prompt.test.json" tests="1" failures="1" time="6.326">
+    <testcase name="the camera is granted, asked or not" classname="android.from-prompt.test.json" time="6.326">
+      <failure message="step 4 of 6 (app_alert) failed: there is no dialog to press a button on — app_alert with no action reports whether one is up; steps 1-3 ran before it, and nothing after" type="no_such_alert">step 4 (app_alert): [no_such_alert] step 4 of 6 (app_alert) failed: there is no dialog to press a button on — app_alert with no action reports whether one is up; steps 1-3 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

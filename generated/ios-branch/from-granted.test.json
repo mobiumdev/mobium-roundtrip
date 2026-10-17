@@ -1,0 +1,56 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {
+      "name": "the camera is granted, asked or not",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Dialog Demo"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=cameraBtn"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {}
+        },
+        {
+          "name": "app_alert",
+          "arguments": {}
+        },
+        {
+          "name": "app_alert",
+          "arguments": {}
+        },
+        {
+          "name": "app_alert",
+          "arguments": {}
+        },
+        {
+          "name": "app_scroll_to",
+          "arguments": {
+            "direction": "up",
+            "target": "testid=dialogOutcome"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "text",
+            "exact": true,
+            "target": "testid=dialogOutcome",
+            "text": "camera: granted",
+            "timeout_ms": 10000
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+DIFFERS  a checkbox reaches the state asked for (7 calls vs 7)
+    call 7:
+      original:  ('app_wait_for', {'condition': 'checked', 'not': True, 'target': 'testid=notifyCheck'}, 'testid=notifyCheck is no longer checked after <t>')
+      generated: ('app_wait_for', {'condition': 'checked', 'not': True, 'target': 'testid=termsCheck'}, 'testid=termsCheck is no longer checked after <t>')
+8 of 9 tests made the same calls with the same results

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="1" failures="0" time="7.716">
+  <testsuite name="android › from-granted.test.json" tests="1" failures="0" time="7.716">
+    <testcase name="the camera is granted, asked or not" classname="android.from-granted.test.json" time="7.716"></testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="0" time="184.963">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="54.855">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="15.802"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="16.938"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="22.114"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="0" time="130.108">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="ios.login.test.json" time="23.681"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="ios.login.test.json" time="24.079"></testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="ios.login.test.json" time="24.564"></testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="ios.login.test.json" time="21.397"></testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="11.190"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="ios.login.test.json" time="25.197"></testcase>
+  </testsuite>
+</testsuites>

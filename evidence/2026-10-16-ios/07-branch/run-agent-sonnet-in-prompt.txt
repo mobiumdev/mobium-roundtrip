@@ -1,0 +1,7 @@
+waiting for WebDriverAgent to start...
+the simulator is on its home screen: a new session starts WebDriverAgent, whose runner takes the foreground and leaves it to the home screen, not to the app that was in front — app_launch brings an app back...
+  FAIL  [ios · 457C7DC2-C706-45D9-8D68-1D26953E28B1] agent-sonnet.test.json › the camera is granted, asked or not (4.2s)
+        step 1 (app_grant): [unsupported] step 1 of 5 (app_grant) failed: "camera" cannot be set on iOS: the iOS simulator has no camera privacy service; nothing ran after it
+0 passed, 1 failed (4.2s)
+json report: evidence/2026-10-16-ios/07-branch/run-agent-sonnet-in-prompt/results.json
+error: 1 of 1 tests failed

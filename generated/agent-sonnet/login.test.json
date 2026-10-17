@@ -1,0 +1,174 @@
+{
+  "app": "dev.mobium.mobiumapp",
+  "beforeEach": [
+    {
+      "dialogs": {
+        "press": "Not Now",
+        "when": "Save Password"
+      }
+    },
+    {
+      "tap": "label=Login Demo"
+    }
+  ],
+  "tests": [
+    {
+      "name": "a bad sign-in is refused, and says why: ${case}",
+      "each": [
+        {
+          "case": "a wrong password",
+          "user": "mobium",
+          "pass": "wrongpass1",
+          "error": "loginError",
+          "message": "Incorrect username or password."
+        },
+        {
+          "case": "a short password",
+          "user": "mobium",
+          "pass": "abc",
+          "error": "passError",
+          "message": "Password must be at least 6 characters."
+        },
+        {
+          "case": "a short username",
+          "user": "mo",
+          "pass": "hunter2",
+          "error": "userError",
+          "message": "Username must be at least 3 characters."
+        }
+      ],
+      "steps": [
+        {
+          "fill": {
+            "target": "testid=username",
+            "text": "${user}"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=password",
+            "text": "${pass}"
+          }
+        },
+        {
+          "tap": "testid=loginBtn"
+        },
+        {
+          "wait_for": {
+            "target": "testid=${error}",
+            "condition": "text",
+            "text": "${message}",
+            "exact": true
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=welcomeText",
+            "condition": "hidden"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the demo account signs in, and out",
+      "steps": [
+        {
+          "fill": {
+            "target": "testid=username",
+            "text": "mobium"
+          }
+        },
+        {
+          "fill": {
+            "target": "testid=password",
+            "text": "hunter2"
+          }
+        },
+        {
+          "tap": "testid=loginBtn"
+        },
+        {
+          "wait_for": {
+            "target": "testid=welcomeText",
+            "timeout_ms": 15000
+          }
+        },
+        {
+          "tap": "testid=logoutBtn"
+        },
+        {
+          "wait_for": {
+            "target": "testid=username",
+            "condition": "value",
+            "text": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "focus follows the tap, and a field holds what was typed",
+      "steps": [
+        {
+          "tap": "testid=username"
+        },
+        {
+          "wait_for": {
+            "target": "testid=username",
+            "condition": "focused"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=password",
+            "condition": "focused",
+            "not": true
+          }
+        },
+        {
+          "type": {
+            "target": "testid=username",
+            "text": "mob"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=username",
+            "condition": "value",
+            "text": "mob"
+          }
+        },
+        {
+          "wait_for": {
+            "target": "testid=username",
+            "condition": "text",
+            "text": "mobium",
+            "not": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "the app is in front throughout",
+      "steps": [
+        {
+          "expect": {
+            "tool": "app_state",
+            "arguments": {
+              "app": "dev.mobium.mobiumapp"
+            },
+            "field": "state",
+            "equals": "foreground"
+          }
+        },
+        {
+          "expect": {
+            "tool": "app_current",
+            "arguments": {},
+            "field": "app",
+            "equals": "dev.mobium.mobiumapp"
+          }
+        }
+      ]
+    }
+  ]
+}

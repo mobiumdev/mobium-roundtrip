@@ -1,0 +1,156 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {
+      "name": "app_scroll_to[1]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Pager Demo"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "label=Card 1"
+          }
+        },
+        {
+          "name": "app_scroll_to",
+          "arguments": {
+            "direction": "right",
+            "target": "label=Card 8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_check[0]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Form Demo"
+          }
+        },
+        {
+          "name": "app_check",
+          "arguments": {
+            "checked": true,
+            "target": "testid=termsCheck"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_wait_for[2]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Form Demo"
+          }
+        },
+        {
+          "name": "app_check",
+          "arguments": {
+            "checked": true,
+            "target": "testid=termsCheck"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "target": "testid=termsCheck",
+            "timeout_ms": 5000
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_keyboard[0]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Login Demo"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=username"
+          }
+        },
+        {
+          "name": "app_keyboard",
+          "arguments": {
+            "key": "enter",
+            "text": "coffee"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_alert[1]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Dialog Demo"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Two-button alert"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "text=Discard changes?"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {
+            "action": "accept"
+          }
+        }
+      ]
+    },
+    {
+      "name": "app_alert[2]",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Dialog Demo"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "text=Three-button alert"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "target": "text=Save this draft?"
+          }
+        },
+        {
+          "name": "app_alert",
+          "arguments": {
+            "button": "Don't Save"
+          }
+        }
+      ]
+    }
+  ]
+}

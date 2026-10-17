@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="1" failures="1" time="6.643">
+  <testsuite name="android › dialogs-rule.test.json" tests="1" failures="1" time="6.642">
+    <testcase name="the camera is granted, asked or not" classname="android.dialogs-rule.test.json" time="6.642">
+      <failure message="step 4 of 5 (app_scroll_to) failed: swiping up moved from dev.mobium.mobiumapp to com.google.android.permissioncontroller instead of scrolling — the area being swiped does not scroll that way. Nothing in the hierarchy says which way it does, so try the other axis, or app_swipe; steps 1-3 ran before it, and nothing after" type="element_not_reachable">step 4 (app_scroll_to): [element_not_reachable] step 4 of 5 (app_scroll_to) failed: swiping up moved from dev.mobium.mobiumapp to com.google.android.permissioncontroller instead of scrolling — the area being swiped does not scroll that way. Nothing in the hierarchy says which way it does, so try the other axis, or app_swipe; steps 1-3 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

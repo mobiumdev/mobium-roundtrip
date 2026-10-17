@@ -1,0 +1,12 @@
+waiting for the UiAutomator2 server to start...
+  ok    [android · emulator-5554] mobiumapp.test.json › app_scroll_to[1] (13.4s)
+  ok    [android · emulator-5554] mobiumapp.test.json › app_check[0] (3.1s)
+  ok    [android · emulator-5554] mobiumapp.test.json › app_wait_for[2] (3s)
+  FAIL  [android · emulator-5554] mobiumapp.test.json › app_keyboard[0] (6.6s)
+        step 2 (app_tap): [no_such_element] step 2 of 3 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; step 1 ran before it, and nothing after
+next: run app_map again, or app_scroll_to if it may be off screen
+  ok    [android · emulator-5554] mobiumapp.test.json › app_alert[1] (3.5s)
+  ok    [android · emulator-5554] mobiumapp.test.json › app_alert[2] (3.6s)
+5 passed, 1 failed (33.2s)
+junit report: evidence/2026-10-16/09-docs/matrix/leaves-front/junit.xml
+error: 1 of 6 tests failed

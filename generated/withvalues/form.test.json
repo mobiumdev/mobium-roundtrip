@@ -1,0 +1,129 @@
+{
+  "description": "Generated from traces by tools/gen.py; nothing inferred.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {
+      "name": "a checkbox reaches the state asked for",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Form Demo"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "unchecked",
+            "target": "testid=termsCheck"
+          }
+        },
+        {
+          "name": "app_check",
+          "arguments": {
+            "target": "testid=termsCheck"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "target": "testid=termsCheck"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "not": true,
+            "target": "testid=notifyCheck"
+          }
+        }
+      ]
+    },
+    {
+      "name": "choosing a radio clears the one before",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Form Demo"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "target": "testid=planFree"
+          }
+        },
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "testid=planPro"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "target": "testid=planPro"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "unchecked",
+            "target": "testid=planFree"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "count",
+            "count": 3,
+            "target": "role=radio"
+          }
+        }
+      ]
+    },
+    {
+      "name": "the dark mode switch goes on and back off",
+      "steps": [
+        {
+          "name": "app_tap",
+          "arguments": {
+            "target": "label=Form Demo"
+          }
+        },
+        {
+          "name": "app_check",
+          "arguments": {
+            "target": "testid=darkSwitch"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "checked",
+            "target": "testid=darkSwitch"
+          }
+        },
+        {
+          "name": "app_check",
+          "arguments": {
+            "checked": false,
+            "target": "testid=darkSwitch"
+          }
+        },
+        {
+          "name": "app_wait_for",
+          "arguments": {
+            "condition": "unchecked",
+            "target": "testid=darkSwitch"
+          }
+        }
+      ]
+    }
+  ]
+}

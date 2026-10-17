@@ -1,0 +1,5 @@
+waiting for the UiAutomator2 server to start...
+  ok    [android · emulator-5554] dialogs-rule.test.json › the camera is granted, asked or not (7.5s)
+1 passed (7.5s)
+json report: evidence/2026-10-16/07-branch/run-dialogs-rule-in-granted/results.json
+junit report: evidence/2026-10-16/07-branch/run-dialogs-rule-in-granted/junit.xml

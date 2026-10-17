@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="9" failures="5" time="33.304">
+  <testsuite name="ios › form.test.json" tests="3" failures="0" time="12.431">
+    <testcase name="a checkbox reaches the state asked for" classname="ios.form.test.json" time="3.175"></testcase>
+    <testcase name="choosing a radio clears the one before" classname="ios.form.test.json" time="2.973"></testcase>
+    <testcase name="the dark mode switch goes on and back off" classname="ios.form.test.json" time="6.284"></testcase>
+  </testsuite>
+  <testsuite name="ios › login.test.json" tests="6" failures="5" time="20.872">
+    <testcase name="a bad sign-in is refused, and says why: a short password [1]" classname="ios.login.test.json" time="3.226">
+      <failure message="step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 3 (app_fill): [no_such_element] step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a short username [1]" classname="ios.login.test.json" time="3.758">
+      <failure message="step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 3 (app_fill): [no_such_element] step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="a bad sign-in is refused, and says why: a wrong password [1]" classname="ios.login.test.json" time="3.725">
+      <failure message="step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 3 (app_fill): [no_such_element] step 3 of 7 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="focus follows the tap, and a field holds what was typed [1]" classname="ios.login.test.json" time="3.785">
+      <failure message="step 3 of 8 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 3 (app_tap): [no_such_element] step 3 of 8 (app_tap) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+    <testcase name="the app is in front throughout" classname="ios.login.test.json" time="2.646"></testcase>
+    <testcase name="the demo account signs in, and out [1]" classname="ios.login.test.json" time="3.731">
+      <failure message="step 3 of 8 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen" type="no_such_element">step 3 (app_fill): [no_such_element] step 3 of 8 (app_fill) failed: no element matches testid=username on the current screen — the screen may have changed, run app_map again; steps 1-2 ran before it, and nothing after&#xA;next: run app_map again, or app_scroll_to if it may be off screen</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

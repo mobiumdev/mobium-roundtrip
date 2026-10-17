@@ -1,0 +1,7 @@
+{
+  "a bad sign-in is refused, and says why: a wrong password": {"text_1": "mobium", "text_2": "wrongpass1"},
+  "a bad sign-in is refused, and says why: a short password": {"text_1": "mobium", "text_2": "abc"},
+  "a bad sign-in is refused, and says why: a short username": {"text_1": "mo", "text_2": "hunter2"},
+  "the demo account signs in, and out": {"text_1": "mobium", "text_2": "hunter2"},
+  "focus follows the tap, and a field holds what was typed": {"text_1": "mob"}
+}

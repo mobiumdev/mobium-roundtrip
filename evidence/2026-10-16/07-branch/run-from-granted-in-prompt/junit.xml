@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="1" failures="1" time="8.546">
+  <testsuite name="android › from-granted.test.json" tests="1" failures="1" time="8.546">
+    <testcase name="the camera is granted, asked or not" classname="android.from-granted.test.json" time="8.546">
+      <failure message="step 10 of 11 (app_scroll_to) failed: no element matches testid=dialogOutcome and nothing on this screen scrolls; steps 1-9 ran before it, and nothing after" type="no_such_element">step 10 (app_scroll_to): [no_such_element] step 10 of 11 (app_scroll_to) failed: no element matches testid=dialogOutcome and nothing on this screen scrolls; steps 1-9 ran before it, and nothing after</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

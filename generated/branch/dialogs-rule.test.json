@@ -1,0 +1,13 @@
+{
+  "description": "Written by hand, not generated: whether the format can hold the branch, as a dialog rule that answers the prompt if it comes in the way.",
+  "app": "dev.mobium.mobiumapp",
+  "tests": [
+    {"name": "the camera is granted, asked or not", "steps": [
+      {"dialogs": {"when": "take pictures", "press": "While using the app"}},
+      {"tap": "label=Dialog Demo"},
+      {"tap": "testid=cameraBtn"},
+      {"scroll_to": {"target": "testid=dialogOutcome", "direction": "up"}},
+      {"wait_for": {"target": "testid=dialogOutcome", "condition": "text", "text": "camera: granted", "exact": true}}
+    ]}
+  ]
+}
