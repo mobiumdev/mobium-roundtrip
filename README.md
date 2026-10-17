@@ -17,6 +17,7 @@ Four probes have run, on Android and an iOS simulator. Their write-ups:
 - [evidence/2026-10-16-ios/RESULTS.md](evidence/2026-10-16-ios/RESULTS.md) — probe 3, the same round trip on an iOS simulator
 - [evidence/2026-10-16-morpho/RESULTS.md](evidence/2026-10-16-morpho/RESULTS.md) — probe 4, Morpho Market's 25-test suite and its 16 bugs on both platforms
 - [evidence/2026-10-17-morpho-reset/RESULTS.md](evidence/2026-10-17-morpho-reset/RESULTS.md) — probe 4's follow-up: `slow-catalog` after every reset, and the app's process id logged
+- [evidence/2026-10-17-morpho-second-code/RESULTS.md](evidence/2026-10-17-morpho-second-code/RESULTS.md) — a bug for Haiku's refactor: `stale-code-message`, which Haiku's suite misses on both platforms
 
 ## Contents
 

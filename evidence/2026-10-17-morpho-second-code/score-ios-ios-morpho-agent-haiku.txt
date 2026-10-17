@@ -1,0 +1,5 @@
+mutant          | test | original | generated
+stale-code-message | codes refused, each saying why | fail | pass  <-- lost
+stale-code-message | killed by original: True, by generated: False
+
+cells where both fail: 0; lost by the round trip: 1; failing only when generated: 0
