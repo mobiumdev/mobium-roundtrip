@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="mobium test" tests="1" failures="0" time="19.662">
+  <testsuite name="android › shop.test.json" tests="1" failures="0" time="19.662">
+    <testcase name="codes refused, each saying why" classname="android.shop.test.json" time="19.662"></testcase>
+  </testsuite>
+</testsuites>

@@ -14,6 +14,10 @@ A step is one tool call, in the long form
 the shorthand: one key, the tool's name without `app_`, whose value is its
 arguments or, as a string, its main argument — `{"tap": "text=Network &
 internet"}`, `{"fill": {"target": "testid=search", "text": "wifi"}}`.
+A string goes to `target` when the tool has one, else to its one required
+string argument, else to its only argument; a tool with none of these
+refuses a string, so `{"keyboard": {"key": "enter"}}` and `{"swipe":
+{"direction": "up"}}` are written with their arguments named.
 
 An assertion is an `app_wait_for` step —
 `{"wait_for": {"target": "text=Internet", "condition": "visible"}}` — or an

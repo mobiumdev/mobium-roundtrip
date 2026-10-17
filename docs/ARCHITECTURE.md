@@ -228,7 +228,7 @@ So far:
 | A keystroke blamed for an app that left the front | Mobium | fixed, #223 |
 | iOS traces carry `driver` on every call | codegen table | fixed in `gen.py` |
 | Agents meet a conditional by removing it | agent | to become an eval task |
-| An agent's `each` changed a test's meaning, and no bug noticed (probe 4) | agent / the bug set | mutant added: Haiku's suite misses `stale-code-message` on both platforms, 1 lost; an eval task still to do |
+| An agent's `each` changed a test's meaning, and no bug noticed (probe 4) | agent / the bug set | mutant added: Haiku's suite misses `stale-code-message` on both platforms, 1 lost; Haiku folds in 4 of 6 runs; mobium-evals t25 built from it |
 | A Morpho Market test's verdict under `slow-catalog` depends on a new process (probe 4) | the original test | fixed in Morpho Market; re-run 0 lost |
 | `score.py` let one `each` case overwrite another | the scorer | fixed; probes 2 and 3 unchanged |
 

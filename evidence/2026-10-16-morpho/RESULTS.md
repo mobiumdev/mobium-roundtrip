@@ -146,7 +146,7 @@ suite.
 | The table and both agents catch 16 of 16 bugs on both platforms | — | measured: 0 lost on iOS, 0 lost outside `slow-catalog` on Android |
 | One trace-derived test serves both platforms, at 25 tests | — | measured: byte-identical |
 | Sonnet rewrote 25 of 25 tests exactly; Haiku 23 of 25 | agent | measured |
-| Haiku's `each` changed a test's meaning, and no bug noticed | agent / the bug set | mutant added, Haiku's suite misses it (`../2026-10-17-morpho-second-code/`); a task for [mobium-evals](https://github.com/mobiumdev/mobium-evals) still to do |
+| Haiku's `each` changed a test's meaning, and no bug noticed | agent / the bug set | mutant added, Haiku's suite misses it (`../2026-10-17-morpho-second-code/`); 4 of 6 Haiku runs fold it (`../2026-10-17-morpho-repeats/`); [mobium-evals](https://github.com/mobiumdev/mobium-evals) t25 |
 | `slow-catalog`'s Android verdicts depend on whether the store is new | the original test | fixed in Morpho Market `b658e0e`; re-run 0 lost on both platforms (`../2026-10-17-morpho-reset/`) |
 | Recording needs a longer timeout than running | runner | noted; `--timeout 4m` here |
 | `score.py` overwrote `each` cases | the scorer | fixed; probes 2 and 3 unchanged |
