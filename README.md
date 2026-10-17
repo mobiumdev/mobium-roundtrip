@@ -19,6 +19,7 @@ Three probes have run, on Android and an iOS simulator. Their write-ups:
 ## Contents
 
 - [The idea](#the-idea)
+- [Architecture](#architecture)
 - [How it improves verification](#how-it-improves-verification)
 - [What it has found](#what-it-has-found)
 - [How a run works](#how-a-run-works)
@@ -55,6 +56,61 @@ one of three places:
 2. **The trace is missing information.** Fix Mobium's trace format.
 3. **An agent misread the trace.** Make it a task in the evaluation
    harness ([mobium-evals](https://github.com/mobiumdev/mobium-evals)).
+
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph inputs["Inputs"]
+        corpus[("corpus/<br/>the original tests")]
+        branch[("corpus-branch/camera.py<br/>a script with a conditional")]
+        docs[("tools/docs_corpus.py<br/>the docs site's scenarios")]
+    end
+
+    subgraph device["Device: Android emulator or iOS simulator"]
+        app["MobiumApp with six mutants<br/>one switched on by a file<br/>(tools/mutant.sh)"]
+    end
+
+    subgraph record["Record"]
+        run1["mobium test --trace on<br/>(a script: mobium trace)<br/>with no mutant on"]
+        traces[("trace.zip per test<br/>calls · arguments · results<br/>expect assertions")]
+    end
+
+    subgraph generate["Generate"]
+        table["tools/gen.py<br/>a fixed table:<br/>one step per call"]
+        agent["tools/digest.py → agent_prompt.py<br/>→ claude -p → agent_extract.py<br/>an agent writes the tests"]
+        generated[("generated/<br/>the tests made back")]
+    end
+
+    subgraph score["Score"]
+        matrix["tools/run.sh<br/>every suite × every mutant<br/>and no mutant"]
+        junit[("JUnit per cell")]
+        scorer["tools/score.py<br/>cells lost or added<br/>against the original"]
+        compare["tools/compare.py<br/>trace against trace"]
+    end
+
+    subgraph route["Each loss goes to"]
+        fixgen["the codegen table<br/>fix gen.py"]
+        fixtrace["the trace format<br/>a Mobium PR"]
+        fixagent["the agent<br/>a mobium-evals task"]
+    end
+
+    corpus & branch & docs --> run1
+    run1 <--> app
+    run1 --> traces
+    traces --> table & agent
+    table & agent --> generated
+    corpus & generated --> matrix
+    matrix <--> app
+    matrix --> junit --> scorer
+    traces --> compare
+    scorer --> fixgen & fixtrace & fixagent
+```
+
+The device is the only judge: a cell is a test failing under a mutant, read
+from JUnit, and no model grades anything. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+takes each part in turn, with diagrams for how a verdict is reached and
+where a difference goes.
 
 ## How it improves verification
 
