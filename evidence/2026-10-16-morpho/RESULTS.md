@@ -102,15 +102,16 @@ passed, and they were different tests each time. Every failure in every
 suite is the same `beforeEach` timeout, and Morpho Market's own Android
 matrix (`evidence/android-bug-matrix/` in its repository) has the
 original failing 25 of 25. So which Android tests a `slow-catalog` run
-fails varies from run to run, the original's included, and the six lost
+fails varies from run to run, the original's included, and the seven lost
 and eight extra cells are that variation, not the round trip.
 
-The weakness is in the original test, which assumes every test starts in
-a new process. *Follow-up, 2026-10-17 (`../2026-10-17-morpho-reset/`): the
+The weakness is in the original test, whose verdict under this bug
+depended on its timing. *Follow-up, 2026-10-17 (`../2026-10-17-morpho-reset/`): the
 bug now fires after every reset, and every suite agrees with the original
-under it on both platforms. The runner gave every test a new process, and
-the three passes did not reproduce.* Why an Android process sometimes survived a test is not
-measured; logging the app's process id before each test would tell.
+under it on both platforms. The runner gave every test a new process, so
+the passes were not process survival: they were timing. The old delay
+counted from launch, and a reset about 2 seconds after launch let it end
+inside the 3-second wait.*
 
 ## 5. What a bigger corpus showed
 

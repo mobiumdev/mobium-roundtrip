@@ -26,13 +26,42 @@ logs show it worked every time:
 | iOS (`ios-process.log`) | 204 | 204 |
 
 So process survival was not what let some Android tests pass under
-`slow-catalog` in probe 4, at least not today. The old build
-(`229111e`) run twice more on Android under `slow-catalog`, with
-ActivityManager's log: 25 of 25 failed both times, and the app's process
-started before every test (`old-build/`). The three passes of probe 4
-did not reproduce in 50 tries, and their cause is unknown. One
-candidate, not measured: the runner ignores `app_terminate`'s error, so
-a terminate that failed would leave the old store running.
+`slow-catalog` in probe 4. The old build (`229111e`) run twice more on
+Android under `slow-catalog`, with ActivityManager's log: 25 of 25
+failed both times, and the app's process started before every test
+(`old-build/`).
+
+### The three passes were timing
+
+`app_terminate` was a candidate: on Android it runs `am force-stop` and
+reads nothing back, and the runner ignores its error. It was not the
+cause. After every terminate measured here the package had no process,
+and the logs above show a new one for every test.
+
+In the old build the 8 seconds count from the catalog's first showing,
+at launch, and a reset does not restart them. Every test's
+`beforeEach` resets the store and waits 3 seconds, so a test passes if
+its reset comes late enough after launch that the 8 seconds end inside
+the wait. Measured by hand on the old build (terminate, launch, a
+pause, reset, wait 3 s), with Android's own log for the time from
+process start to the reset link:
+
+| process start → reset | the wait |
+|---|---|
+| 1.61 s, 1.83 s | failed |
+| 2.11 s, 2.61 s, 2.61 s, 2.97 s, 3.10 s, 3.11 s | passed |
+
+The runner's own gap is about 1.3–1.9 s on this clock (`store made` →
+`reset`, 1.01–1.55 s for 204 of 205 tests today, the store being made
+a fraction of a second after the process starts). So the original test
+sat just under a threshold of about 2 seconds, and any test whose steps
+before the reset ran slow by half a second passed. Probe 4 ran both
+matrices at once; three tests in each Android suite crossing it fits,
+though their timings were not recorded. Today's old-build runs
+stayed under it, 0 in 50.
+
+The fix makes the threshold irrelevant: the delay starts again at the
+reset.
 
 ## 2. The re-run
 
@@ -66,4 +95,4 @@ this; only a bug run that should fail could.
 | `slow-catalog`'s verdict depended on the store being new | Morpho Market | fixed, `b658e0e`, mobiumdev/morpho-market#1 |
 | A canceled SwiftUI task showed the catalog early | Morpho Market | fixed in the same commit, found by the matrix |
 | The runner gives every test a new process, on both platforms | — | measured: 205 of 205, 204 of 204 |
-| Probe 4's three Android passes | unknown | not reproduced in 50; `app_terminate`'s ignored error is a candidate |
+| Probe 4's three Android passes | the original test | timing: a reset ≥ ~2 s after launch passed the old build; the runner's gap is ~1.3–1.9 s. `app_terminate` ruled out |
