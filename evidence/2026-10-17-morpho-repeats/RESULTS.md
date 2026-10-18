@@ -57,7 +57,7 @@ where the four refusals are kept too).
 |---|---|---|
 | Haiku folds a one-session test into fresh cases in 4 of 6 runs; every fold misses `stale-code-message` | agent | measured; Sonnet 0 of 3 |
 | Haiku shortens `keyboard` to a form that does not exist in 4 of 6 runs | agent / `agent/format.md` | measured; Mobium refuses the file with the fix named; `format.md` now says which string goes where |
-| Mobium's test-runner guide does not say a case starts from a fresh app | Mobium's docs | proposed: a paragraph in "One test over several cases: `each`", on the Mobium branch `each-starts-over`; mobium-evals `verify` on t25: Sonnet folded 2 of 3 before it and 0 of 3 after, but its pass rate stayed 1 of 3, since two trials kept the file and gave no answer (a flaw in the harness's finish schema); Haiku 3 of 3 both |
+| Mobium's test-runner guide does not say a case starts from a fresh app | Mobium's docs | proposed: a paragraph in "One test over several cases: `each`", on the Mobium branch `each-starts-over`; mobium-evals `verify` on t25, once the harness's finish schema let a file be the answer: Haiku 2 of 3 before it, 3 of 3 after; Sonnet 1 of 3 before, 3 of 3 after; every failure a fold |
 | The refactor as an eval task | [mobium-evals](https://github.com/mobiumdev/mobium-evals) | t25 (`dc36d2c`): controls as expected; asked to shorten the one test with the constraint stated, Haiku kept the sequence 3 of 3 and Sonnet folded 1 of 3 — the fold depends on how the test is asked for |
 
 ## What is kept
