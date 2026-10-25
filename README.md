@@ -136,7 +136,7 @@ Each point says what the harness measures and why that matters.
 3. **The device is the judge.** Scoring is two deterministic comparisons:
    which (mutant, test) cells fail, and whether two traces made the same
    calls with the same results. No language model grades anything. That
-   matters here: in [mobium-rag](https://github.com/mobiumdev/mobium-rag), Haiku changed 8 of 20 scores when asked
+   matters here: in [mobium-rag](https://github.com/mobiumdev/mobium-rag), Haiku changed 6 of 20 scores when asked
    to rescore the same answers.
 
 4. **It finds defects in Mobium that ordinary tests miss.** It drives the

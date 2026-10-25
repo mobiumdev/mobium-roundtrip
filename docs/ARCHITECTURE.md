@@ -294,7 +294,7 @@ Four things it adds to such a practice:
 3. **Grading without a model.** Many AI evaluation setups use a language
    model as the judge. Here the device decides, through cells that fail or
    pass. That matters because model judges drift: in the RAG work beside
-   this project, Haiku changed 8 of 20 scores when asked to rescore the same
+   this project, Haiku changed 6 of 20 scores when asked to rescore the same
    answers. A model would be needed only at the last level, intent in
    prose, and only after it passes controls of its own.
 
